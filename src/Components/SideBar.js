@@ -7,3 +7,4 @@ const SideBar = () => {
 export default SideBar;
 //Sidebar.js
 //Another comment from Patrickgit
+//line of comment
