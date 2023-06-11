@@ -7,7 +7,8 @@ import SubMenu from "./Components/patrickComponents/SubMenu";
 function App() {
   return (
     <div className="App">
-      <h1>Test</h1>
+      <h1>Test 1...2...3...</h1>
+
       <SideBar></SideBar>
     </div>
   );
