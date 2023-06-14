@@ -1,0 +1,11 @@
+.sidebar {
+    background-color: #43c0f6;
+    height: 100vh;
+    width: 15vw;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .inActive {
+    width: 5vw;
+    transition: width 0.3s ease-in-out;
+  }

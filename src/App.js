@@ -1,15 +1,25 @@
-import logo from "./logo.svg";
-import "./App.css";
-import SideBar from "./Components/patrickComponents/SideBar";
-import SideBarData from "./Components/patrickComponents/SideBarData";
-import SubMenu from "./Components/patrickComponents/SubMenu";
+import './App.css';
+import MainDashboard from './Pages/MainDashboard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LearningObjectives from './Components/patrickComponents/layout/LearningObjectives';
+import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
 
 function App() {
   return (
     <div className="App">
-      <h1>Test 1...2...3...</h1>
-
-      <SideBar></SideBar>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainDashboard />}></Route>
+          <Route
+            path="/studentdashboard/learningobjectives"
+            element={<LearningObjectives />}
+          ></Route>
+          <Route
+            path="/studentdashboard/videotutorial"
+            element={<VideoTutorial />}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
