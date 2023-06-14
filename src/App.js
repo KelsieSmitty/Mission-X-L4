@@ -1,9 +1,10 @@
-import "./App.css";
-import MuiButton from "./Components/MuiButton";
+import './Styling/Footer.css'; 
+import Footer from './Components/Footer.jsx'; 
+
 function App() {
   return (
     <div className="App">
-      <MuiButton />
+      <Footer />
     </div>
   );
 }
