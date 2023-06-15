@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
-
+  // use to control the sidebar menu
   const toggleSidebar = () => {
     setInActive(!inActive);
   };
@@ -18,6 +18,26 @@ const StudentDashboard = () => {
     {
       path: '/studentdashboard/videotutorial',
       name: 'Video Tutorial',
+    },
+    {
+      path: '/studentdashboard/instructions',
+      name: 'Instructions',
+    },
+    {
+      path: '/studentdashboard/makeproject',
+      name: 'Make Project',
+    },
+    {
+      path: '/studentdashboard/submitproject',
+      name: 'Submit Project',
+    },
+    {
+      path: '/studentdashboard/bonuschallenge',
+      name: 'Bonus Challenge',
+    },
+    {
+      path: '/studentdashboard/takethequiz',
+      name: 'Take the Quiz',
     },
   ];
   // Conditional Rendering Picture
@@ -44,8 +64,8 @@ const StudentDashboard = () => {
 
 export default StudentDashboard;
 
-{
-  /* <li>
+//{
+/* <li>
   <ul>
     <button>Learning Objectives</button>
   </ul>
@@ -68,4 +88,4 @@ export default StudentDashboard;
     <button>Take the Quiz</button>
   </ul>
 </li> */
-}
+//}

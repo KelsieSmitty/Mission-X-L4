@@ -1,9 +1,11 @@
 import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
+import images from '../../../images/StudentDashboard/VideoTutorial.png';
+console.log(images);
 function VideoTutorial() {
   return (
     <MainDashboard>
-      <h1>VideoTutorial</h1>
+      <img src={images} alt="Video Tutorial" />
     </MainDashboard>
   );
 }
