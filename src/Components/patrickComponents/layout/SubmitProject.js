@@ -1,6 +1,6 @@
 import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
-import { ChangeEvent, useState } from 'react';
+
 import styles from '../../../Styling/SubmitProject.module.css';
 import UploaderButton from './UploaderButton';
 import images from '../../../images/StudentDashboard/makeproject.png';
@@ -24,6 +24,7 @@ const SubmitProject = () => {
               After completing your project, take a screenshot of your project
               and upload it here
             </p>
+            <br></br>
 
             <UploaderButton></UploaderButton>
           </div>
