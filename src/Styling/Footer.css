@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-* {
-    font-family: 'Roboto';
+@import url('https://fonts.googleapis.com/css?family=Nunito:700&display=swap');
+*{
+   font-family: 'Nunito', sans-serif;
+    color: #707070;
 }
 .footer-container {
       display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #a0d8f6;
+  align-items: stretch;
+  background-color: #B2E4FA;
   padding: 10px;
-  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
 }
 .footer-element {
-    background-color: chartreuse;
   margin-right: 10px;
   font-size: 20px;
+  padding: 60px;;
 }
-.element-info {
-    background-color: chocolate;
-    font-size: 15px;
-    transition: all 0.1s ease-in-out;
+.footer-element h3 {
+  font-weight: 700;
+  font-size: 24px;
+  align-items: left;
 }
-.element-info:hover {
-  color: rgb(185, 97, 157);
-  cursor: pointer;
+.footer-element a {
+  font-size: 20px;
+
 }

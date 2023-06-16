@@ -2,50 +2,53 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-element">
-        Company
-        <div className="element-info">
-          <ul>About Us</ul>
-          <ul>Carrer</ul>
-          <ul>Partners</ul>
-        </div>
+        <h3>COMPANY</h3>
+        <a href="#">About Us</a>
+        <br />
+        <a href="#">Careers</a>
+        <br />
+        <a href="#">Partners</a>
       </div>
 
       <div className="footer-element">
-        Courses
-        <div className="element-info">
-          <ul>Register</ul>
-          <ul>Login</ul>
-          <ul>Projects</ul>
-          <ul>Teachers</ul>
-          <ul>Parents</ul>
-          <ul>Resources</ul>
-        </div>
+        <h3>COURSES</h3>
+        <a href="#">Register</a>
+        <br />
+        <a href="#">Login</a>
+        <br />
+        <a href="#">Projects</a>
+        <br />
+        <a href="#">Teachers</a>
+        <br />
+        <a href="#">Parents</a>
+        <br />
+        <a href="#">Resources</a>
+      </div>
+
+      <div className="footer-element">
+        <h3>SUPPORT</h3>
+        <a href="#">FAQS</a>
+        <br />
+        <a href="#">Helpdesk</a>
+        <br />
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div className="footer-element">
+        <h3>LEGAL</h3>
+        <a href="#">Terms & Conditions</a>
+        <br />
+        <a href="#">Privacy Policy</a>
       </div>
       <div className="footer-element">
-        Support
-        <div className="element-info">
-          <ul>FAQs</ul>
-          <ul>Helpdesk</ul>
-          <ul>Contact Us</ul>
-        </div>
-      </div>
-      <div className="footer-element">
-        Legal
-        <div className="element-info">
-          <ul>Terms & Conditions</ul>
-          <ul>Privacy Policy</ul>
-        </div>
-      </div>
-      <div className="footer-element">
-        LevelUp Works
-        <div className="element-info">
-          <p>
-            LevelUp Works is an Auckland-based enterprise dedicated to
-            developing game-based learning software to help teachers in response
-            to the New Zealand Digital Technologies & Hangarau Matihiko.
-            alan@levelupworks.com (021) 668 185
-          </p>
-        </div>
+        <h3>LEVEL UP WORKS</h3>
+        <p>
+          LevelUp Works is an Auckland-based enterprise dedicated to developing
+          game-based learning software to help teachers in response to the New
+          Zealand Digital Technologies & Hangarau Matihiko.
+          alan@levelupworks.com
+        </p>
+        <p>(021) 668 185</p>
       </div>
     </div>
   );
