@@ -9,3 +9,7 @@
     width: 5vw;
     transition: width 0.3s ease-in-out;
   }
+
+  .buttonSideBar{
+    margin: 50px;
+  }

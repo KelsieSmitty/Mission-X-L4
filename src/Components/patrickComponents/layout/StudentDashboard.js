@@ -39,6 +39,10 @@ const StudentDashboard = () => {
       path: '/studentdashboard/takethequiz',
       name: 'Take the Quiz',
     },
+    {
+      path: '/studentdashboard/projectsubmissions',
+      name: 'Project Submission',
+    },
   ];
   // Conditional Rendering Picture
 

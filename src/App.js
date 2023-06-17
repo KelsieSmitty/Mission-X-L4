@@ -8,6 +8,7 @@ import MakeProject from './Components/patrickComponents/layout/MakeProject';
 import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
 import BonusChallenge from './Components/patrickComponents/layout/BonusChallenge';
 import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
+import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
 
 function App() {
   return (
@@ -42,6 +43,10 @@ function App() {
           <Route
             path="/studentdashboard/takethequiz"
             element={<TaketheQuiz />}
+          ></Route>
+          <Route
+            path="/studentdashboard/projectsubmissions"
+            element={<TeacherDashboard />}
           ></Route>
         </Routes>
       </BrowserRouter>
