@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../../Styling/UploaderButton.module.css';
 import images from '../../../images/StudentDashboard/uploader.png';
+console.log(styles);
 
 console.log(images);
 function UploaderButton() {

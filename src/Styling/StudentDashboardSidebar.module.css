@@ -13,3 +13,8 @@
   .buttonSideBar{
     margin: 50px;
   }
+
+  .buttonSelection{
+    background-color: burlywood;
+    padding: 50px;
+  }

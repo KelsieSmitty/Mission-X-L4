@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../../../Styling/StudentDashboardSidebar.module.css';
 import { NavLink } from 'react-router-dom';
+import images from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
 
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
@@ -53,11 +54,44 @@ const StudentDashboard = () => {
           inActive ? styles.inActive : ''
         }          `}
       >
-        <button onClick={toggleSidebar}>Sidebar</button>
+        <br></br>
+        <img
+          src={images}
+          alt="Instructions"
+          style={{
+            padding: 10,
+            margin: 4,
+            border: 10,
+          }}
+        ></img>
+        <br></br>
+        <button
+          onClick={toggleSidebar}
+          style={{
+            backgroundColor: ' #43c0f6',
+            padding: 10,
+            margin: 4,
+            border: 10,
+          }}
+        >
+          Sidebar
+        </button>
         <div>
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
-              <button>{item.name}</button>
+              <br></br>
+              <button
+                style={{
+                  backgroundColor: ' #43c0f6',
+                  padding: 10,
+                  margin: 4,
+                  border: 10,
+                }}
+              >
+                {item.name}
+              </button>
+
+              <br></br>
             </NavLink>
           ))}
         </div>

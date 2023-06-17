@@ -5,7 +5,7 @@ console.log(images);
 const Instructions = () => {
   return (
     <MainDashboard>
-      <img src={images} alt="Instructions" />
+      <img src={images} alt="Instructions" width={1600} />
     </MainDashboard>
   );
 };

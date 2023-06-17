@@ -5,7 +5,7 @@ console.log(images);
 function VideoTutorial() {
   return (
     <MainDashboard>
-      <img src={images} alt="Video Tutorial" width={1300} />
+      <img src={images} alt="Video Tutorial" width={1600} />
     </MainDashboard>
   );
 }

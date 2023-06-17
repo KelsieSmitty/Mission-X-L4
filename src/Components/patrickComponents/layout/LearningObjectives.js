@@ -6,7 +6,7 @@ console.log(images);
 const LearningObjectives = () => {
   return (
     <MainDashboard>
-      <img src={images} alt="learning Objectives" />
+      <img src={images} alt="learning Objectives" width={1600} />
     </MainDashboard>
   );
 };
