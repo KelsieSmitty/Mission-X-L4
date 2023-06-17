@@ -46,7 +46,7 @@ function Footer() {
           LevelUp Works is an Auckland-based enterprise dedicated to developing
           game-based learning software to help teachers in response to the New
           Zealand Digital Technologies & Hangarau Matihiko.
-          alan@levelupworks.com
+          <p>alan@levelupworks.com</p>
         </p>
         <p>(021) 668 185</p>
       </div>

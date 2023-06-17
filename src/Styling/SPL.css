@@ -6,14 +6,22 @@ background-color: #43C0F6;
 display: flex;
 justify-content: center;
 height: 64px;
+
+}
+.section {
+    display: flex;
+    flex-direction: column;
 }
 .myCheckbox {
-    margin-top: -30px;
+    /* margin-top: -270px; */
     background-color: aquamarine;
     margin-left: 10%;
     width: 10%;
     color: #767676;
      font-family: 'Open Sans', sans-serif;
+     /* flex-direction: column; */
+     /* position: relative; */
+    
 }
 .myCheckbox h1{
     font-size: 16px;
@@ -25,9 +33,12 @@ label {
     font-size: 14px;
 }
 .projects-container {
-    background-color: darksalmon;
+    /* background-color: rgb(235, 128, 229); */
     margin-right: 15%;
-    margin-left: 30%;
+    margin-left: 27%;
+    /* flex-direction: column; */
+    width: 1300px;
+    
 }
 .projects-container h1{
     color:#6C6C6C;
@@ -39,4 +50,61 @@ label {
      color: #767676;
      font-family: 'Open Sans', sans-serif;
      font-size: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    color: #767676;
+}
+.buttons {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.left {
+    justify-content: flex-start;
+    width: 287px;
+    height: 21px;    
+}
+.right {
+    justify-content: flex-end;
+    width: 246px;
+    height: 21px;
+}
+.right h3{
+    margin-top: 0px;
+    margin-right: 5px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image {
+    width: 314px;
+    height: 221px;
+     padding: 20px;
+     padding-top: 80px;
+     padding-bottom: 80px;
+     
+}
+.image h2 {
+    font-size: 30px;
+    color:#707070 ;
+    font-weight: 900px;
+    font-family: 'Nunito', sans-serif;;
+}
+.image p {
+    font-size: 20px;
+    color: #767676;
+      font-family: 'Open Sans', sans-serif;
+}
+#back-to-top{
+    background-color: yellow;
+    width: 175px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 83%;
+    margin-top: 200px;
+    
 }
