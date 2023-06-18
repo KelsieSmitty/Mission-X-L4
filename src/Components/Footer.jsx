@@ -40,7 +40,7 @@ function Footer() {
         <br />
         <a href="#">Privacy Policy</a>
       </div>
-      <div className="footer-element">
+      <div className="footer-element-works">
         <h3>LEVEL UP WORKS</h3>
         <p>
           LevelUp Works is an Auckland-based enterprise dedicated to developing
