@@ -8,20 +8,16 @@ justify-content: center;
 height: 64px;
 
 }
-.section {
+
+.main-SPL-container{
     display: flex;
-    flex-direction: column;
 }
 .myCheckbox {
-    /* margin-top: -270px; */
-    background-color: aquamarine;
+    padding-top: 13%;
     margin-left: 10%;
-    width: 10%;
     color: #767676;
      font-family: 'Open Sans', sans-serif;
-     /* flex-direction: column; */
-     /* position: relative; */
-    
+     flex-basis: 7%;
 }
 .myCheckbox h1{
     font-size: 16px;
@@ -34,17 +30,21 @@ label {
 }
 .projects-container {
     /* background-color: rgb(235, 128, 229); */
-    margin-right: 15%;
-    margin-left: 27%;
+    /* margin-right: 15%;  */
+   
     /* flex-direction: column; */
-    width: 1300px;
-    
+    /* width: 1300px; */
+    flex-basis: 65%;
+    /* width: 100%; */
+    padding: 5%;
+    /* margin-right: 10%; */
 }
 .projects-container h1{
     color:#6C6C6C;
     font-size: 42px;
    font-family: 'Nunito', sans-serif;
    font-weight: 900;
+   
 }
 .projects-container p {
      color: #767676;
@@ -55,16 +55,90 @@ label {
     display: flex;
     justify-content: space-between;
     color: #767676;
+    margin-right: 4%;
 }
 .buttons {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 .left {
     justify-content: flex-start;
     width: 287px;
-    height: 21px;    
+    height: 21px;  
+    font-weight: bolder;  
+}
+/*I styled each button individually*/
+#beginner {
+     background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#beginner:hover {
+  background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
+}
+#intermediate {
+    background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#intermediate:hover{
+    background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
+}
+#advanced {
+    background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#advanced:hover {
+    background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
+}
+#five {
+    background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#five:hover {
+    background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
+}
+#ten {
+     background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#ten:hover {
+    background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
+}
+#all {
+     background-color: #FAF0E6;
+     transition: background-color 0.3s, color 0.3s;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#all:hover {
+    background-color: rgb(15, 150, 241);
+  color: white;
+  cursor: pointer;
 }
 .right {
     justify-content: flex-end;
@@ -79,6 +153,8 @@ label {
     display: flex;
     justify-content: space-around;
   flex-wrap: wrap;
+  margin-right: 0px;
+ 
 }
 .image {
     width: 314px;
@@ -86,25 +162,33 @@ label {
      padding: 20px;
      padding-top: 80px;
      padding-bottom: 80px;
+     text-align: center;
      
 }
 .image h2 {
     font-size: 30px;
     color:#707070 ;
     font-weight: 900px;
-    font-family: 'Nunito', sans-serif;;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5px;
+    margin-bottom: -10px; 
 }
 .image p {
     font-size: 20px;
     color: #767676;
       font-family: 'Open Sans', sans-serif;
+     margin-top: 20px;
+      
 }
 #back-to-top{
-    background-color: yellow;
+    background-color: goldenrod;
+    color: white;
     width: 175px;
     height: 35px;
     border-radius: 10px;
     margin-left: 83%;
     margin-top: 200px;
+    border: none;
+    font-weight: bolder;
     
 }

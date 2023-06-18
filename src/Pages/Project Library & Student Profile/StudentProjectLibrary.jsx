@@ -18,12 +18,72 @@ import Project15 from "../../Images/public-images/projects/Project15.png";
 export default function StudentProyectLibrary() {
   return (
     <>
+
       <header className="navbar">
         <h1>Here goes the Nav Bar</h1>
       </header>
 
-      <section>
-        <div className="projects-container">
+      <div className='main-SPL-container'>
+        <section className='myCheckbox'>
+          <h1>SUBSCRIPTION</h1>
+          <hr />
+          <input type="checkbox" />
+          <label> Free</label>
+          <br />
+          <input type="checkbox" />
+          <label> Premium</label>
+          <br />
+          <h1>ACTIVITY TYPE</h1>
+          <hr />
+          <input type="checkbox" />
+          <label> Animation</label>
+          <br />
+          <input type="checkbox" />
+          <label> Game</label>
+          <br />
+          <input type="checkbox" />
+          <label> Chatbot</label>
+          <br />
+          <input type="checkbox" />
+          <label> Augmented Reality</label>
+          <br />
+          <h1> YEAR LEVEL</h1>
+          <hr />
+          <input type="checkbox" />
+          <label> 1 - 4</label>
+          <br />
+          <input type="checkbox" />
+          <label> 5 - 6</label>
+          <br />
+          <input type="checkbox" />
+          <label> 7 - 8 </label>
+          <br />
+          <input type="checkbox" />
+          <label> 9 - 13</label>
+          <br />
+          <h1> SUBJECT MATTER</h1>
+          <hr />
+          <input type="checkbox" />
+          <label> Computer Science</label>
+          <br />
+          <input type="checkbox" />
+          <label> Maths</label>
+          <br />
+          <input type="checkbox" />
+          <label> Science</label>
+          <br />
+          <input type="checkbox" />
+          <label> Language</label>
+          <br />
+          <input type="checkbox" />
+          <label> Art</label>
+          <br />
+          <input type="checkbox" />
+          <label> Music</label>
+          <br />
+      </section>
+  
+        <section className='projects-container'>
           <h1>PROJECTS</h1>
           <p>
             Welcome to the library project.You can use the filters on the right
@@ -32,15 +92,15 @@ export default function StudentProyectLibrary() {
 
           <div className="button-container">
             <div className="buttons left">
-              <button>BEGINNER</button>
-              <button>INTERMEDIATE</button>
-              <button>ADVANCED</button>
+              <button id='beginner'>BEGINNER</button>
+              <button id='intermediate'>INTERMEDIATE</button>
+              <button id='advanced'>ADVANCED</button>
             </div>
             <div className="buttons right">
               <h3>SHOW</h3>
-              <button>5</button>
-              <button>10</button>
-              <button>All</button>
+              <button id='five'>5</button>
+              <button id='ten'>10</button>
+              <button id='all'>All</button>
             </div>
           </div>
 
@@ -120,71 +180,10 @@ export default function StudentProyectLibrary() {
               <h2>The Lion and the Mouse Part 2</h2>
               <p>BEGINNER | Animation</p>
             </div>
-          </div>
         </div>
-        <button id='back-to-top'>BACK TO TOP</button>
+        <button id="back-to-top">BACK TO TOP</button>
       </section>
-
-      <section>
-        <div className="myCheckbox">
-          <h1>SUBSCRIPTION</h1>
-          <hr />
-          <input type="checkbox" />
-          <label> Free</label>
-          <br />
-          <input type="checkbox" />
-          <label> Premium</label>
-          <br />
-          <h1>ACTIVITY TYPE</h1>
-          <hr />
-          <input type="checkbox" />
-          <label> Animation</label>
-          <br />
-          <input type="checkbox" />
-          <label> Game</label>
-          <br />
-          <input type="checkbox" />
-          <label> Chatbot</label>
-          <br />
-          <input type="checkbox" />
-          <label> Augmented Reality</label>
-          <br />
-          <h1> YEAR LEVEL</h1>
-          <hr />
-          <input type="checkbox" />
-          <label> 1 - 4</label>
-          <br />
-          <input type="checkbox" />
-          <label> 5 - 6</label>
-          <br />
-          <input type="checkbox" />
-          <label> 7 - 8 </label>
-          <br />
-          <input type="checkbox" />
-          <label> 9 - 13</label>
-          <br />
-          <h1> SUBJECT MATTER</h1>
-          <hr />
-          <input type="checkbox" />
-          <label> Computer Science</label>
-          <br />
-          <input type="checkbox" />
-          <label> Maths</label>
-          <br />
-          <input type="checkbox" />
-          <label> Science</label>
-          <br />
-          <input type="checkbox" />
-          <label> Language</label>
-          <br />
-          <input type="checkbox" />
-          <label> Art</label>
-          <br />
-          <input type="checkbox" />
-          <label> Music</label>
-          <br />
-        </div>
-      </section>
+      </div>
     </>
   );
 }
