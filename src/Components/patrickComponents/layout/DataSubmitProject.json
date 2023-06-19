@@ -15,6 +15,15 @@
         "Description3":"Tukua te Whakaahua Kaupapa",
         "Description4":"Whakaatuhia to kaiako",
         "Description5":"timata kaupapa"
+    },
+    "Korean":{
+        "Description":"프로젝트를 완료한 후 프로젝트의 스크린샷을 찍어 여기에 업로드하세요.",
+        "Description2":"선생님이 같은 방에 있는 경우 아래 버튼을 클릭하여 완료되었음을 알립니다.",
+        "Description3":"프로젝트 사진 제출.",
+        "Description4":"선생님을 보여주세요.",
+        "Description5":"프로젝트 시작."
+
+
     }
     
 }
