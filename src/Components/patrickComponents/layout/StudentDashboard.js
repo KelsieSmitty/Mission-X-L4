@@ -55,7 +55,7 @@ const StudentDashboard = () => {
         }          `}
       >
         <br></br>
-        <img src={images} alt="Instructions"></img>
+
         <br></br>
         <button
           onClick={toggleSidebar}
