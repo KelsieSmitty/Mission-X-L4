@@ -2,7 +2,18 @@ import React from 'react';
 import styles from '../../../Styling/Navbar2.module.css';
 import images from '../../../images/StudentDashboard/NavBar/LevelUpWorks-white.png';
 console.log(styles);
+
 const Navbar2 = () => {
+  const alert1 = () => {
+    return alert('Start Project');
+  };
+  const alert2 = () => {
+    return alert('Ask Teacher for help');
+  };
+  const alert3 = () => {
+    return alert('More Projects');
+  };
+
   return (
     <div className={styles['nav']}>
       <div className={styles['nav-header']}>
@@ -23,13 +34,9 @@ const Navbar2 = () => {
       </div>
 
       <div className={styles['nav-links']}>
-        <a href="" target="_blank">
-          Start Project
-        </a>
-        <a href="" target="_blank">
-          Ask Teacher for help
-        </a>
-        <a href="" target="_blank">
+        <a onClick={alert1}>Start Project</a>
+        <a onClick={alert2}>Ask Teacher for help</a>
+        <a a onClick={alert3}>
           More Projects
         </a>
       </div>

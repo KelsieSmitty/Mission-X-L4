@@ -1,0 +1,20 @@
+
+{
+    "english":{
+        "Title":"",
+        "Description":"After completing your project, take a screenshot of your project and upload it here",
+        "Description2":"If your teacher is in the same room as you, click the button below to let them know you are done",
+        "Description3":"Submit Project Photo",
+        "Description4":"Show your teacher",
+        "Description5":"Start Project"
+    },
+    "Maori":{
+        "Title":"After completing your project, take a screenshot of your project and upload it here",
+        "Description":"Tukua te Whakaahua Kaupapa Ka oti to kaupapa, tangohia he whakaahua o to kaupapa ka tuku ake ki konei",
+        "Description2":"Mena kei te ruma kotahi to kaiako ki a koe, pawhiria te paatene i raro nei kia mohio ratou kua oti koe",
+        "Description3":"Tukua te Whakaahua Kaupapa",
+        "Description4":"Whakaatuhia to kaiako",
+        "Description5":"timata kaupapa"
+    }
+    
+}

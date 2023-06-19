@@ -55,15 +55,7 @@ const StudentDashboard = () => {
         }          `}
       >
         <br></br>
-        <img
-          src={images}
-          alt="Instructions"
-          style={{
-            padding: 10,
-            margin: 4,
-            border: 10,
-          }}
-        ></img>
+        <img src={images} alt="Instructions"></img>
         <br></br>
         <button
           onClick={toggleSidebar}
