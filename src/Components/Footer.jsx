@@ -1,6 +1,9 @@
 function Footer() {
   return (
+    //creates a large container for all the elements in footer
     <div className="footer-container">
+{/* each element in footer belongs to footer-element class */}
+
       <div className="footer-element">
         <h3>COMPANY</h3>
         <a href="#">About Us</a>
@@ -40,6 +43,8 @@ function Footer() {
         <br />
         <a href="#">Privacy Policy</a>
       </div>
+
+      {/* This footer element has a different class name as it's wider in size that the others */}
       <div className="footer-element-works">
         <h3>LEVEL UP WORKS</h3>
         <p>

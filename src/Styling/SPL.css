@@ -29,22 +29,14 @@ label {
     font-size: 14px;
 }
 .projects-container {
-    /* background-color: rgb(235, 128, 229); */
-    /* margin-right: 15%;  */
-   
-    /* flex-direction: column; */
-    /* width: 1300px; */
     flex-basis: 65%;
-    /* width: 100%; */
     padding: 5%;
-    /* margin-right: 10%; */
 }
 .projects-container h1{
     color:#6C6C6C;
     font-size: 42px;
    font-family: 'Nunito', sans-serif;
-   font-weight: 900;
-   
+   font-weight: 900;  
 }
 .projects-container p {
      color: #767676;
@@ -153,17 +145,15 @@ label {
     display: flex;
     justify-content: space-around;
   flex-wrap: wrap;
-  margin-right: 0px;
- 
+  margin-right: 0px; 
 }
 .image {
     width: 314px;
     height: 221px;
-     padding: 20px;
+     /* padding: 20px; */
      padding-top: 80px;
      padding-bottom: 80px;
-     text-align: center;
-     
+     text-align: center;  
 }
 .image h2 {
     font-size: 30px;
@@ -177,11 +167,10 @@ label {
     font-size: 20px;
     color: #767676;
       font-family: 'Open Sans', sans-serif;
-     margin-top: 20px;
-      
+     margin-top: 20px;    
 }
 #back-to-top{
-    background-color: goldenrod;
+    background-color: #daa520;
     color: white;
     width: 175px;
     height: 35px;
@@ -189,6 +178,11 @@ label {
     margin-left: 83%;
     margin-top: 200px;
     border: none;
-    font-weight: bolder;
-    
+    font-weight: bolder; 
+    transition: background-color 0.3s, color 0.3s;
+}
+#back-to-top:hover {
+    background-color: #FFDA7B;
+    color: black;
+    cursor: pointer;
 }

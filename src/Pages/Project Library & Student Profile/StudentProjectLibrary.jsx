@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollUp from "../../Components/ScrollUp";
 import Project01 from '../../Images/public-images/projects/Project01.png'
 import Project02 from "../../Images/public-images/projects/Project02.png";
 import Project03 from "../../Images/public-images/projects/Project03.png";
@@ -18,13 +19,12 @@ import Project15 from "../../Images/public-images/projects/Project15.png";
 export default function StudentProyectLibrary() {
   return (
     <>
-
       <header className="navbar">
         <h1>Here goes the Nav Bar</h1>
       </header>
 
-      <div className='main-SPL-container'>
-        <section className='myCheckbox'>
+      <div className="main-SPL-container">
+        <section className="myCheckbox">
           <h1>SUBSCRIPTION</h1>
           <hr />
           <input type="checkbox" />
@@ -81,9 +81,9 @@ export default function StudentProyectLibrary() {
           <input type="checkbox" />
           <label> Music</label>
           <br />
-      </section>
-  
-        <section className='projects-container'>
+        </section>
+
+        <section className="projects-container">
           <h1>PROJECTS</h1>
           <p>
             Welcome to the library project.You can use the filters on the right
@@ -92,15 +92,15 @@ export default function StudentProyectLibrary() {
 
           <div className="button-container">
             <div className="buttons left">
-              <button id='beginner'>BEGINNER</button>
-              <button id='intermediate'>INTERMEDIATE</button>
-              <button id='advanced'>ADVANCED</button>
+              <button id="beginner">BEGINNER</button>
+              <button id="intermediate">INTERMEDIATE</button>
+              <button id="advanced">ADVANCED</button>
             </div>
             <div className="buttons right">
               <h3>SHOW</h3>
-              <button id='five'>5</button>
-              <button id='ten'>10</button>
-              <button id='all'>All</button>
+              <button id="five">5</button>
+              <button id="ten">10</button>
+              <button id="all">All</button>
             </div>
           </div>
 
@@ -180,9 +180,9 @@ export default function StudentProyectLibrary() {
               <h2>The Lion and the Mouse Part 2</h2>
               <p>BEGINNER | Animation</p>
             </div>
-        </div>
-        <button id="back-to-top">BACK TO TOP</button>
-      </section>
+          </div>
+          <ScrollUp />
+        </section>
       </div>
     </>
   );
