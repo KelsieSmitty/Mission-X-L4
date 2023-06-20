@@ -1,0 +1,50 @@
+.logoMain {
+  top: 5px;
+  left: 236px;
+  width: 174px;
+  height: 55px;
+}
+
+/* Home/features/teachers area: */
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navLang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.navLang img {
+  padding: 0 0.25rem;
+  cursor: pointer;
+  top: 8px;
+  width: 24px;
+  height: 12px;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navAvatar {
+  height: 50%;
+}

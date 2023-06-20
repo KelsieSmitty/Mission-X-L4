@@ -1,11 +1,14 @@
 import "./App.css";
-import MuiButton from "./Components/KSComponents/MuiButton";
+import { HomeContent } from "./Components/KSComponents/HomeContent";
+import NavBar from "./Components/KSComponents/NavBar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <MuiButton />
-    </div>
+    <Router>
+      <NavBar />
+      <HomeContent />
+    </Router>
   );
 }
 
