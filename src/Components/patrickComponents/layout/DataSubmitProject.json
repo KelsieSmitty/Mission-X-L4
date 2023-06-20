@@ -24,6 +24,15 @@
         "Description5":"프로젝트 시작."
 
 
+    },
+    "Chinese":{
+        "Description":"完成项目后，截取项目的屏幕截图并上传到此处",
+        "Description2":"如果您的老师和您在同一个房间，请单击下面的按钮让他们知道您已完成",
+        "Description3":"提交项目照片",
+        "Description4":"显示你的老师",
+        "Description5":"启动项目"
+
     }
+    
     
 }

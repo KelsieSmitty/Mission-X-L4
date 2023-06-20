@@ -27,6 +27,8 @@ const SubmitProject = () => {
       setContent(TranslatedLanguage.Maori);
     } else if (language === 'Korean') {
       setContent(TranslatedLanguage.Korean);
+    } else if (language === 'Chinese') {
+      setContent(TranslatedLanguage.Chinese);
     }
   });
 
@@ -46,6 +48,7 @@ const SubmitProject = () => {
               <option>English</option>
               <option>Maori</option>
               <option>Korean</option>
+              <option>Chinese</option>
             </select>
             <div>
               <p>{content.Description}</p>
