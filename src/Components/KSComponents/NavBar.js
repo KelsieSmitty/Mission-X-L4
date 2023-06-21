@@ -1,3 +1,10 @@
+// Still to complete for NavBar:
+// - Responsive Page design:
+// - - Menu items in drop down
+// -- Hamburger icon to be made bigger
+//-- Logo to stay on page
+//-- signup/login/lang to move to drop down
+
 import {
   Nav,
   NavBtn,
@@ -11,6 +18,7 @@ import Logo from "../../Images/src-assets/NavBar/LevelUpWorks-white.png";
 import Avatar from "../../Images/src-assets/NavBar/Avatar-white.png";
 import NZFlag from "../../Images/src-assets/NavBar/NZFlag.png";
 import MāoriFlag from "../../Images/src-assets/NavBar/MaoriFlag.png";
+import { FaDrawPolygon } from "react-icons/fa";
 
 const NavBar = () => {
   return (
