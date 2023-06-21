@@ -1,19 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-* {
-  margin: 0;
-  padding: 0px;
-}
-
 .homeBanner {
   color: #767676;
   margin: 0;
   padding: 0;
-  top: 64px;
   left: 0px;
   width: 1920px;
-  height: 400px;
+  height: 410px;
+  position: relative;
+  background-size: cover;
 }
 
 #homeFuture {
@@ -30,41 +26,43 @@
   text-align: left;
   position: relative;
   font-family: "Nunito", sans-serif;
-  top: 40px;
   left: 266px;
   width: 588px;
-  height: 140px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .homeBannerH6 {
   font-family: "Open Sans", sans-serif;
   position: relative;
   font-size: 24px;
-  top: 70px;
   left: 266px;
   width: 562px;
   height: 98px;
   text-align: left;
   letter-spacing: 0px;
   color: #6c6c6c;
+  padding-top: 11px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeBannerP {
-  top: 85px;
   left: 625px;
   width: 175px;
   height: 37px;
   text-align: center;
   letter-spacing: 0.22px;
   color: #707070;
-
   position: relative;
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeOfferH1 {
-  top: 118px;
   left: 266px;
   width: 292px;
   height: 57px;
@@ -73,12 +71,13 @@
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
-
+  padding-top: 118px;
+  margin: 0;
+  padding-bottom: 0;
   font-size: 42px;
 }
 
 .homeOfferP {
-  top: 130px;
   left: 270px;
   width: 554px;
   height: 131px;
@@ -87,12 +86,13 @@
   text-align: left;
   letter-spacing: 0.4px;
   color: #767676;
-
   font-size: 20px;
+  padding-top: 17px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeOfferH3 {
-  top: 203px;
   left: 270px;
   width: 384px;
   height: 41px;
@@ -102,12 +102,17 @@
   font: normal normal bold 30px/11px Nunito;
   letter-spacing: 0.6px;
   color: #6c6c6c;
+  padding-top: 35px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeOfferImgs {
   display: flex;
   justify-content: space-between;
-  top: 210px;
+  padding-top: 11px;
+  margin: 0;
+  padding-bottom: 0;
   left: 270px;
   width: 152px;
   height: 152px;
@@ -117,7 +122,7 @@
 
 .homeLaptopImgs {
   position: relative;
-  top: -302px;
+  top: -480px;
   left: 1010px;
   width: 728px;
   height: 493px;
@@ -129,7 +134,6 @@
 }
 
 .homeTeachingH2 {
-  top: 20px;
   left: 408px;
   width: 1104px;
   height: 41px;
@@ -149,14 +153,15 @@
   align-items: center;
   width: 1400px;
   height: 221px;
-  top: 55px;
   left: 288px;
   position: relative;
   border-radius: 20px;
+  padding-top: 55px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeHelpH1 {
-  top: 150px;
   left: 452px;
   width: 970px;
   height: 57px;
@@ -167,6 +172,9 @@
   color: #6c6c6c;
   font-size: 42px;
   padding-bottom: 100px;
+  padding-top: 140px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeBtns {
@@ -177,6 +185,9 @@
   margin: 100px 0 0 0;
   width: 1400px;
   position: relative;
+  padding-top: 55px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeBtnLink {
@@ -209,7 +220,6 @@
 }
 
 .homeHelpH3 {
-  top: 64px;
   left: 282px;
   width: 384px;
   height: 41px;
@@ -220,10 +230,15 @@
   letter-spacing: 0.6px;
   color: #606060;
   opacity: 1;
+  padding-top: 70px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .homeHelpP {
-  top: 100px;
+  padding-top: 24px;
+  margin: 0;
+  padding-bottom: 0;
   left: 282px;
   width: 1235px;
   height: 64px;

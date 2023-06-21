@@ -31,7 +31,7 @@ const NavBar = () => {
         </div>
         <div className="navRight">
           <div className="navLang">
-            <h5>LANG </h5>
+            LANG
             <img src={NZFlag} alt="NZFlag" />
             <img src={MāoriFlag} alt="MāoriFlag" />
           </div>

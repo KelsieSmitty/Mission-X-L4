@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { HomeBtnLink as Link } from "react-router-dom";
 
 export const HomeLearnBtn = styled.div`
   color: #707070;
@@ -9,14 +8,13 @@ export const HomeLearnBtn = styled.div`
   text-align: center;
   box-shadow: 0px 4px 5px #00000029;
   letter-spacing: 0.32px;
-  top: 85px;
   left: 398px;
   width: 175px;
   height: 31px;
   position: relative;
   font-size: 16px;
-  vertical-align: middle;
   line-height: 35px;
+  margin-top: 17px;
 `;
 
 export const HomeSignBtn = styled.div`
@@ -26,11 +24,11 @@ export const HomeSignBtn = styled.div`
   border-radius: 7px;
   text-align: center;
   letter-spacing: 0.32px;
-  top: 85px;
   left: 445px;
   width: 175px;
   height: 35px;
   position: relative;
   font-size: 16px;
   line-height: 35px;
+  margin-top: 17px;
 `;

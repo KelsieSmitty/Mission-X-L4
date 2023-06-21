@@ -13,7 +13,7 @@ import Group2 from "../../Images/src-assets/Home/Group 2.png";
 
 export const HomeContent = () => {
   return (
-    <div>
+    <div className="home">
       <div
         className="homeBanner"
         style={{

@@ -40,7 +40,7 @@ export const Bars = styled(FaBars)`
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: 16px;
     cursor: pointer;
   }
 `;
@@ -49,6 +49,10 @@ export const Bars = styled(FaBars)`
 export const NavLogin = styled.nav`
   display: flex;
   justify-content: space-around;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  height: 22px;
+  margin: 0;
 `;
 
 export const NavBtn = styled.nav`
@@ -62,11 +66,13 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   background: #52bff3;
-  padding: 0.25rem 1rem;
   color: #fff;
   font-size: 16px;
   border: none;
   outline: none;
   cursor: pointer;
   text-decoration: none;
+  padding-bottom: 10px;
+
+  margin: 0;
 `;
