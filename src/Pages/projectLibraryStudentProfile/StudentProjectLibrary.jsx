@@ -1,20 +1,20 @@
 
 import ScrollUp from "../../Components/ScrollUp";
-import Project01 from '../../Images/public-images/projects/Project01.png'
-import Project02 from "../../Images/public-images/projects/Project02.png";
-import Project03 from "../../Images/public-images/projects/Project03.png";
-import Project04 from "../../Images/public-images/projects/Project04.png";
-import Project05 from "../../Images/public-images/projects/Project05.png";
-import Project06 from "../../Images/public-images/projects/Project06.png";
-import Project07 from "../../Images/public-images/projects/Project07.png";
-import Project08 from "../../Images/public-images/projects/Project08.png";
-import Project09 from "../../Images/public-images/projects/Project09.png";
-import Project10 from "../../Images/public-images/projects/Project10.png";
-import Project11 from "../../Images/public-images/projects/Project11.png";
-import Project12 from "../../Images/public-images/projects/Project12.png";
-import Project13 from "../../Images/public-images/projects/Project13.png";
-import Project14 from "../../Images/public-images/projects/Project14.png";
-import Project15 from "../../Images/public-images/projects/Project15.png";
+import Project01 from '../../images/public-images/projects/Project01.png'
+import Project02 from "../../images/public-images/projects/Project02.png";
+import Project03 from "../../images/public-images/projects/Project03.png";
+import Project04 from "../../images/public-images/projects/Project04.png";
+import Project05 from "../../images/public-images/projects/Project05.png";
+import Project06 from "../../images/public-images/projects/Project06.png";
+import Project07 from "../../images/public-images/projects/Project07.png";
+import Project08 from "../../images/public-images/projects/Project08.png";
+import Project09 from "../../images/public-images/projects/Project09.png";
+import Project10 from "../../images/public-images/projects/Project10.png";
+import Project11 from "../../images/public-images/projects/Project11.png";
+import Project12 from "../../images/public-images/projects/Project12.png";
+import Project13 from "../../images/public-images/projects/Project13.png";
+import Project14 from "../../images/public-images/projects/Project14.png";
+import Project15 from "../../images/public-images/projects/Project15.png";
 
 export default function StudentProyectLibrary() {
   return (

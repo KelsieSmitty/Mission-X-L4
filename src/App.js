@@ -1,21 +1,21 @@
-import "./App.css";
-import MainDashboard from "./Pages/MainDashboard";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LearningObjectives from "./Components/patrickComponents/layout/LearningObjectives";
-import VideoTutorial from "./Components/patrickComponents/layout/VideoTutorial";
-import Instructions from "./Components/patrickComponents/layout/Instructions";
-import MakeProject from "./Components/patrickComponents/layout/MakeProject";
-import SubmitProject from "./Components/patrickComponents/layout/SubmitProject";
-import BonusChallenge from "./Components/patrickComponents/layout/BonusChallenge";
-import TaketheQuiz from "./Components/patrickComponents/layout/TaketheQuiz";
-import TeacherDashboard from "./Components/patrickComponents/layout/TeacherDashboard";
-import ProgressTracker from "./Pages/ProgressTracker";
-import "./Styling/Footer.css";
-import "./Styling/SPL.css";
-import Footer from "./Components/Footer.jsx";
-import StudentProjectLibrary from "./Pages/Project Library & Student Profile/StudentProjectLibrary";
-import "./App.css";
-import Home from "./Pages/Home";
+import './App.css';
+import MainDashboard from './Pages/MainDashboard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LearningObjectives from './components/patrickComponents/layout/LearningObjectives';
+import VideoTutorial from './components/patrickComponents/layout/VideoTutorial';
+import Instructions from './components/patrickComponents/layout/Instructions';
+import MakeProject from './components/patrickComponents/layout/MakeProject';
+import SubmitProject from './components/patrickComponents/layout/SubmitProject';
+import BonusChallenge from './components/patrickComponents/layout/BonusChallenge';
+import TaketheQuiz from './components/patrickComponents/layout/TaketheQuiz';
+import TeacherDashboard from './components/patrickComponents/layout/TeacherDashboard';
+import ProgressTracker from './Pages/ProgressTracker';
+import './Styling/Footer.css';
+import './Styling/SPL.css';
+import Footer from './Components/Footer.jsx';
+import StudentProjectLibrary from './pages/projectLibraryStudentProfile/StudentProjectLibrary';
+import './App.css';
+import Home from './Pages/Home';
 
 function App() {
   return (
