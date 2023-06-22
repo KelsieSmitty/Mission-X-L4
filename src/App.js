@@ -1,10 +1,9 @@
-
-import './App.css';
+import ProgressTracker from "./Pages/ProgressTracker";
 
 function App() {
   return (
-    <div className="App">
-    
+    <div>
+      <ProgressTracker />
     </div>
   );
 }
