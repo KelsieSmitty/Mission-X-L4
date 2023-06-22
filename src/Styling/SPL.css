@@ -34,7 +34,7 @@ label {
 }
 .projects-container h1{
     color:#6C6C6C;
-    font-size: 42px;
+    font-size: 40px;
    font-family: 'Nunito', sans-serif;
    font-weight: 900;  
 }
@@ -156,7 +156,7 @@ label {
      text-align: center;  
 }
 .image h2 {
-    font-size: 30px;
+    font-size: 25px;
     color:#707070 ;
     font-weight: 900px;
     font-family: 'Nunito', sans-serif;
@@ -164,7 +164,7 @@ label {
     margin-bottom: -10px; 
 }
 .image p {
-    font-size: 20px;
+    font-size: 18px;
     color: #767676;
       font-family: 'Open Sans', sans-serif;
      margin-top: 20px;    

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ScrollUp from "../../Components/ScrollUp";
 import Project01 from '../../Images/public-images/projects/Project01.png'
 import Project02 from "../../Images/public-images/projects/Project02.png";
@@ -103,6 +103,7 @@ export default function StudentProyectLibrary() {
               <button id="all">All</button>
             </div>
           </div>
+          
 
           <div className="image-container">
             <div className="image">
@@ -113,27 +114,27 @@ export default function StudentProyectLibrary() {
             <div className="image">
               <img src={Project02} alt="My Birthday" />
               <h2>My Birthday</h2>
-              <p>BEGINNER | Animation</p>
+              <p>BEGINNER | Game</p>
             </div>
             <div className="image">
               <img src={Project03} alt="10 Block Challenge" />
               <h2>10 Block Challenge</h2>
-              <p>BEGINNER | Animation</p>
+              <p>INTERMEDIATE | Animation</p>
             </div>
             <div className="image">
               <img src={Project04} alt="Build a band" />
               <h2>Build a band</h2>
-              <p>BEGINNER | Animation</p>
+              <p>INTERMEDIATE | Game</p>
             </div>
             <div className="image">
               <img src={Project05} alt="The bear and the monkey" />
               <h2>The bear and the monkey</h2>
-              <p>BEGINNER | Animation</p>
+              <p>BEGINNER | Game</p>
             </div>
             <div className="image">
               <img src={Project06} alt="Bebugging" />
               <h2>Debugging</h2>
-              <p>BEGINNER | Animation</p>
+              <p>ADVANCED | Animation</p>
             </div>
             <div className="image">
               <img src={Project07} alt="About me" />
@@ -143,22 +144,22 @@ export default function StudentProyectLibrary() {
             <div className="image">
               <img src={Project08} alt="I am here!" />
               <h2>I am here!</h2>
-              <p>BEGINNER | Animation</p>
+              <p>INTERMEDIATE | Animation</p>
             </div>
             <div className="image">
               <img src={Project09} alt="Funny faces" />
               <h2>Funny faces</h2>
-              <p>BEGINNER | Animation</p>
+              <p>BEGINNER | Game</p>
             </div>
             <div className="image">
               <img src={Project10} alt="It tickles!" />
               <h2>It tickles!</h2>
-              <p>BEGINNER | Animation</p>
+              <p>INTERMEDIATE | Animation</p>
             </div>
             <div className="image">
               <img src={Project11} alt="Penguin in a Desert" />
               <h2>Penguin in a Desert</h2>
-              <p>BEGINNER | Animation</p>
+              <p>BEGINNER | Chatbot</p>
             </div>
             <div className="image">
               <img src={Project12} alt="Time Travel" />
@@ -168,7 +169,7 @@ export default function StudentProyectLibrary() {
             <div className="image">
               <img src={Project13} alt="Birthday Card" />
               <h2>Birthday Card</h2>
-              <p>BEGINNER | Animation</p>
+              <p>BEGINNER | Chatbot</p>
             </div>
             <div className="image">
               <img src={Project14} alt="The Lion and the Mouse Part 1" />
@@ -178,7 +179,7 @@ export default function StudentProyectLibrary() {
             <div className="image">
               <img src={Project15} alt="The Lion and the Mouse Part 2" />
               <h2>The Lion and the Mouse Part 2</h2>
-              <p>BEGINNER | Animation</p>
+              <p>INTERMEDIATE | Animation</p>
             </div>
           </div>
           <ScrollUp />
