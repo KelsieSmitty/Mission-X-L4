@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import styles from '../../../styling/StudentDashboardSidebar.module.css';
+import SidebarIcons from '../../../styling/SidebarIcons.module.css';
 import { NavLink } from 'react-router-dom';
-
+import images from '../layout/../../../images/StudentDashboard/learningObjectives.png';
+import Instructionsicon from '../../../images/StudentDashboard/instructions.png';
+import Videoicon from '../../../images/StudentDashboard/video.png';
+import MakeProjecticon from '../../../images/StudentDashboard/makeProjectSelected.png';
+import SubmitProjecticon from '../../../images/StudentDashboard/submitProject.png';
+import takethequizicon from '../../../images/StudentDashboard/takeTheQuiz.png';
+import projectsubmission from '../../../images/StudentDashboard/projectSubmissions.png';
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
+
   // use to control the sidebar menu
+
   const toggleSidebar = () => {
     setInActive(!inActive);
   };
@@ -14,36 +23,41 @@ const StudentDashboard = () => {
     {
       path: '/studentdashboard/learningobjectives',
       name: 'Learning Objectives',
-    },
-    {
-      path: '/studentdashboard/videotutorial',
-      name: 'Video Tutorial',
+      img: images,
     },
     {
       path: '/studentdashboard/instructions',
       name: 'Instructions',
+      img: Instructionsicon,
     },
+    {
+      path: '/studentdashboard/videotutorial',
+      name: 'Video Tutorial',
+      img: Videoicon,
+    },
+
     {
       path: '/studentdashboard/makeproject',
       name: 'Make Project',
+      img: MakeProjecticon,
     },
     {
       path: '/studentdashboard/submitproject',
       name: 'Submit Project',
-    },
-    {
-      path: '/studentdashboard/bonuschallenge',
-      name: 'Bonus Challenge',
+      img: SubmitProjecticon,
     },
     {
       path: '/studentdashboard/takethequiz',
       name: 'Take the Quiz',
+      img: takethequizicon,
     },
     {
       path: '/studentdashboard/projectsubmissions',
       name: 'Project Submission',
+      img: projectsubmission,
     },
   ];
+
   // Conditional Rendering Picture
 
   return (
@@ -53,15 +67,12 @@ const StudentDashboard = () => {
           inActive ? styles.inActive : ''
         }          `}
       >
-        <br></br>
-
-        <br></br>
         <button
           onClick={toggleSidebar}
           style={{
             backgroundColor: ' #43c0f6',
-            padding: 10,
-            margin: 4,
+            padding: 5,
+            margin: 10,
             border: 10,
           }}
         >
@@ -71,16 +82,20 @@ const StudentDashboard = () => {
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
               <br></br>
-              <button
-                style={{
-                  backgroundColor: ' #43c0f6',
-                  padding: 10,
-                  margin: 4,
-                  border: 10,
-                }}
-              >
-                {item.name}
-              </button>
+              <div>
+                <div>
+                  <div>
+                    <button className={SidebarIcons['SidebarWords']}>
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className={SidebarIcons['SidebarIcons']}
+                      />
+                      {item.name}
+                    </button>
+                  </div>
+                </div>
+              </div>
 
               <br></br>
             </NavLink>
