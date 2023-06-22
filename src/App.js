@@ -9,13 +9,20 @@ import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
 import BonusChallenge from './Components/patrickComponents/layout/BonusChallenge';
 import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
 import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
+import "./Styling/Footer.css";
+import "./Styling/SPL.css";
+import Footer from "./Components/Footer.jsx";
+import StudentProjectLibrary from "./Pages/Project Library & Student Profile/StudentProjectLibrary";
+import "./App.css";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainDashboard />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/studentdashboard" element={<MainDashboard />}></Route>
           <Route
             path="/studentdashboard/learningobjectives"
             element={<LearningObjectives />}
@@ -48,10 +55,10 @@ function App() {
             path="/studentdashboard/projectsubmissions"
             element={<TeacherDashboard />}
           ></Route>
+          <Route path="/studentprojectlibrary" element={<StudentProjectLibrary />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-
 export default App;
