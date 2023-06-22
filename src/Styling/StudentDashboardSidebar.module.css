@@ -1,20 +1,20 @@
 .sidebar {
-    background-color: #43c0f6;
-    height: 100vh;
-    width: 15vw;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .inActive {
-    width: 5vw;
-    transition: width 0.3s ease-in-out;
-  }
+  background-color: #43c0f6;
+  height: 100vh;
+  width: 15vw;
+  transition: width 0.3s ease-in-out;
+}
 
-  .buttonSideBar{
-    margin: 50px;
-  }
+.inActive {
+  width: 5vw;
+  transition: width 0.3s ease-in-out;
+}
 
-  .buttonSelection{
-    background-color: burlywood;
-    padding: 50px;
-  }
+.buttonSideBar {
+  margin: 50px;
+}
+
+.buttonSelection {
+  background-color: burlywood;
+  padding: 50px;
+}

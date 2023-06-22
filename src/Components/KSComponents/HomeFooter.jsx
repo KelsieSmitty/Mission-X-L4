@@ -1,12 +1,12 @@
-// import "./footer.css";
+import "./HomeFooter.css";
 
-function Footer() {
+function HomeFooter() {
   return (
     //creates a large container for all the elements in footer
-    <div className="footer-container">
+    <div className="homefooter-container">
       {/* each element in footer belongs to footer-element class */}
 
-      <div className="footer-element">
+      <div className="homefooter-element">
         <h3>COMPANY</h3>
         <a href="#">About Us</a>
         <br />
@@ -15,7 +15,7 @@ function Footer() {
         <a href="#">Partners</a>
       </div>
 
-      <div className="footer-element">
+      <div className="homefooter-element">
         <h3>COURSES</h3>
         <a href="#">Register</a>
         <br />
@@ -30,7 +30,7 @@ function Footer() {
         <a href="#">Resources</a>
       </div>
 
-      <div className="footer-element">
+      <div className="homefooter-element">
         <h3>SUPPORT</h3>
         <a href="#">FAQS</a>
         <br />
@@ -39,7 +39,7 @@ function Footer() {
         <a href="#">Contact Us</a>
       </div>
 
-      <div className="footer-element">
+      <div className="homefooter-element">
         <h3>LEGAL</h3>
         <a href="#">Terms & Conditions</a>
         <br />
@@ -47,7 +47,7 @@ function Footer() {
       </div>
 
       {/* This footer element has a different class name as it's wider in size that the others */}
-      <div className="footer-element-works">
+      <div className="homefooter-element-works">
         <h3>LEVEL UP WORKS</h3>
         <p>
           LevelUp Works is an Auckland-based enterprise dedicated to developing
@@ -60,4 +60,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default HomeFooter;
