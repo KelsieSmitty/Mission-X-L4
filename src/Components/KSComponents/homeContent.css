@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.homeBanner {
+  color: #767676;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  width: 1920px;
+  height: 410px;
+  position: relative;
+  background-size: cover;
+}
+
+#homeFuture {
+  color: #42c0f6;
+}
+
+.homeBannerBtns {
+  display: flex;
+  text-align: center;
+}
+
+.homeBannerH1 {
+  font-size: 60px;
+  text-align: left;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  left: 266px;
+  width: 588px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.homeBannerH6 {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  font-size: 24px;
+  left: 266px;
+  width: 562px;
+  height: 98px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #6c6c6c;
+  padding-top: 11px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeBannerP {
+  left: 625px;
+  width: 175px;
+  height: 37px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #707070;
+  position: relative;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeOfferH1 {
+  left: 266px;
+  width: 292px;
+  height: 57px;
+  text-align: left;
+  font-family: "Nunito", sans-serif, bold;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  padding-top: 118px;
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 42px;
+}
+
+.homeOfferP {
+  left: 270px;
+  width: 554px;
+  height: 131px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  text-align: left;
+  letter-spacing: 0.4px;
+  color: #767676;
+  font-size: 20px;
+  padding-top: 17px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeOfferH3 {
+  left: 270px;
+  width: 384px;
+  height: 41px;
+  font-family: "Nunito", sans-serif, bold;
+  position: relative;
+  text-align: left;
+  font: normal normal bold 30px/11px Nunito;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  padding-top: 35px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeOfferImgs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+  margin: 0;
+  padding-bottom: 0;
+  left: 270px;
+  width: 152px;
+  height: 152px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.homeLaptopImgs {
+  position: relative;
+  top: -480px;
+  left: 1010px;
+  width: 728px;
+  height: 493px;
+}
+
+.whatWeOffer {
+  width: 1920px;
+  height: 700px;
+}
+
+.homeTeachingH2 {
+  left: 408px;
+  width: 1104px;
+  height: 41px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+.homeTeachingImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1400px;
+  height: 221px;
+  left: 288px;
+  position: relative;
+  border-radius: 20px;
+  padding-top: 55px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeHelpH1 {
+  left: 452px;
+  width: 970px;
+  height: 57px;
+  text-align: center;
+  font-family: "Nunito", sans-serif, bold;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  font-size: 42px;
+  padding-bottom: 100px;
+  padding-top: 140px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeBtns {
+  display: flex;
+  left: 288px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 0 0;
+  width: 1400px;
+  position: relative;
+  padding-top: 55px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeBtnLink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 250px;
+  height: 35px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  color: #707070;
+  box-shadow: 0px 4px 5px #00000029;
+  border: 3px solid #43c0f6;
+  border-radius: 7px;
+  line-height: 35px;
+}
+
+.homeHelpSection {
+  top: 50px;
+  left: 0px;
+  width: 1920px;
+  height: 634px;
+  background: #efeff1 0% 0% no-repeat padding-box;
+  border: 1px solid #efeff1;
+  opacity: 1;
+  position: relative;
+}
+
+.homeHelpH3 {
+  left: 282px;
+  width: 384px;
+  height: 41px;
+  position: relative;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  color: #606060;
+  opacity: 1;
+  padding-top: 70px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.homeHelpP {
+  padding-top: 24px;
+  margin: 0;
+  padding-bottom: 0;
+  left: 282px;
+  width: 1235px;
+  height: 64px;
+  position: relative;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #606060;
+  opacity: 1;
+}
