@@ -1,14 +1,15 @@
-import './App.css';
-import MainDashboard from './Pages/MainDashboard';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LearningObjectives from './Components/patrickComponents/layout/LearningObjectives';
-import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
-import Instructions from './Components/patrickComponents/layout/Instructions';
-import MakeProject from './Components/patrickComponents/layout/MakeProject';
-import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
-import BonusChallenge from './Components/patrickComponents/layout/BonusChallenge';
-import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
-import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
+import "./App.css";
+import MainDashboard from "./Pages/MainDashboard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LearningObjectives from "./Components/patrickComponents/layout/LearningObjectives";
+import VideoTutorial from "./Components/patrickComponents/layout/VideoTutorial";
+import Instructions from "./Components/patrickComponents/layout/Instructions";
+import MakeProject from "./Components/patrickComponents/layout/MakeProject";
+import SubmitProject from "./Components/patrickComponents/layout/SubmitProject";
+import BonusChallenge from "./Components/patrickComponents/layout/BonusChallenge";
+import TaketheQuiz from "./Components/patrickComponents/layout/TaketheQuiz";
+import TeacherDashboard from "./Components/patrickComponents/layout/TeacherDashboard";
+import ProgressTracker from "./Pages/ProgressTracker";
 import "./Styling/Footer.css";
 import "./Styling/SPL.css";
 import Footer from "./Components/Footer.jsx";
@@ -55,10 +56,14 @@ function App() {
             path="/studentdashboard/projectsubmissions"
             element={<TeacherDashboard />}
           ></Route>
-          <Route path="/studentprojectlibrary" element={<StudentProjectLibrary />} />
+          <Route
+            path="/studentprojectlibrary"
+            element={<StudentProjectLibrary />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
+
 export default App;
