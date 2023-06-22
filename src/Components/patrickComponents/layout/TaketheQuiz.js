@@ -1,5 +1,5 @@
 import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
+import MainDashboard from '../../../pages/MainDashboard';
 const TaketheQuiz = () => {
   return (
     <MainDashboard>

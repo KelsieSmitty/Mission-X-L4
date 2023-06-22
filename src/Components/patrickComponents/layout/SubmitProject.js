@@ -1,10 +1,10 @@
 import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
-import styles from '../../../Styling/SubmitProject.module.css';
+import MainDashboard from '../../../pages/MainDashboard';
+import styles from '../../../styling/SubmitProject.module.css';
 import UploaderButton from './UploaderButton';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
-import images from '../../../images/StudentDashboard/makeproject.png';
+import images from '../../../images/StudentDashboard/makeProject.png';
 import images2 from '../../../images/StudentDashboard/SecondaryTeacher.png';
 import images3 from '../../../images/StudentDashboard/uploader.png';
 console.log(images);

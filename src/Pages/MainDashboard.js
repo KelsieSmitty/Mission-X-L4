@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from '../Components/patrickComponents/layout/Footer';
-import Section from '../Components/patrickComponents/layout/Section';
-import StudentDashboardSidebar from '../Components/patrickComponents/layout/StudentDashboard';
-import LearningObjectives from '../Components/patrickComponents/layout/LearningObjectives';
-import Navbar2 from '../Components/patrickComponents/layout/Navbar2';
+import Footer from '../components/patrickComponents/layout/Footer';
+import Section from '../components/patrickComponents/layout/Section';
+import StudentDashboardSidebar from '../components/patrickComponents/layout/StudentDashboard';
+import LearningObjectives from '../components/patrickComponents/layout/LearningObjectives';
+import Navbar2 from '../components/patrickComponents/layout/Navbar2';
 
 const MainDashboard = ({ children }) => {
   return (
