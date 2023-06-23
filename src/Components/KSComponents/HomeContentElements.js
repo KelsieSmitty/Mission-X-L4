@@ -15,6 +15,8 @@ export const HomeLearnBtn = styled.div`
   font-size: 16px;
   line-height: 35px;
   margin-top: 17px;
+  font-family: "Nunito";
+  font-size: 16px;
 `;
 
 export const HomeSignBtn = styled.div`
@@ -31,4 +33,6 @@ export const HomeSignBtn = styled.div`
   font-size: 16px;
   line-height: 35px;
   margin-top: 17px;
+  font-family: "Nunito";
+  font-size: 16px;
 `;

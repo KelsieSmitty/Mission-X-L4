@@ -10,6 +10,7 @@ import Group1 from "../../images/src-assets/Home/Group 1.png";
 import Group3 from "../../images/src-assets/Home/Group 3.png";
 import Group4 from "../../images/src-assets/Home/Group 4.png";
 import Group2 from "../../images/src-assets/Home/Group 2.png";
+import HomeHelp from "./homeHelpDiv/HomeHelp.js";
 
 export const HomeContent = () => {
   return (
@@ -66,22 +67,25 @@ export const HomeContent = () => {
         <img src={Group4} alt="Group4Img"></img>
         <img src={Group2} alt="Group2Img"></img>
       </div>
-      <h1 className="homeHelpH1">
-        How our programme helps teachers and schools
-      </h1>
-      <div className="homeBtns">
-        <btn className="homeBtnLink">LEARNING PATHWAYS</btn>
-        <btn className="homeBtnLink">DIGITAL TECHNOLOGIES</btn>
-        <btn className="homeBtnLink">KEY COMPETENCIES</btn>
-        <btn className="homeBtnLink">IR4.0</btn>
-      </div>
-      <div className="homeHelpSection">
-        <h3 className="homeHelpH3">Enhance key competencies</h3>
-        <p className="homeHelpP">
-          The programme enhances capabilities of students in the 5 Key
-          Competencies identified in the New Zealand Curriculum:
-        </p>
-      </div>
+      <HomeHelp />
+      {/* <div className="homeHelpDiv">
+        <h1 className="homeHelpH1">
+          How our programme helps teachers and schools
+        </h1>
+        <div className="homeBtns">
+          <btn className="homeBtnLink">LEARNING PATHWAYS</btn>
+          <btn className="homeBtnLink">DIGITAL TECHNOLOGIES</btn>
+          <btn className="homeBtnLink">KEY COMPETENCIES</btn>
+          <btn className="homeBtnLink">IR4.0</btn>
+        </div>
+        <div className="homeHelpSection">
+          <h3 className="homeHelpH3">Enhance key competencies</h3>
+          <p className="homeHelpP">
+            The programme enhances capabilities of students in the 5 Key
+            Competencies identified in the New Zealand Curriculum:
+          </p>
+        </div>
+      </div> */}
     </div>
   );
 };

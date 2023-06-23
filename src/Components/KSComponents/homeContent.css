@@ -29,7 +29,7 @@
   font-size: 60px;
   text-align: left;
   position: relative;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
   left: 266px;
   width: 588px;
   padding-top: 40px;
@@ -38,7 +38,7 @@
 }
 
 .homeBannerH6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   position: relative;
   font-size: 24px;
   left: 266px;
@@ -61,7 +61,7 @@
   color: #707070;
   position: relative;
   font-size: 11px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   margin: 0;
   padding-bottom: 0;
 }
@@ -71,7 +71,8 @@
   width: 292px;
   height: 57px;
   text-align: left;
-  font-family: "Nunito", sans-serif, bold;
+  font-family: "Nunito";
+  font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
@@ -98,12 +99,12 @@
 
 .homeOfferH3 {
   left: 270px;
-  width: 384px;
   height: 41px;
-  font-family: "Nunito", sans-serif, bold;
+  font-family: "Nunito";
+  font-weight: bold;
   position: relative;
   text-align: left;
-  font: normal normal bold 30px/11px Nunito;
+  font-size: 30px;
   letter-spacing: 0.6px;
   color: #6c6c6c;
   padding-top: 35px;
@@ -165,12 +166,15 @@
   padding-bottom: 0;
 }
 
+/* Home help div: */
+
 .homeHelpH1 {
   left: 452px;
   width: 970px;
   height: 57px;
   text-align: center;
-  font-family: "Nunito", sans-serif, bold;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
@@ -181,7 +185,7 @@
   padding-bottom: 0;
 }
 
-.homeBtns {
+.home-btns {
   display: flex;
   left: 288px;
   justify-content: space-between;
@@ -193,8 +197,7 @@
   margin: 0;
   padding-bottom: 0;
 }
-
-.homeBtnLink {
+.home-btn {
   color: #fff;
   text-decoration: none;
   margin: 0 5px;
@@ -216,7 +219,7 @@
   top: 50px;
   left: 0px;
   width: 1920px;
-  height: 634px;
+  height: 750px;
   background: #efeff1 0% 0% no-repeat padding-box;
   border: 1px solid #efeff1;
   opacity: 1;
@@ -225,7 +228,6 @@
 
 .homeHelpH3 {
   left: 282px;
-  width: 384px;
   height: 41px;
   position: relative;
   text-align: left;
@@ -239,18 +241,58 @@
   padding-bottom: 0;
 }
 
-.homeHelpP {
+.homeHelpHeadings {
+  padding-top: 0px;
+  margin: 0;
+  padding-bottom: 0;
+  left: 322px;
+  width: 1235px;
+  position: relative;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #606060;
+  opacity: 1;
+}
+
+.homeHelpSubHeading {
   padding-top: 24px;
   margin: 0;
   padding-bottom: 0;
   left: 282px;
   width: 1235px;
-  height: 64px;
   position: relative;
   text-align: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.4px;
   color: #606060;
+  opacity: 1;
+}
+
+.homeHelpP {
+  padding-top: 0px;
+  margin: 0;
+  padding-bottom: 0;
+  width: 1235px;
+  height: 18px;
+  position: relative;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  color: #606060;
+  opacity: 1;
+}
+
+.home-help-active {
+  background: #efeff1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 5px #00000029;
+  border: 3px solid #efeff1;
+  border-radius: 7px;
   opacity: 1;
 }
