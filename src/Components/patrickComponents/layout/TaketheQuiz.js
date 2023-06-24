@@ -63,8 +63,6 @@ const TaketheQuiz = () => {
   return (
     <MainDashboard>
       <div className={styles['app']}>
-        {/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
         {showScore ? (
           <div className={styles['score-section']}>
             You scored {score} out of {questions.length}
@@ -75,8 +73,6 @@ const TaketheQuiz = () => {
               <div className={styles['question-count']}>
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
               </div>
-              {/* putting the usestate on array 0 starts with the question of france */}
-              {/* questions[currentQuestion],gets the current question, .questionText,gets the answer */}
               <div className={styles['question-text']}>
                 {questions[currentQuestion].questionText}
               </div>
