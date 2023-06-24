@@ -30,7 +30,7 @@ const SubmitProject = () => {
     } else if (language === 'Chinese') {
       setContent(TranslatedLanguage.Chinese);
     }
-  });
+  }, [language]);
 
   return (
     <MainDashboard>

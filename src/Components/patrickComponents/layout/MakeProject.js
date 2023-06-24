@@ -4,7 +4,7 @@ import images from '../../../images/StudentDashboard/makeProject.png';
 const MakeProject = () => {
   return (
     <MainDashboard>
-      <img src={images} alt="makeproject" width={1600} />
+      <img src={images} alt="makeproject" width={1790} />
     </MainDashboard>
   );
 };

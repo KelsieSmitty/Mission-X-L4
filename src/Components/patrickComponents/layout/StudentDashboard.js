@@ -81,21 +81,18 @@ const StudentDashboard = () => {
         <div>
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
-              <br></br>
-              <div>
-                <div>
-                  <div>
-                    <button className={SidebarIcons['SidebarWords']}>
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        className={SidebarIcons['SidebarIcons']}
-                      />
-                      {item.name}
-                    </button>
+              <ul>
+                <li>
+                  <div className={SidebarIcons['SidebarWords']}>
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className={SidebarIcons['SidebarIcons']}
+                    />
+                    {item.name}
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
 
               <br></br>
             </NavLink>

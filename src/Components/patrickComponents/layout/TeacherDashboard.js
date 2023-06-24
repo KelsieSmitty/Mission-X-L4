@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainDashboard from '../../../pages/MainDashboard';
 import styles from '../../../styling/TeacherDashboard.module.css';
 import images from '../../../images/StudentDashboard/VideoTutorial.png';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import TranslatedLanguage2 from '../../../components/patrickComponents/layout/TeacherDashboardData.json';
 
 const TeacherDashboard = () => {
-  const alert7 = () => {
-    return alert('completed sucessfully');
-  };
-
+  const [checked, setChecked] = useState(false);
+  // declaring variable for translation
   const [language, setLanguage] = useState('english');
   const [content, setContent] = useState({});
 
@@ -19,7 +17,20 @@ const TeacherDashboard = () => {
     } else if (language === 'Maori') {
       setContent(TranslatedLanguage2.Maori);
     }
-  });
+  }, [language]);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
+
+  const handleMarkAsComplete = () => {
+    if (checked) {
+      // Perform additional actions here
+      setChecked(false); // Reset the checkbox to unchecked state
+    } else {
+      alert('Please tick the checkbox before marking as complete.');
+    }
+  };
 
   return (
     <MainDashboard>
@@ -34,7 +45,7 @@ const TeacherDashboard = () => {
           <option>English</option>
           <option>Maori</option>
         </select>
-        <button id={styles['downloadbutton']} onClick={alert7}>
+        <button id={styles['downloadbutton']} onClick={handleMarkAsComplete}>
           Mark as complete project
         </button>
         <a
@@ -45,14 +56,21 @@ const TeacherDashboard = () => {
         >
           <button id={styles['downloadbutton']}>Download Files</button>
         </a>
-        <div id={styles['Aiden1']}>
-          <input type="checkbox" id="nav-check"></input>
-          {content.Description}
-          <div id={styles['time3']}>
-            <div>{content.Description2}</div>
-            <div>10:53 Am</div>
+        {checked ? null : (
+          <div id={styles['Aiden1']}>
+            <input
+              type="checkbox"
+              id="nav-check"
+              checked={checked}
+              onChange={handleCheckboxChange}
+            />
+            {content.Description}
+            <div id={styles['time3']}>
+              <div>{content.Description2}</div>
+              <div>10:53 AM</div>
+            </div>
           </div>
-        </div>
+        )}
         <div id={styles['Rawiri1']}>
           <input type="checkbox" id="nav-check"></input>
           {content.Description3}

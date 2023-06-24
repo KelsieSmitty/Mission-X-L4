@@ -1,0 +1,14 @@
+.LearningObjectives{
+display: flex;
+flex-wrap: wrap;
+font-size: 30px;
+text-align: center;
+width: 1800px;
+
+justify-content: space-around;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
