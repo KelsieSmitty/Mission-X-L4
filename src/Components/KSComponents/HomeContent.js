@@ -1,6 +1,6 @@
 import HomeHero from "../../images/src-assets/Home/hero.png";
 import "./homeContent.css";
-import { HomeLearnBtn, HomeSignBtn } from "./HomeContentElements";
+import { HomeLearnBtn, HomeSignBtn, HomeSignBtn2 } from "./HomeContentElements";
 import Animation from "../../images/src-assets/Home/animation.png";
 import Games from "../../images/src-assets/Home/games.png";
 import Chatbots from "../../images/src-assets/Home/chatbots.png";
@@ -11,6 +11,7 @@ import Group3 from "../../images/src-assets/Home/Group 3.png";
 import Group4 from "../../images/src-assets/Home/Group 4.png";
 import Group2 from "../../images/src-assets/Home/Group 2.png";
 import HomeHelp from "./homeHelpDiv/HomeHelp.js";
+import Classroom from "../../images/src-assets/Home/classroom.png";
 
 export const HomeContent = () => {
   return (
@@ -22,10 +23,10 @@ export const HomeContent = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1 className="homeBannerH1">
+        <h1 id="homeBannerH1">
           Prepare young minds for a better <span id="homeFuture">future.</span>
         </h1>
-        <h6 className="homeBannerH6">
+        <h6 id="homeBannerH6">
           Let us help you advance students in Digital Technologies and other
           learning areas with our project-based learning programme.
         </h6>
@@ -33,19 +34,19 @@ export const HomeContent = () => {
           <HomeLearnBtn to="/LearnMore">LEARN MORE</HomeLearnBtn>
           <HomeSignBtn to="/SignUp">SIGN UP</HomeSignBtn>
         </div>
-        <p className="homeBannerP">
+        <p id="homeBannerP">
           *Basic subscription includes the first 15 projects free of charge.
         </p>
       </div>
       <div className="homeSection1">
         <div className="whatWeOffer">
-          <h1 className="homeOfferH1">What we offer</h1>
-          <p className="homeOfferP">
+          <h1 id="homeOfferH1">What we offer</h1>
+          <p id="homeOfferP">
             The Creative Problem Solving programme is series of digital creation
             projects aimed to encourage self-motivation and student agency,
             designed by New Zealand’s leading IT industry experts and schools.
           </p>
-          <h3 className="homeOfferH3">What will students create?</h3>
+          <h3 id="homeOfferH3">What will students create?</h3>
           <div className="homeOfferImgs">
             <img src={Animation} alt="AnimationImg"></img>
             <img src={Games} alt="GameImg"></img>
@@ -57,35 +58,33 @@ export const HomeContent = () => {
           </div>
         </div>
       </div>
-      <h2 className="homeTeachingH2">
+      <h2 id="homeTeachingH2">
         Teaching kids programming and digital skills is MORE than just writing
         code.
       </h2>
       <div className="homeTeachingImgs">
-        <img src={Group1} alt="Group1Img"></img>
-        <img src={Group3} alt="Group3Img"></img>
-        <img src={Group4} alt="Group4Img"></img>
-        <img src={Group2} alt="Group2Img"></img>
+        <img src={Group1} alt="Group1Img" />
+        <img src={Group3} alt="Group3Img" />
+        <img src={Group4} alt="Group4Img" />
+        <img src={Group2} alt="Group2Img" />
       </div>
       <HomeHelp />
-      {/* <div className="homeHelpDiv">
-        <h1 className="homeHelpH1">
-          How our programme helps teachers and schools
-        </h1>
-        <div className="homeBtns">
-          <btn className="homeBtnLink">LEARNING PATHWAYS</btn>
-          <btn className="homeBtnLink">DIGITAL TECHNOLOGIES</btn>
-          <btn className="homeBtnLink">KEY COMPETENCIES</btn>
-          <btn className="homeBtnLink">IR4.0</btn>
-        </div>
-        <div className="homeHelpSection">
-          <h3 className="homeHelpH3">Enhance key competencies</h3>
-          <p className="homeHelpP">
-            The programme enhances capabilities of students in the 5 Key
-            Competencies identified in the New Zealand Curriculum:
+      <div className="homeStart"></div>
+      <div className="homeWaiting">
+        <img src={Classroom} alt="Classroom" id="homeWaitingImg" />
+        <div className="homeWaitingText">
+          <h1 id="homeWaitingH1">What are you waiting for?</h1>
+          <h3 id="homeWaitingH3">Start teaching Digital Technologies today.</h3>
+          <p id="homeWaitingP">
+            If you need more information, we are happy to answer any questions
+            you may have.
           </p>
+          <div className="homeWaitingBtns">
+            <button id="homeEnquireBtn">ENQUIRE NOW</button>
+            <HomeSignBtn2 to="/SignUp">SIGN UP</HomeSignBtn2>
+          </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

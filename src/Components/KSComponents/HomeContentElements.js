@@ -17,6 +17,7 @@ export const HomeLearnBtn = styled.div`
   margin-top: 17px;
   font-family: "Nunito";
   font-size: 16px;
+  cursor: pointer;
 `;
 
 export const HomeSignBtn = styled.div`
@@ -35,4 +36,24 @@ export const HomeSignBtn = styled.div`
   margin-top: 17px;
   font-family: "Nunito";
   font-size: 16px;
+  cursor: pointer;
+`;
+
+export const HomeSignBtn2 = styled.div`
+  color: #f0efef;
+  background: #f91c85;
+  box-shadow: 0px 4px 5px #00000029;
+  border-radius: 7px;
+  text-align: center;
+  letter-spacing: 0.32px;
+  left: 119px;
+  width: 175px;
+  height: 35px;
+  position: relative;
+  font-size: 16px;
+  margin-top: 55px;
+  line-height: 35px;
+  font-family: "Nunito";
+  font-size: 16px;
+  cursor: pointer;
 `;

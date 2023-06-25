@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.homeBannerH1 {
+#homeBannerH1 {
   font-size: 60px;
   text-align: left;
   position: relative;
@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-.homeBannerH6 {
+#homeBannerH6 {
   font-family: "Open Sans";
   position: relative;
   font-size: 24px;
@@ -52,7 +52,7 @@
   padding-bottom: 0;
 }
 
-.homeBannerP {
+#homeBannerP {
   left: 625px;
   width: 175px;
   height: 37px;
@@ -66,7 +66,7 @@
   padding-bottom: 0;
 }
 
-.homeOfferH1 {
+#homeOfferH1 {
   left: 266px;
   width: 292px;
   height: 57px;
@@ -82,7 +82,7 @@
   font-size: 42px;
 }
 
-.homeOfferP {
+#homeOfferP {
   left: 270px;
   width: 554px;
   height: 131px;
@@ -97,7 +97,7 @@
   padding-bottom: 0;
 }
 
-.homeOfferH3 {
+#homeOfferH3 {
   left: 270px;
   height: 41px;
   font-family: "Nunito";
@@ -138,7 +138,7 @@
   height: 700px;
 }
 
-.homeTeachingH2 {
+#homeTeachingH2 {
   left: 408px;
   width: 1104px;
   height: 41px;
@@ -214,6 +214,8 @@
   border-radius: 7px;
   line-height: 35px;
 }
+
+/* How our programme helps section: */
 
 .homeHelpSection {
   top: 50px;
@@ -326,3 +328,95 @@
   height: 364px;
   position: relative;
 }
+
+/* section ends */
+
+/* 
+What are you waiting for section: */
+
+.homeWaiting {
+  display: flex;
+  width: 1920px;
+  justify-content: center;
+  align-items: center;
+  top: 57px;
+  position: relative;
+  height: 634px;
+  width: 1920px;
+  background-color: #fff;
+}
+
+.homeWaitingText {
+  padding-left: 85.5px;
+}
+
+#homeWaitingH1 {
+  width: 525px;
+  height: 57px;
+  text-align: left;
+  font-family: "Nunito";
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 42px;
+}
+
+#homeWaitingH3 {
+  width: 610px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 0;
+  font-size: 30px;
+}
+
+#homeWaitingP {
+  width: 610px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+#homeWaitingImg {
+  width: 625px;
+  height: 417px;
+  padding-right: 85.5px;
+}
+
+#homeEnquireBtn {
+  color: #707070;
+  background: #fff;
+  border: 3px solid #43c0f6;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 0px 4px 5px #00000029;
+  letter-spacing: 0.32px;
+  width: 175px;
+  height: 31px;
+  position: relative;
+  font-size: 16px;
+  margin-top: 55px;
+  padding: 0;
+  font-family: "Nunito";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.homeWaitingBtns {
+  display: flex;
+}
+
+/* Section ends */
