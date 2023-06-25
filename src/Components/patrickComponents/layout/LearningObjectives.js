@@ -7,11 +7,15 @@ console.log(images);
 const LearningObjectives = () => {
   return (
     <MainDashboard>
-      <img
-        src={images}
-        alt="learning Objectives"
-        className={styles['LearningObjectives']}
-      />
+      <div className={styles['LearningObjectivesContainer1']}>
+        <div className={styles['LearningObjectivesContainer2']}>
+          <img
+            src={images}
+            alt="learning Objectives"
+            className={styles['LearningObjectives']}
+          />
+        </div>
+      </div>
     </MainDashboard>
   );
 };
