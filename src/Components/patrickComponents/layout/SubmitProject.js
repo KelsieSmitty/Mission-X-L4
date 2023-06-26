@@ -7,9 +7,6 @@ import TranslatedLanguage from './DataSubmitProject.json';
 import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
 import images2 from '../../../Images/StudentDashboard/SecondaryTeacher.png';
 import images3 from '../../../Images/StudentDashboard/uploader.png';
-console.log(images);
-console.log(images2);
-console.log(images3);
 
 const SubmitProject = () => {
   const alert6 = () => {
@@ -30,7 +27,7 @@ const SubmitProject = () => {
     } else if (language === 'Chinese') {
       setContent(TranslatedLanguage.Chinese);
     }
-  });
+  }, [language]);
 
   return (
     <MainDashboard>

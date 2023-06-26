@@ -6,7 +6,6 @@ import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
 import Instructions from './Components/patrickComponents/layout/Instructions';
 import MakeProject from './Components/patrickComponents/layout/MakeProject';
 import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
-import BonusChallenge from './Components/patrickComponents/layout/BonusChallenge';
 import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
 import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
 import './Styling/Footer.css';
@@ -40,10 +39,6 @@ function App() {
           <Route
             path="/studentdashboard/submitproject"
             element={<SubmitProject />}
-          ></Route>
-          <Route
-            path="/studentdashboard/bonuschallenge"
-            element={<BonusChallenge />}
           ></Route>
           <Route
             path="/studentdashboard/takethequiz"
