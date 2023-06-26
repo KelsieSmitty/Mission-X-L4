@@ -1,6 +1,6 @@
 import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
-import images from '../../../images/StudentDashboard/Instructionsfrontend.png';
+import images from '../../../Images/StudentDashboard/Instructionsfrontend.png';
 console.log(images);
 const Instructions = () => {
   return (

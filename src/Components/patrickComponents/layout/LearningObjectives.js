@@ -1,6 +1,6 @@
 import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
-import images from '../../../images/StudentDashboard/learning objectives.png';
+import images from '../../../Images/StudentDashboard/learning objectives.png';
 console.log(images);
 
 const LearningObjectives = () => {

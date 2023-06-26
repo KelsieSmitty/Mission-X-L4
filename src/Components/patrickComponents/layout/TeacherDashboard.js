@@ -1,7 +1,7 @@
 import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
 import styles from '../../../Styling/TeacherDashboard.module.css';
-import images from '../../../images/StudentDashboard/VideoTutorial.png';
+import images from '../../../Images/StudentDashboard/VideoTutorial.png';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/TeacherDashboardData.json';
 

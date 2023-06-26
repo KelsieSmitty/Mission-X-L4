@@ -10,22 +10,21 @@ import {
   NavBtn,
   NavBtnLink,
   NavLink,
-  Bars,
+  //Bars,
   NavLogin,
-} from "./NavBarElements";
-import "./navBar.css";
-import Logo from "../../Images/src-assets/NavBar/LevelUpWorks-white.png";
-import Avatar from "../../Images/src-assets/NavBar/Avatar-white.png";
-import NZFlag from "../../Images/src-assets/NavBar/NZFlag.png";
-import MāoriFlag from "../../Images/src-assets/NavBar/MaoriFlag.png";
-import { FaDrawPolygon } from "react-icons/fa";
+} from './NavBarElements';
+import './navBar.css';
+import Logo from '../../Images/src-assets/NavBar/LevelUpWorks-white.png';
+import Avatar from '../../Images/src-assets/NavBar/Avatar-white.png';
+import NZFlag from '../../Images/src-assets/NavBar/NZFlag.png';
+import MāoriFlag from '../../Images/src-assets/NavBar/MaoriFlag.png';
 
 const NavBar = () => {
   return (
     <div>
       <Nav>
         <img src={Logo} alt="LevelUpLogo" className="logoMain" />
-        <Bars />
+
         <div className="navMenu">
           <NavLink to="/" activestyle="true">
             HOME

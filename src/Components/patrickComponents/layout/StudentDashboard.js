@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../../../Styling/StudentDashboardSidebar.module.css';
 import { NavLink } from 'react-router-dom';
-import images from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
+import images from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
 
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);

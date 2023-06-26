@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import styled from 'styled-components';
+import { NavLink as Link } from 'react-router-dom';
+//import { FaBars } from "react-icons/fa";
 
 //nav bar:
 export const Nav = styled.nav`
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   padding: 1rem 0 0.25rem 0;
   margin: 0;
   border: #41baef solid 1px;
-  font-family: "Open Sans", sans-serif, bold;
+  font-family: 'Open Sans', sans-serif, bold;
 `;
 
 // Home/features/teachers links:
@@ -30,20 +30,20 @@ export const NavLink = styled(Link)`
 `;
 
 // Hamburger:
-export const Bars = styled(FaBars)`
-  display: none;
-  color: #fff;
+//export const Bars = styled()`
+// display: none;
+// color: #fff;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 16px;
-    cursor: pointer;
-  }
-`;
+//  @media screen and (max-width: 768px) {
+//    display: block;
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    transform: translate(-100%, 75%);
+//    font-size: 16px;
+//    cursor: pointer;
+//  }
+//`;
 
 // Avatar/login and register:
 export const NavLogin = styled.nav`

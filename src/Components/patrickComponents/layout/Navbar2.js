@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../../Styling/Navbar2.module.css';
-import images from '../../../images/StudentDashboard/NavBar/LevelUpWorks-white.png';
+import images from '../../../Images/StudentDashboard/NavBar/LevelUpWorks-white.png';
 console.log(styles);
 
 const Navbar2 = () => {
