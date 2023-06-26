@@ -1,7 +1,7 @@
-import styles from '../../../styling/Navbar2.module.css';
-import images from '../../../images/StudentDashboard/NavBar/LevelUpWorks-white.png';
-import React, { useState } from 'react';
-console.log(styles);
+import React from 'react';
+import styles from '../../../Styling/Navbar2.module.css';
+import images from '../../../Images/StudentDashboard/NavBar/LevelUpWorks-white.png';
+import { useState } from 'react';
 
 const Navbar2 = () => {
   const alert1 = () => {

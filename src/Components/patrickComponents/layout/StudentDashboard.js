@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import styles from '../../../styling/StudentDashboardSidebar.module.css';
-import SidebarIcons from '../../../styling/SidebarIcons.module.css';
+import styles from '../../../Styling/StudentDashboardSidebar.module.css';
+import SidebarIcons from '../../../Styling/SidebarIcons.module.css';
 import { NavLink } from 'react-router-dom';
-import images from '../layout/../../../images/StudentDashboard/learningObjectives.png';
-import Instructionsicon from '../../../images/StudentDashboard/instructions.png';
-import Videoicon from '../../../images/StudentDashboard/video.png';
-import MakeProjecticon from '../../../images/StudentDashboard/makeProjectSelected.png';
-import SubmitProjecticon from '../../../images/StudentDashboard/submitProject.png';
-import takethequizicon from '../../../images/StudentDashboard/takeTheQuiz.png';
-import projectsubmission from '../../../images/StudentDashboard/projectSubmissions.png';
+
+import Instructionsicon from '../../../Images/StudentDashboard/instructions.png';
+import Videoicon from '../../../Images/StudentDashboard/video.png';
+import MakeProjecticon from '../../../Images/StudentDashboard/makeProjectSelected.png';
+import SubmitProjecticon from '../../../Images/StudentDashboard/submitProject.png';
+import takethequizicon from '../../../Images/StudentDashboard/takeTheQuiz.png';
+import projectsubmission from '../../../Images/StudentDashboard/projectSubmissions.png';
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
 
@@ -23,7 +23,6 @@ const StudentDashboard = () => {
     {
       path: '/studentdashboard/learningobjectives',
       name: 'Learning Objectives',
-      img: images,
     },
     {
       path: '/studentdashboard/instructions',
@@ -104,29 +103,3 @@ const StudentDashboard = () => {
 };
 
 export default StudentDashboard;
-
-//{
-/* <li>
-  <ul>
-    <button>Learning Objectives</button>
-  </ul>
-  <ul>
-    <button>Instructions</button>
-  </ul>
-  <ul>
-    <button>Video Tutorial</button>
-  </ul>
-  <ul>
-    <button>Make Project</button>
-  </ul>
-  <ul>
-    <button>Submit Project</button>
-  </ul>
-  <ul>
-    <button>Bonus Challenge</button>
-  </ul>
-  <ul>
-    <button>Take the Quiz</button>
-  </ul>
-</li> */
-//}

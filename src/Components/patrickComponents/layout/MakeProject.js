@@ -1,6 +1,7 @@
 import React from 'react';
-import MainDashboard from '../../../pages/MainDashboard';
-import images from '../../../images/StudentDashboard/makeProject.png';
+import MainDashboard from '../../../Pages/MainDashboard';
+import images from '../../../Images/StudentDashboard/makeProject.png';
+
 const MakeProject = () => {
   return (
     <MainDashboard>

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import MainDashboard from '../../../pages/MainDashboard';
+import React from 'react';
+import MainDashboard from '../../../Pages/MainDashboard';
 import styles from '../../../Styling/TeacherDashboard.module.css';
-import images from '../../../images/StudentDashboard/VideoTutorial.png';
-import { useEffect } from 'react';
-import TranslatedLanguage2 from '../../../components/patrickComponents/layout/TeacherDashboardData.json';
+import images from '../../../Images/StudentDashboard/VideoTutorial.png';
+import { useEffect, useState } from 'react';
+import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/TeacherDashboardData.json';
 
 const TeacherDashboard = () => {
   const [checked, setChecked] = useState(false);

@@ -1,20 +1,25 @@
 import './App.css';
-import MainDashboard from './pages/MainDashboard';
+import MainDashboard from './Pages/MainDashboard';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LearningObjectives from './components/patrickComponents/layout/LearningObjectives';
-import VideoTutorial from './components/patrickComponents/layout/VideoTutorial';
-import Instructions from './components/patrickComponents/layout/Instructions';
-import MakeProject from './components/patrickComponents/layout/MakeProject';
-import SubmitProject from './components/patrickComponents/layout/SubmitProject';
-import TaketheQuiz from './components/patrickComponents/layout/TaketheQuiz';
-import TeacherDashboard from './components/patrickComponents/layout/TeacherDashboard';
+import LearningObjectives from './Components/patrickComponents/layout/LearningObjectives';
+import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
+import Instructions from './Components/patrickComponents/layout/Instructions';
+import MakeProject from './Components/patrickComponents/layout/MakeProject';
+import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
+import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
+import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
+import './Styling/Footer.css';
+import './Styling/SPL.css';
+
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainDashboard />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/studentdashboard" element={<MainDashboard />}></Route>
           <Route
             path="/studentdashboard/learningobjectives"
             element={<LearningObjectives />}

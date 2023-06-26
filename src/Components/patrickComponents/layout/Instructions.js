@@ -1,7 +1,7 @@
 import React from 'react';
-import MainDashboard from '../../../pages/MainDashboard';
-import images from '../../../images/StudentDashboard/Instructionsfrontend.png';
-import styles from '../../../styling/Instructions.module.css';
+import MainDashboard from '../../../Pages/MainDashboard';
+import images from '../../../Images/StudentDashboard/Instructionsfrontend.png';
+import styles from '../../../Styling/Instructions.module.css';
 console.log(images);
 const Instructions = () => {
   return (

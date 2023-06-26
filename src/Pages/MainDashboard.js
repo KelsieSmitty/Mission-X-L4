@@ -1,9 +1,7 @@
 import React from 'react';
-import Footer from '../components/patrickComponents/layout/Footer';
+import StudentDashboardSidebar from '../Components/patrickComponents/layout/StudentDashboard';
 
-import StudentDashboardSidebar from '../components/patrickComponents/layout/StudentDashboard';
-
-import Navbar2 from '../components/patrickComponents/layout/Navbar2';
+import Navbar2 from '../Components/patrickComponents/layout/Navbar2';
 
 const MainDashboard = ({ children }) => {
   return (
@@ -15,7 +13,6 @@ const MainDashboard = ({ children }) => {
         {/* <LearningObjectives /> */}
       </div>
       {/* <Section /> */}
-      <Footer />
     </div>
   );
 };

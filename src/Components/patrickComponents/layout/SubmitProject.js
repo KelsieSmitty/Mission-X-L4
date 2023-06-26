@@ -1,15 +1,12 @@
 import React from 'react';
-import MainDashboard from '../../../pages/MainDashboard';
-import styles from '../../../styling/SubmitProject.module.css';
+import MainDashboard from '../../../Pages/MainDashboard';
+import styles from '../../../Styling/SubmitProject.module.css';
 import UploaderButton from './UploaderButton';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
-import images from '../../../images/StudentDashboard/makeProject.png';
-import images2 from '../../../images/StudentDashboard/SecondaryTeacher.png';
-import images3 from '../../../images/StudentDashboard/uploader.png';
-console.log(images);
-console.log(images2);
-console.log(images3);
+import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
+import images2 from '../../../Images/StudentDashboard/SecondaryTeacher.png';
+import images3 from '../../../Images/StudentDashboard/uploader.png';
 
 const SubmitProject = () => {
   const alert6 = () => {
