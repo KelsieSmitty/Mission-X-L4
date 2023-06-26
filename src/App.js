@@ -16,54 +16,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import StudentProjectLibrary from "./pages/projectLibraryStudentProfile/StudentProjectLibrary";
 
 import Home from "./pages/Home";
+import LogIn from "./pages/LogIn";
+// import StudentProyectLibrary from "./pages/Project Library & Student Profile/StudentProjectLibrary";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      //{" "}
-      {/* <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/" element={<Home />}></Route>
-    //       {/* <Route path="/studentdashboard" element={<MainDashboard />}></Route>
-    //       <Route
-    //         path="/studentdashboard/learningobjectives"
-    //         element={<LearningObjectives />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/videotutorial"
-    //         element={<VideoTutorial />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/instructions"
-    //         element={<Instructions />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/makeproject"
-    //         element={<MakeProject />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/submitproject"
-    //         element={<SubmitProject />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/bonuschallenge"
-    //         element={<BonusChallenge />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/takethequiz"
-    //         element={<TaketheQuiz />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentdashboard/projectsubmissions"
-    //         element={<TeacherDashboard />}
-    //       ></Route>
-    //       <Route
-    //         path="/studentprojectlibrary"
-    //         element={<StudentProjectLibrary />}
-    //       /> */}
-      {/* //     </Routes> */}
-      {/* //   </BrowserRouter> */}
+      {/* <Home /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<LogIn />}></Route>
+          {/* <Route
+            path="/studentprojectlibrary"
+            element={<StudentProyectLibrary />}
+          ></Route> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

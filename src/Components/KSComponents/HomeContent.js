@@ -12,6 +12,7 @@ import Group4 from "../../images/src-assets/Home/Group 4.png";
 import Group2 from "../../images/src-assets/Home/Group 2.png";
 import HomeHelp from "./homeHelpDiv/HomeHelp.js";
 import Classroom from "../../images/src-assets/Home/classroom.png";
+import HomeLaptop from "./homeLaptop/HomeLaptop.js";
 
 export const HomeContent = () => {
   return (
@@ -37,8 +38,9 @@ export const HomeContent = () => {
         <p id="homeBannerP">
           *Basic subscription includes the first 15 projects free of charge.
         </p>
-      </div>
-      <div className="homeSection1">
+      </div>{" "}
+      <HomeLaptop />
+      {/* <div className="homeSection1">
         <div className="whatWeOffer">
           <h1 id="homeOfferH1">What we offer</h1>
           <p id="homeOfferP">
@@ -46,8 +48,8 @@ export const HomeContent = () => {
             projects aimed to encourage self-motivation and student agency,
             designed by New Zealand’s leading IT industry experts and schools.
           </p>
-          <h3 id="homeOfferH3">What will students create?</h3>
-          <div className="homeOfferImgs">
+          <h3 id="homeOfferH3">What will students create?</h3> */}
+      {/* <div className="homeOfferImgs">
             <img src={Animation} alt="AnimationImg"></img>
             <img src={Games} alt="GameImg"></img>
             <img src={Chatbots} alt="ChatbotsImg"></img>
@@ -55,9 +57,9 @@ export const HomeContent = () => {
           </div>
           <div className="homeLaptopImgs">
             <img src={Laptop1} alt="Laptop1Img"></img>
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div> */}
+      {/* </div> */}
       <h2 id="homeTeachingH2">
         Teaching kids programming and digital skills is MORE than just writing
         code.
