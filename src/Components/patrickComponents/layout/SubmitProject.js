@@ -5,8 +5,9 @@ import UploaderButton from './UploaderButton';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
 import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
-import images2 from '../../../Images/StudentDashboard/SecondaryTeacher.png';
-import images3 from '../../../Images/StudentDashboard/uploader.png';
+import images2 from '../../../Images/StudentDashboard/TeacherPhoto.png';
+import images3 from '../../../Images/StudentDashboard/callTeacher.png';
+import images4 from '../../../Images/StudentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
   const alert6 = () => {
@@ -53,18 +54,22 @@ const SubmitProject = () => {
 
             <br></br>
 
-            <UploaderButton></UploaderButton>
+            <UploaderButton>
+              <img src={images4} alt="Instructions" width={200} height={200} />
+            </UploaderButton>
           </div>
           <div className={styles['flex-item-right']}>
             <img src={images2} alt="Instructions" width={625} height={350} />
             <h2>{content.Description4}</h2>
             <br></br>
             <p>{content.Description2}</p>
+            <br></br>
+            <br></br>
             <img
               src={images3}
               alt="Instructions"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               onClick={alert6}
             />
           </div>

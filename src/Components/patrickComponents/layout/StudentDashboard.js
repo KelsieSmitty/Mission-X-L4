@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../../Styling/StudentDashboardSidebar.module.css';
 import SidebarIcons from '../../../Styling/SidebarIcons.module.css';
 import { NavLink } from 'react-router-dom';
-
+import LearningObjectivesicon from '../../../Images/StudentDashboard/learningObjectives.png';
 import Instructionsicon from '../../../Images/StudentDashboard/instructions.png';
 import Videoicon from '../../../Images/StudentDashboard/video.png';
 import MakeProjecticon from '../../../Images/StudentDashboard/makeProjectSelected.png';
@@ -23,6 +23,7 @@ const StudentDashboard = () => {
     {
       path: '/studentdashboard/learningobjectives',
       name: 'Learning Objectives',
+      img: LearningObjectivesicon,
     },
     {
       path: '/studentdashboard/instructions',

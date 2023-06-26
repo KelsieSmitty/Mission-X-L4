@@ -3,9 +3,18 @@
 }
 
 
-
+#TeacherDashboardContainer3{
+  border: 0px solid #B2E4FA;
+    padding: 10px;
+    padding-left: 55px;
+    border-radius: 35px;
+    background-color:#B2E4FA ;
+    width:1800px;
+    height:900px;
+    
+}
 #Aiden1{
-  border: 4px solid red;
+  border: 4px solid rgba(10, 7, 7, 0.275);
   padding: 8px;
   padding-bottom: 1px;
   border-radius: 25px;
@@ -15,7 +24,7 @@
   margin-bottom: 45px;
 }
 #Rawiri1{
-    border: 4px solid red;
+    border: 4px solid rgba(10, 7, 7, 0.275);
     padding: 10px;
     border-radius: 25px;
     font-size: 35px;
@@ -24,7 +33,7 @@
   }
 
 #Neevah1 {
-    border: 4px solid red;
+    border: 4px solid rgba(10, 7, 7, 0.275);
     padding: 10px;
     border-radius: 25px;
     font-size: 35px;
@@ -39,7 +48,7 @@
     border-radius:50px;
     background-color:#1b82ba64;
     width:1800px;
-    height:900px;
+    height:800px;
     
 }
 

@@ -1,0 +1,32 @@
+.VideoTutorial{
+    display: flex;
+flex-wrap: wrap;
+font-size: 30px;
+text-align: center;
+font-style: center;
+width: 1500px;
+border-radius: 25px;
+}
+.VideoTutorialContainer1{
+    border: 0px solid #B2E4FA;
+    padding: 10px;
+    padding-left: 55px;
+    border-radius: 25px;
+    top: 62px;
+    left: 118px;
+    width: 1800px;
+    height: 957px;
+    background-color:#B2E4FA ;
+}
+.VideoTutorialContainer2{
+    border: 0px solid #B2E4FA;
+    padding: 10px;
+    padding-left: 55px;
+    border-radius: 35px;
+    background-color:#B2E4FA ;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
