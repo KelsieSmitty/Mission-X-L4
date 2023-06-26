@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MainDashboard from '../../../pages/MainDashboard';
-import styles from '../../../styling/TeacherDashboard.module.css';
+import styles from '../../../Styling/TeacherDashboard.module.css';
 import images from '../../../images/StudentDashboard/VideoTutorial.png';
 import { useEffect } from 'react';
 import TranslatedLanguage2 from '../../../components/patrickComponents/layout/TeacherDashboardData.json';

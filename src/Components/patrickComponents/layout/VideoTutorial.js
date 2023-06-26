@@ -1,5 +1,5 @@
 import React from 'react';
-import MainDashboard from '../../../pages/MainDashboard';
+import MainDashboard from '../../../Pages/MainDashboard';
 import images from '../../../images/StudentDashboard/VideoTutorial.png';
 console.log(images);
 function VideoTutorial() {
