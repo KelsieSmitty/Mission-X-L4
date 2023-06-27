@@ -4,7 +4,9 @@ import styles from '../../../Styling/TeacherDashboard.module.css';
 import images from '../../../Images/StudentDashboard/VideoTutorial.png';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/TeacherDashboardData.json';
-
+import AidenAndrewsTDS from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
+import RawiriFletcherTDS from '../../../Images/StudentDashboard/students (1)/students/RawiriFletcher.png';
+import NeevahMachenryTDS from '../../../Images/StudentDashboard/students (1)/students/NeveahMachenry.png';
 const TeacherDashboard = () => {
   const [checked, setChecked] = useState(false);
   // declaring variable for translation
@@ -36,7 +38,7 @@ const TeacherDashboard = () => {
     <MainDashboard>
       <div id={styles['Container2']}>
         <div id={styles['TeacherDashboardContainer3']}>
-          <h2 id={styles['ProjectSubmission']}>Project Submissions</h2>
+          <h2 id={styles['ProjectSubmission']}>Project Submissions TDSH</h2>
           <select
             value={language}
             onChange={(e) => {
@@ -65,6 +67,12 @@ const TeacherDashboard = () => {
                 checked={checked}
                 onChange={handleCheckboxChange}
               />
+              <img
+                src={AidenAndrewsTDS}
+                alt="Instructions"
+                width={90}
+                height={90}
+              ></img>
               {content.Description}
               <div id={styles['time3']}>
                 <div>{content.Description2}</div>
@@ -74,6 +82,12 @@ const TeacherDashboard = () => {
           )}
           <div id={styles['Rawiri1']}>
             <input type="checkbox" id="nav-check"></input>
+            <img
+              src={RawiriFletcherTDS}
+              alt="Instructions"
+              width={90}
+              height={90}
+            ></img>
             {content.Description3}
             <div id={styles['time3']}>
               <div>{content.Description4}</div>
@@ -82,6 +96,12 @@ const TeacherDashboard = () => {
           </div>
           <div id={styles['Neevah1']}>
             <input type="checkbox" id="nav-check"></input>
+            <img
+              src={NeevahMachenryTDS}
+              alt="Instructions"
+              width={90}
+              height={90}
+            ></img>
             {content.Description5}
             <div id={styles['time3']}>
               <div>{content.Description6}</div>
