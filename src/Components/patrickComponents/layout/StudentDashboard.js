@@ -18,6 +18,7 @@ const StudentDashboard = () => {
     setInActive(!inActive);
   };
   console.log(inActive);
+  // this is for color background change
 
   const sidebarMenu = [
     {
@@ -81,20 +82,16 @@ const StudentDashboard = () => {
         <div>
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
-              <ul>
-                <li>
-                  <div className={SidebarIcons['SidebarWords']}>
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className={SidebarIcons['SidebarIcons']}
-                    />
-                    {item.name}
-                  </div>
-                </li>
-              </ul>
-
-              <br></br>
+              <div className={SidebarIcons['SidebarWords']}>
+                <img
+                  src={item.img}
+                  alt={item.img}
+                  className={SidebarIcons['SidebarIcons']}
+                />
+                {inActive && (
+                  <span className={styles.sidebarTitle}>{item.name}</span>
+                )}
+              </div>
             </NavLink>
           ))}
         </div>

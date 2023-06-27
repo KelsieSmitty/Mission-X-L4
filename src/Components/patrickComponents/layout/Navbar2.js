@@ -21,8 +21,8 @@ const Navbar2 = () => {
             src={images}
             alt="Instructions"
             width={120}
-            height={20}
-            className="LevelupworksLogo"
+            height={40}
+            className={styles['nav-title']}
           ></img>
           Project Introduction
           <span className={activeDot === 1 ? styles['dot-1'] : styles['dot']}>
@@ -41,9 +41,21 @@ const Navbar2 = () => {
       </div>
 
       <div className={styles['nav-links']}>
-        <a onClick={alert1}>Start Project</a>
-        <a onClick={() => handlelinkClick(2)}>Ask Teacher for help</a>
-        <a onClick={() => handlelinkClick(3)}>More Projects</a>
+        <a onClick={alert1} className={styles['Start-ProjectSD']}>
+          Start Project
+        </a>
+        <a
+          onClick={() => handlelinkClick(2)}
+          className={styles['Ask-TeacherSD']}
+        >
+          Ask Teacher for help
+        </a>
+        <a
+          onClick={() => handlelinkClick(3)}
+          className={styles['MoreProjectsSD']}
+        >
+          More Projects
+        </a>
       </div>
     </div>
   );
