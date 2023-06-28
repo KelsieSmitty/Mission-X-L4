@@ -29,7 +29,7 @@
   font-size: 60px;
   text-align: left;
   position: relative;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   left: 266px;
   width: 588px;
   padding-top: 40px;
@@ -38,7 +38,7 @@
 }
 
 #homeBannerH6 {
-  font-family: "Open Sans";
+  font-family: "Nunito", sans-serif;
   position: relative;
   font-size: 24px;
   left: 266px;
@@ -61,7 +61,7 @@
   color: #707070;
   position: relative;
   font-size: 11px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding-bottom: 0;
 }
@@ -71,7 +71,7 @@
   width: 292px;
   height: 57px;
   text-align: left;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
@@ -100,7 +100,7 @@
 #homeOfferH3 {
   left: 270px;
   height: 41px;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   text-align: left;
@@ -347,7 +347,7 @@ What are you waiting for section: */
   width: 525px;
   height: 57px;
   text-align: left;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
@@ -403,7 +403,7 @@ What are you waiting for section: */
   font-size: 16px;
   margin-top: 55px;
   padding: 0;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   cursor: pointer;
 }

@@ -1,11 +1,11 @@
 import HomeHero from "../../images/src-assets/Home/hero.png";
 import "./homeContent.css";
 import { HomeLearnBtn, HomeSignBtn, HomeSignBtn2 } from "./HomeContentElements";
-import Animation from "../../images/src-assets/Home/animation.png";
-import Games from "../../images/src-assets/Home/games.png";
-import Chatbots from "../../images/src-assets/Home/chatbots.png";
-import AugReality from "../../images/src-assets/Home/augreality.png";
-import Laptop1 from "../../images/src-assets/Home/laptop1.png";
+// import Animation from "../../images/src-assets/Home/animation.png";
+// import Games from "../../images/src-assets/Home/games.png";
+// import Chatbots from "../../images/src-assets/Home/chatbots.png";
+// import AugReality from "../../images/src-assets/Home/augreality.png";
+// import Laptop1 from "../../images/src-assets/Home/laptop1.png";
 import Group1 from "../../images/src-assets/Home/Group 1.png";
 import Group3 from "../../images/src-assets/Home/Group 3.png";
 import Group4 from "../../images/src-assets/Home/Group 4.png";

@@ -73,6 +73,5 @@ export const NavBtnLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   padding-bottom: 10px;
-
   margin: 0;
 `;

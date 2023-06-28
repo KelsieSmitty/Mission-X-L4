@@ -8,42 +8,42 @@ function HomeFooter() {
 
       <div className="homefooter-element">
         <h3>COMPANY</h3>
-        <a href="#">About Us</a>
+        <a href="#aboutUs">About Us</a>
         <br />
-        <a href="#">Careers</a>
+        <a href="#careers">Careers</a>
         <br />
-        <a href="#">Partners</a>
+        <a href="#partners">Partners</a>
       </div>
 
       <div className="homefooter-element">
         <h3>COURSES</h3>
-        <a href="#">Register</a>
+        <a href="#register">Register</a>
         <br />
-        <a href="#">Login</a>
+        <a href="#login">Login</a>
         <br />
-        <a href="#">Projects</a>
+        <a href="#projects">Projects</a>
         <br />
-        <a href="#">Teachers</a>
+        <a href="#teachers">Teachers</a>
         <br />
-        <a href="#">Parents</a>
+        <a href="#parents">Parents</a>
         <br />
-        <a href="#">Resources</a>
+        <a href="#resources">Resources</a>
       </div>
 
       <div className="homefooter-element">
         <h3>SUPPORT</h3>
-        <a href="#">FAQS</a>
+        <a href="#FAQS">FAQS</a>
         <br />
-        <a href="#">Helpdesk</a>
+        <a href="#helpdesk">Helpdesk</a>
         <br />
-        <a href="#">Contact Us</a>
+        <a href="#contactUs">Contact Us</a>
       </div>
 
       <div className="homefooter-element">
         <h3>LEGAL</h3>
-        <a href="#">Terms & Conditions</a>
+        <a href="#terms&Conditions">Terms & Conditions</a>
         <br />
-        <a href="#">Privacy Policy</a>
+        <a href="#privacyPolicy">Privacy Policy</a>
       </div>
 
       {/* This footer element has a different class name as it's wider in size that the others */}
