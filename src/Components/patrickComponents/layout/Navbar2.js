@@ -41,18 +41,22 @@ const Navbar2 = () => {
       </div>
 
       <div className={styles['nav-links']}>
-        <a onClick={alert1} href="#" className={styles['Start-ProjectSD']}>
+        <a
+          onClick={alert1}
+          href="#Start-ProjectSD"
+          className={styles['Start-ProjectSD']}
+        >
           Start Project
         </a>
         <a
-          href="#"
+          href="#Ask-Teacher"
           onClick={() => handlelinkClick(2)}
           className={styles['Ask-TeacherSD']}
         >
           Ask Teacher for help
         </a>
         <a
-          href="#"
+          href="#MoreProjects"
           onClick={() => handlelinkClick(3)}
           className={styles['MoreProjectsSD']}
         >
