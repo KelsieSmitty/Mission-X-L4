@@ -6,14 +6,25 @@
   }
   
   .inActive {
-    width: 25vw;
+    width: 29vw;
     transition: width 0.3s ease-in-out;
     
     
   }
+
+  
   .AidenAndrewsSD{
    width: 91px;
+   transition: width 0.3s ease-in-out;
+   margin: auto;
   }
+
+  .middlePositionAndrewSD{
+    width: 5vw;
+    margin-left:100px ;
+    transition: width 0.3s ease-in-out;
+  }
+
 
   .RightArrowSD{
     top: 809px;
@@ -24,9 +35,16 @@
     background-color:#F92D8E;
    
   }
+  
+  .RightArrowmiddlePositionSD{
+    transform: rotate(180deg);
+    transition: width 0.3s ease-in-out;
+    margin-left: 180px;
+    
+  }
 
   .RightArrowSD.inActive{
-    transform: rotate(45);
+    transform: rotate(45deg);
   }
 
 

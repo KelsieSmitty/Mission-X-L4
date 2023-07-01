@@ -13,16 +13,15 @@ import AidenAndrewSD from '../../../Images/StudentDashboard/students (1)/student
 import RightArrowSD from '../../../Images/StudentDashboard/right-arrowSD.png';
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
-
+  const [expandedAndrewSD, setExpandedAndrewSD] = useState(false);
+  const [RightArrowclickSD, setRightArrowclickSD] = useState(false);
   // use to control the sidebar menu
 
   const toggleSidebar = () => {
     setInActive(!inActive);
+    setExpandedAndrewSD(!expandedAndrewSD);
+    setRightArrowclickSD(!RightArrowclickSD);
   };
-
-  console.log(inActive);
-  // this is for color background change
-  //arrow that open and close
 
   const sidebarMenu = [
     {
@@ -73,11 +72,21 @@ const StudentDashboard = () => {
         }          `}
       >
         <br></br>
-        <img src={AidenAndrewSD} className={styles['AidenAndrewsSD']} />
+        <img
+          src={AidenAndrewSD}
+          alt="AidenAndrewsPicSD"
+          className={`${styles['AidenAndrewsSD']} ${
+            expandedAndrewSD ? styles.middlePositionAndrewSD : ''
+          }`}
+        />
         <div>
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
-              <div className={SidebarIcons['SidebarWords']}>
+              <div
+                className={`${SidebarIcons['SidebarWords']} ${
+                  inActive ? SidebarIcons.active : ''
+                }`}
+              >
                 <img
                   src={item.img}
                   alt={item.img}
@@ -102,7 +111,9 @@ const StudentDashboard = () => {
             <img
               src={RightArrowSD}
               alt="makeproject"
-              className={styles['RightArrowSD']}
+              className={`${styles['RightArrowSD']} ${
+                RightArrowclickSD ? styles.RightArrowmiddlePositionSD : ''
+              }`}
             />
           </button>
         </div>
