@@ -65,13 +65,16 @@ const SubmitProject = () => {
             <p>{content.Description2}</p>
             <br></br>
             <br></br>
-            <img
-              src={images3}
-              alt="Instructions"
-              width={200}
-              height={200}
-              onClick={alert6}
-            />
+            <span className="callTeacherContainer">
+              <img
+                src={images3}
+                alt="Instructions"
+                width={200}
+                height={180}
+                onClick={alert6}
+              />
+              <p>Call Teacher</p>
+            </span>
           </div>
         </div>
       </section>

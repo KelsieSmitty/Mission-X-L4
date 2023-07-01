@@ -19,6 +19,7 @@ const StudentDashboard = () => {
   const toggleSidebar = () => {
     setInActive(!inActive);
   };
+
   console.log(inActive);
   // this is for color background change
   //arrow that open and close
