@@ -8,6 +8,8 @@
   .inActive {
     width: 25vw;
     transition: width 0.3s ease-in-out;
+    
+    
   }
   .AidenAndrewsSD{
    width: 91px;
@@ -20,7 +22,16 @@
     height: 50px;
     border-radius: 22px;
     background-color:#F92D8E;
+   
   }
+
+  .RightArrowSD.inActive{
+    transform: rotate(45);
+  }
+
+
+
+  
 
   
   .buttonSideBar{

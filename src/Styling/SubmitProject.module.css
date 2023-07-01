@@ -20,7 +20,7 @@
   }
   
   .flex-item-right {
-    background-color: dodgerblue;
+    background-color: rgba(30, 143, 255, 0.218);
     padding: 10px;
     flex: 50%;
     font-family:sans-serif
@@ -36,3 +36,6 @@
       flex: 100%;
     }
   }
+
+
+ 
