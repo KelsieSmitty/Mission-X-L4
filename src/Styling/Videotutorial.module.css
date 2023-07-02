@@ -4,7 +4,8 @@ flex-wrap: wrap;
 font-size: 30px;
 text-align: center;
 font-style: center;
-width: 1500px;
+width: 85rem;
+height: 45rem;
 border-radius: 25px;
 }
 .VideoTutorialContainer1{
@@ -13,14 +14,14 @@ border-radius: 25px;
     padding-left: 55px;
     border-radius: 25px;
     top: 62px;
-    left: 118px;
-    width: 1800px;
-    height: 957px;
+  
+    width: 150rem;
+ 
     background-color:#B2E4FA ;
 }
 .VideoTutorialContainer2{
-    border: 0px solid #B2E4FA;
-    padding: 10px;
+    border:9px solid #B2E4FA;
+    padding: 55px;
     padding-left: 55px;
     border-radius: 35px;
     background-color:#B2E4FA ;

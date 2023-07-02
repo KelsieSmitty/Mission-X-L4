@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../../../Styling/Navbar2.module.css';
 import images from '../../../Images/StudentDashboard/NavBar/LevelUpWorks-white.png';
 import { useState } from 'react';
+import MaoriFlagSD from '../../../Images/src-assets/StudentDashboard/MaoriFlagSD.png';
+import NZFlagSD from '../../../Images/src-assets/StudentDashboard/NZFlagSD.png';
 
 const Navbar2 = () => {
   const alert1 = () => {
@@ -61,6 +63,13 @@ const Navbar2 = () => {
           className={styles['MoreProjectsSD']}
         >
           More Projects
+        </a>
+
+        <a href="Maorilang" className={styles['Maorilang']}>
+          <img src={MaoriFlagSD} alt="MaoriFlagSD"></img>
+        </a>
+        <a href="NZlang" className={styles['NZlang']}>
+          <img src={NZFlagSD} alt="NZFLAGSD"></img>
         </a>
       </div>
     </div>

@@ -11,16 +11,22 @@ import takethequizicon from '../../../Images/StudentDashboard/takeTheQuiz.png';
 import projectsubmission from '../../../Images/StudentDashboard/projectSubmissions.png';
 import AidenAndrewSD from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
 import RightArrowSD from '../../../Images/StudentDashboard/right-arrowSD.png';
+import logoutSD from '../../../Images/StudentDashboard/logoutSD.png';
+import profileSD from '../../../Images/StudentDashboard/profileSD.png';
+import settingsSD from '../../../Images/StudentDashboard/settingsSD.png';
+
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
   const [expandedAndrewSD, setExpandedAndrewSD] = useState(false);
   const [RightArrowclickSD, setRightArrowclickSD] = useState(false);
+  const [sidebarImagesSpace, setSidebarImagesSpace] = useState(false);
   // use to control the sidebar menu
 
   const toggleSidebar = () => {
     setInActive(!inActive);
     setExpandedAndrewSD(!expandedAndrewSD);
     setRightArrowclickSD(!RightArrowclickSD);
+    setSidebarImagesSpace(!sidebarImagesSpace);
   };
 
   const sidebarMenu = [
@@ -117,6 +123,42 @@ const StudentDashboard = () => {
             />
           </button>
         </div>
+        <img
+          src={profileSD}
+          alt="profileSD"
+          className={`${styles.profileSD} ${
+            RightArrowclickSD && sidebarImagesSpace
+              ? styles.profileSDActive
+              : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.ProfileStatement}>Profile</p>
+        )}
+
+        <img
+          src={settingsSD}
+          alt="settingsSD"
+          className={`${styles.settingsSD} ${
+            RightArrowclickSD && sidebarImagesSpace
+              ? styles.settingsSDActive
+              : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.SettingStatement}>Settings</p>
+        )}
+        <br></br>
+        <img
+          src={logoutSD}
+          alt="logoutSD"
+          className={`${styles.logoutSD} ${
+            RightArrowclickSD && sidebarImagesSpace ? styles.logoutSDActive : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.LogoutStatement}>Logout</p>
+        )}
       </div>
     </>
   );

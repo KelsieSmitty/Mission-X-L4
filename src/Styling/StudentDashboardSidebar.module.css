@@ -64,3 +64,55 @@
   .sidebarTitle{
     font-size: 25px;
   }
+
+  .profileSD{
+    margin-left: 25px;
+  }
+
+  .settingsSD{
+    margin-left: 25px;
+  }
+  .logoutSD{
+    margin-left: 25px;
+  }
+  .profileSDActive{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+  .settingsSDActive{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 25px;
+  }
+  .logoutSDActive{
+    display:flex;
+   justify-content: space-between;
+   margin-top:5px;
+   margin-right: 50px;
+  }
+
+  .ProfileStatement{
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-left: 75px;
+    
+  }
+
+  .SettingStatement{
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-left: 75px;
+  }
+  
+  .LogoutStatement{
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-left: 75px;
+  }
