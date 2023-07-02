@@ -11,7 +11,7 @@ import images4 from '../../../Images/StudentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
   const alert6 = () => {
-    return alert(' Teacher help is on the way');
+    alert('Teacher help is on the way');
   };
   //translating a page using json file please see DataSubmit.Project.json file
 
