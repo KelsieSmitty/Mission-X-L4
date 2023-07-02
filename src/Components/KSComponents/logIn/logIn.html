@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In and Sign Up</title>
     <link rel="stylesheet" href="login.css" />
+    <!-- <script defer src="./Login.js"></script>
+    <script defer src="../HomeContent.js"></script> -->
   </head>
   <body>
-    <div class="signup-modal">
+    <div id="login_modal" class="signup-modal">
       <div class="signup-students">
         <img
           src="../../../images/src-assets/LoginSignup/students.png"
-          class="login-singup-imgs"
+          class="login-signup-imgs"
+          alt="Students"
         />
         <h1 class="login-signup-header">Students</h1>
 
@@ -51,8 +54,14 @@
       </div>
       <div class="signup-teachers">
         <img
+          src="../../../images/src-assets/LoginSignup/esc.png"
+          id="login_close_btn"
+          alt="Close Pop Up Symbol"
+        />
+        <img
           src="../../../images/src-assets/LoginSignup/teachers.png"
-          class="login-singup-imgs"
+          class="login-signup-imgs"
+          alt="Teacher"
         />
         <h1 class="login-signup-header">Teachers</h1>
         <form action="">
@@ -91,11 +100,12 @@
         </form>
       </div>
     </div>
-    <div class="login-modal">
+    <!-- <div class="login-modal">
       <div class="login-students">
         <img
           src="../../../images/src-assets/LoginSignup/students.png"
-          class="login-singup-imgs"
+          class="login-signup-imgs"
+          alt="Students"
         />
         <h1 class="login-signup-header">Students</h1>
       </div>
@@ -103,10 +113,12 @@
       <div class="login-teachers">
         <img
           src="../../../images/src-assets/LoginSignup/teachers.png"
-          class="login-singup-imgs"
+          class="login-signup-imgs"
+          alt="Teacher"
         />
         <h1 class="login-signup-header">Teachers</h1>
       </div>
-    </div>
+    </div> -->
+    <div class="signup-overlay hidden" />
   </body>
 </html>
