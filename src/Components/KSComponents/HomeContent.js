@@ -13,8 +13,8 @@ import { useState } from "react";
 export const HomeContent = () => {
   const [openLogin, setOpenLogin] = useState(false);
 
-  const handleOpenLogin = (isSignUp) => {
-    setOpenLogin(isSignUp === "signup");
+  const handleOpenLogin = () => {
+    setOpenLogin(true);
   };
 
   return (
@@ -35,7 +35,7 @@ export const HomeContent = () => {
         </h6>
         <div className="home-banner-btns">
           <button id="home-learn-btn">LEARN MORE</button>
-          <button id="home_sign_btn" onClick={() => handleOpenLogin("signup")}>
+          <button id="home_sign_btn" onClick={handleOpenLogin}>
             SIGN UP
           </button>
           <Login open={openLogin} handleClose={() => setOpenLogin(!false)} />
@@ -73,7 +73,7 @@ export const HomeContent = () => {
             >
               SIGN UP
             </button>
-            <Login open={openLogin} handleClose={() => setOpenLogin(!false)} />
+            <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
           </div>
         </div>
       </div>
