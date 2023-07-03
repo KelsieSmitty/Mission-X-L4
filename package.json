@@ -18,6 +18,8 @@
     "components": "^0.1.0",
     "dom": "^0.0.3",
     "filestack-js": "^3.26.1",
+    "filestack-react": "^4.0.1",
+    "filestack-react-18": "^4.0.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",

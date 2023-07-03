@@ -1,0 +1,21 @@
+.SendPhotoButton{
+    font-size: 35px;
+    background-color: #F91C85;
+    padding-top:-200px;
+    padding-bottom: 55px;
+    border-radius: 20px;
+    border: 55px;
+    padding-right: 55px;
+    padding-left: 55px;
+    color: white;
+  
+    
+}
+
+.SendPhotoPic{
+  margin-top: 22px;
+  margin-left: 22px; 
+  padding-top: 22px; 
+    
+  width: 55px;
+}

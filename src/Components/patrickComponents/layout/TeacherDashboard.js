@@ -67,6 +67,7 @@ const TeacherDashboard = () => {
                 checked={checked}
                 onChange={handleCheckboxChange}
               />
+
               <img
                 src={AidenAndrewsTDS}
                 alt="Instructions"

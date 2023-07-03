@@ -1,7 +1,6 @@
-import React from 'react';
 import MainDashboard from '../../../Pages/MainDashboard';
 import styles from '../../../Styling/SubmitProject.module.css';
-import UploaderButton from './UploaderButton';
+import FileStack from './FileStack';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
 import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
@@ -54,9 +53,9 @@ const SubmitProject = () => {
 
             <br></br>
 
-            <UploaderButton>
+            <FileStack>
               <img src={images4} alt="Instructions" width={200} height={200} />
-            </UploaderButton>
+            </FileStack>
           </div>
           <div className={styles['flex-item-right']}>
             <img src={images2} alt="Instructions" width={625} height={350} />
