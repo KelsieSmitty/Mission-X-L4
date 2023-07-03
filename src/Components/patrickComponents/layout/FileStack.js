@@ -36,7 +36,7 @@ const FileStack = () => {
       </div>
       {/* you need to store this url to your database */}
       <br></br>
-      <a href={imageUrl}>Verify</a>
+      {/* <a href={imageUrl}>Verify</a> */}
     </div>
   );
 };

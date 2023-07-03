@@ -64,16 +64,24 @@ const SubmitProject = () => {
             <p>{content.Description2}</p>
             <br></br>
             <br></br>
-            <span className="callTeacherContainer">
-              <img
-                src={images3}
-                alt="Instructions"
-                width={200}
-                height={180}
-                onClick={alert6}
-              />
+
+            <button className={styles['callTeacherContainer']}>
+              <div>
+                <img
+                  src={images3}
+                  alt="Instructions"
+                  width={200}
+                  height={180}
+                  onClick={alert6}
+                  className={styles['callTeacherContainerPic']}
+                />
+              </div>
+
               <p>Call Teacher</p>
-            </span>
+            </button>
+            <br></br>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </section>
