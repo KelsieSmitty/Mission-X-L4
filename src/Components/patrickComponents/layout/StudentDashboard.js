@@ -14,12 +14,14 @@ import RightArrowSD from '../../../Images/StudentDashboard/right-arrowSD.png';
 import logoutSD from '../../../Images/StudentDashboard/logoutSD.png';
 import profileSD from '../../../Images/StudentDashboard/profileSD.png';
 import settingsSD from '../../../Images/StudentDashboard/settingsSD.png';
+import StudentAdvertisement from '../../../Images/StudentDashboard/ADVERTISEMENTSD.png';
 
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
   const [expandedAndrewSD, setExpandedAndrewSD] = useState(false);
   const [RightArrowclickSD, setRightArrowclickSD] = useState(false);
   const [sidebarImagesSpace, setSidebarImagesSpace] = useState(false);
+  const [showAdvertisement, setShowAdvertisement] = useState(false);
   // use to control the sidebar menu
 
   const toggleSidebar = () => {
@@ -27,6 +29,7 @@ const StudentDashboard = () => {
     setExpandedAndrewSD(!expandedAndrewSD);
     setRightArrowclickSD(!RightArrowclickSD);
     setSidebarImagesSpace(!sidebarImagesSpace);
+    setShowAdvertisement(!showAdvertisement);
   };
 
   const sidebarMenu = [
@@ -123,6 +126,14 @@ const StudentDashboard = () => {
             />
           </button>
         </div>
+        <img
+          src={StudentAdvertisement}
+          alt="profileSD"
+          className={`${styles.StudentAdvertisement} ${
+            RightArrowclickSD ? styles.StudentAdvertisementinActive : ''
+          }`}
+        />
+
         <img
           src={profileSD}
           alt="profileSD"

@@ -14,14 +14,16 @@
 
   
   .AidenAndrewsSD{
-   width: 91px;
+   width: 70px;
+   margin-left: 50px;
+   padding-left: 10px;
    transition: width 0.3s ease-in-out;
    margin: auto;
   }
 
   .middlePositionAndrewSD{
-    width: 5vw;
-    margin-left:100px ;
+    width: 4vw;
+    margin-left:125px ;
     transition: width 0.3s ease-in-out;
   }
 
@@ -39,7 +41,7 @@
   .RightArrowmiddlePositionSD{
     transform: rotate(180deg);
     transition: width 0.3s ease-in-out;
-    margin-left: 180px;
+    margin-left: 250px;
     
   }
 
@@ -63,6 +65,21 @@
  
   .sidebarTitle{
     font-size: 25px;
+  }
+
+  .StudentAdvertisement{
+   width: 1px;
+  }
+
+  .StudentAdvertisementinActive{
+  
+    margin-left:60px;
+    width: 12rem;
+   margin-top: -100px;
+   
+  
+
+
   }
 
   .profileSD{
@@ -94,7 +111,7 @@
 
   .ProfileStatement{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 100px;
     margin-top: -30px;
     margin-left: 75px;
@@ -103,7 +120,7 @@
 
   .SettingStatement{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 100px;
     margin-top: -30px;
     margin-left: 75px;
@@ -111,7 +128,7 @@
   
   .LogoutStatement{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 100px;
     margin-top: -30px;
     margin-left: 75px;
