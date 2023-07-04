@@ -18,8 +18,16 @@ import Logo from "../../images/src-assets/NavBar/LevelUpWorks-white.png";
 import Avatar from "../../images/src-assets/NavBar/Avatar-white.png";
 import NZFlag from "../../images/src-assets/NavBar/NZFlag.png";
 import MāoriFlag from "../../images/src-assets/NavBar/MaoriFlag.png";
+import { Login } from "./logIn/Login";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [openLogin, setOpenLogin] = useState(false);
+
+  const handleOpenLogin = () => {
+    setOpenLogin(true);
+  };
+
   return (
     <div>
       <Nav>
@@ -45,7 +53,10 @@ const NavBar = () => {
           <NavLogin>
             <NavBtn>
               <img src={Avatar} alt="LoginAvatar" className="navAvatar" />
-              <NavBtnLink to="/Login">REGISTER | LOGIN</NavBtnLink>
+              <NavBtnLink onClick={handleOpenLogin}>
+                REGISTER | LOGIN
+              </NavBtnLink>
+              <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
             </NavBtn>
           </NavLogin>
         </div>

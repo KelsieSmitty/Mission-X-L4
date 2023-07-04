@@ -52,7 +52,7 @@ export const Login = ({ open, handleClose }) => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:4000/loginStudent", {
+      .post("http://localhost:/4000/loginStudent", {
         email: studentEmail,
         password: studentPassword,
       })
@@ -156,101 +156,110 @@ export const Login = ({ open, handleClose }) => {
 
   return (
     <Modal open={open} onClose={handleClose}>
-      <div id="login_modal" className="signup-modal">
+      <div className="signup-modal">
         <div className="signup-modal-content">
-          <div className="signup-students">
-            <img src={Students} className="login-signup-imgs" alt="Students" />
-            <h1 className="login-signup-header">Students</h1>
+          <div className="student-teacher-split">
+            <div className="signup-students">
+              <img
+                src={Students}
+                className="login-signup-imgs"
+                alt="Students"
+              />
+              <h1 className="login-signup-header">Students</h1>
 
-            <div className="login-signup-sub-headings">
-              <button
-                className={`login-signup-sub-headings-text ${
-                  studentFormType === "signup" && "hidden"
-                }`}
-                onClick={() => setStudentFormType("login")}
-              >
-                LOG IN
-              </button>
-              <button
-                className={`login-signup-sub-headings-text ${
-                  studentFormType === "login" && "hidden"
-                }`}
-                onClick={() => setStudentFormType("signup")}
-              >
-                SIGN UP
-              </button>
+              <div className="login-signup-sub-headings">
+                <button
+                  className={`login-signup-btns ${
+                    studentFormType === "signup"
+                    // && "hidden"
+                  }`}
+                  onClick={() => setStudentFormType("login")}
+                >
+                  {" "}
+                  LOG IN
+                </button>
+                <button
+                  className={`login-signup-btns ${
+                    studentFormType === "login"
+                    // && "hidden"
+                  }`}
+                  onClick={() => setStudentFormType("signup")}
+                >
+                  SIGN UP
+                </button>
+              </div>
+              {studentFormType === "login" ? (
+                <div>
+                  <form onSubmit={handleStudentLogin}>
+                    <div className="login-signup-input-container">
+                      <input
+                        type="email"
+                        required
+                        placeholder="Email Address"
+                        value={studentEmail}
+                        onChange={handleStudentEmailChange}
+                        className="login-signup-input-field"
+                      />
+                      <input
+                        type="password"
+                        required
+                        placeholder="Password"
+                        value={studentPassword}
+                        onChange={handleStudentPasswordChange}
+                        className="login-signup-input-field"
+                      />
+                      <p className="result_p">{loginStudentResult}</p>
+                      <button type="submit" className="login-signup-button">
+                        LOG IN
+                      </button>
+                    </div>{" "}
+                  </form>
+                </div>
+              ) : (
+                <div>
+                  <form onSubmit={handleStudentSignup}>
+                    <div className="login-signup-input-container">
+                      <input
+                        type="text"
+                        required
+                        placeholder="Full Name"
+                        value={studentName}
+                        onChange={(e) => setStudentName(e.target.value)}
+                        className="login-signup-input-field"
+                      />
+                      <input
+                        type="email"
+                        required
+                        placeholder="Email Address"
+                        value={studentEmail}
+                        onChange={handleStudentEmailChange}
+                        className="login-signup-input-field"
+                      />
+                      <input
+                        type="password"
+                        required
+                        placeholder="Password"
+                        value={studentPassword}
+                        onChange={handleStudentPasswordChange}
+                        className="login-signup-input-field"
+                      />
+                      <input
+                        type="password"
+                        required
+                        placeholder="Confirm Password"
+                        value={studentConfirmPassword}
+                        onChange={handleStudentConfirmPasswordChange}
+                        className="login-signup-input-field"
+                      />
+                      <p id="result_p">{signupStudentResult}</p>
+                      <button type="submit" className="login-signup-button">
+                        SIGN UP
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              )}
             </div>
-            {studentFormType === "login" ? (
-              <div>
-                <form onSubmit={handleStudentLogin}>
-                  <div className="login-signup-input-container">
-                    <input
-                      type="email"
-                      required
-                      placeholder="Email Address"
-                      value={studentEmail}
-                      onChange={handleStudentEmailChange}
-                      className="login-signup-input-field"
-                    />
-                    <input
-                      type="password"
-                      required
-                      placeholder="Password"
-                      value={studentPassword}
-                      onChange={handleStudentPasswordChange}
-                      className="login-signup-input-field"
-                    />
-                    <p className="result_p">{loginStudentResult}</p>
-                    <button type="submit" className="login-signup-button">
-                      LOG IN
-                    </button>
-                  </div>{" "}
-                </form>
-              </div>
-            ) : (
-              <div>
-                <form onSubmit={handleStudentSignup}>
-                  <div className="login-signup-input-container">
-                    <input
-                      type="text"
-                      required
-                      placeholder="Full Name"
-                      value={studentName}
-                      onChange={(e) => setStudentName(e.target.value)}
-                      className="login-signup-input-field"
-                    />
-                    <input
-                      type="email"
-                      required
-                      placeholder="Email Address"
-                      value={studentEmail}
-                      onChange={handleStudentEmailChange}
-                      className="login-signup-input-field"
-                    />
-                    <input
-                      type="password"
-                      required
-                      placeholder="Password"
-                      value={studentPassword}
-                      onChange={handleStudentPasswordChange}
-                      className="login-signup-input-field"
-                    />
-                    <input
-                      type="password"
-                      required
-                      placeholder="Confirm Password"
-                      value={studentConfirmPassword}
-                      onChange={handleStudentConfirmPasswordChange}
-                      className="login-signup-input-field"
-                    />
-                    <p id="result_p">{signupStudentResult}</p>
-                    <button type="submit" className="login-signup-button">
-                      SIGN UP
-                    </button>
-                  </div>
-                </form>
-              </div>
-            )}
           </div>
           <div className="signup-students">
             <img
@@ -265,18 +274,22 @@ export const Login = ({ open, handleClose }) => {
 
               <div className="login-signup-sub-headings">
                 <button
-                  className={`login-signup-sub-headings-text ${
-                    teacherFormType === "signup" && "hidden"
+                  className={`login-signup-btns ${
+                    teacherFormType === "signup"
+                    // && "hidden"
                   }`}
                   onClick={() => setTeacherFormType("login")}
                 >
                   LOG IN
                 </button>
                 <button
-                  className={`login-signup-sub-headings-text ${
-                    teacherFormType === "login" && "hidden"
+                  className={`login-signup-btns ${
+                    teacherFormType === "login"
+                    // && "hidden"
                   }`}
-                  onClick={() => setTeacherFormType("signup")}
+                  onClick={() => {
+                    setTeacherFormType("signup");
+                  }}
                 >
                   SIGN UP
                 </button>

@@ -51,6 +51,7 @@ export const HomeContent = () => {
       </h2>
       <div className="homeTeachingImgs">
         <img src={Group1} alt="Group1Img" />
+        <img src={Group2} alt="Group2Img" />
         <img src={Group3} alt="Group3Img" />
         <img src={Group4} alt="Group4Img" />
       </div>
