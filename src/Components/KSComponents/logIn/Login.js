@@ -86,7 +86,6 @@ export const Login = ({ open, handleClose }) => {
       .post("http://localhost4000/signupStudent", {
         name: studentName,
         email: studentEmail,
-        //   teacher: teachersName,
         password: studentPassword,
         confirmPassword: studentConfirmPassword,
       })
@@ -118,7 +117,7 @@ export const Login = ({ open, handleClose }) => {
           <span className="login-successful">Login Successful!</span>
         );
         console.log(response);
-        goTo(`submission page link`);
+        goTo(`submissionpagelink`);
       })
       .catch((error) => {
         setLoginTeacherResult(
@@ -150,13 +149,22 @@ export const Login = ({ open, handleClose }) => {
     })
     .catch((error) => {
       setSignupTeacherResult(
-        <span className="signup-failed">Sign Up Failed. Please Try Again.</span>
+        <span className="signup-failed hidden">
+          Sign Up Failed. Please Try Again.
+        </span>
       );
+      console.log(error);
     });
 
   return (
     <Modal open={open} onClose={handleClose}>
       <div className="signup-modal">
+        <img
+          src={ModalCloseBtn}
+          id="login_close_btn"
+          alt="Close Pop Up Symbol"
+          onClick={handleClose}
+        />
         <div className="signup-modal-content">
           <div className="student-teacher-split">
             <div className="signup-students">
@@ -171,7 +179,6 @@ export const Login = ({ open, handleClose }) => {
                 <button
                   className={`login-signup-btns ${
                     studentFormType === "signup"
-                    // && "hidden"
                   }`}
                   onClick={() => setStudentFormType("login")}
                 >
@@ -179,10 +186,7 @@ export const Login = ({ open, handleClose }) => {
                   LOG IN
                 </button>
                 <button
-                  className={`login-signup-btns ${
-                    studentFormType === "login"
-                    // && "hidden"
-                  }`}
+                  className={`login-signup-btns ${studentFormType === "login"}`}
                   onClick={() => setStudentFormType("signup")}
                 >
                   SIGN UP
@@ -262,13 +266,7 @@ export const Login = ({ open, handleClose }) => {
             </div>
           </div>
           <div className="signup-students">
-            <img
-              src={ModalCloseBtn}
-              id="login_close_btn"
-              alt="Close Pop Up Symbol"
-              onClick={handleClose}
-            />
-            <div className="login-teachers">
+            <div className="signup-teachers">
               <img src={Teacher} className="login-signup-imgs" alt="Teacher" />
               <h1 className="login-signup-header">Teachers</h1>
 
@@ -276,17 +274,13 @@ export const Login = ({ open, handleClose }) => {
                 <button
                   className={`login-signup-btns ${
                     teacherFormType === "signup"
-                    // && "hidden"
                   }`}
                   onClick={() => setTeacherFormType("login")}
                 >
                   LOG IN
                 </button>
                 <button
-                  className={`login-signup-btns ${
-                    teacherFormType === "login"
-                    // && "hidden"
-                  }`}
+                  className={`login-signup-btns ${teacherFormType === "login"}`}
                   onClick={() => {
                     setTeacherFormType("signup");
                   }}
