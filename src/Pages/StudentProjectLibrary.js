@@ -1,8 +1,8 @@
 import "../styling/SPL.css";
-import NavBar from "../kSComponents/NavBar.js";
-import ScrollUp from "../componentsLuis/ScrollUp.js";
-import Footer from "../componentsLuis/Footer.jsx";
-import FilteringLibraryProjects from "../componentsLuis/FilteringLibraryProjects";
+import NavBar from "../components/kSComponents/NavBar.js";
+import ScrollUp from "../components/componentsLuis/ScrollUp";
+import Footer from "../components/componentsLuis/Footer";
+import FilteringLibraryProjects from "../components/componentsLuis/FilteringLibraryProjects";
 
 export default function StudentProyectLibrary() {
   return (
@@ -98,7 +98,7 @@ export default function StudentProyectLibrary() {
             Welcome to the library project.You can use the filters on the right
             to help you search for specific projects
           </p>
-              <FilteringLibraryProjects/>
+          <FilteringLibraryProjects />
           <ScrollUp />
         </section>
       </div>

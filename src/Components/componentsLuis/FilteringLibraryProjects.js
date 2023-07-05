@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styling/SPL.css";
+import "../../styling/SPL.css";
 import Project01 from "../componentsLuis/projectsImages/Project01.png";
 import Project02 from "../componentsLuis/projectsImages/Project02.png";
 import Project03 from "../componentsLuis/projectsImages/Project03.png";
