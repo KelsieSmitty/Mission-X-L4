@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../ComponentsJosh/Sidebar";
-import Navbar from "../ComponentsJosh/Navbar";
-import ProgressContent from "../ComponentsJosh/progressContent";
+import Sidebar from "../componentsJosh/Sidebar";
+import Navbar from "../componentsJosh/Navbar";
+import ProgressContent from "../componentsJosh/progressContent";
 
 export default function ProgressTracker() {
   return (

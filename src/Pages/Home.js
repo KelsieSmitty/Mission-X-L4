@@ -1,6 +1,6 @@
-import { HomeContent } from "../Components/KSComponents/HomeContent";
-import NavBar from "../Components/KSComponents/NavBar";
-import Footer from "../Components/KSComponents/Footer";
+import { HomeContent } from "../components/kSComponents/HomeContent";
+import NavBar from "../components/kSComponents/NavBar";
+import Footer from "../components/kSComponents/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export default function Home() {
