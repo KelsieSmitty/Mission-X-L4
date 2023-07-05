@@ -14,10 +14,10 @@ import {
   NavLogin,
 } from './NavBarElements';
 import './navBar.css';
-import Logo from '../../Images/src-assets/NavBar/LevelUpWorks-white.png';
-import Avatar from '../../Images/src-assets/NavBar/Avatar-white.png';
-import NZFlag from '../../Images/src-assets/NavBar/NZFlag.png';
-import MāoriFlag from '../../Images/src-assets/NavBar/MaoriFlag.png';
+import Logo from '../../images/src-assets/NavBar/LevelUpWorks-white.png';
+import Avatar from '../../images/src-assets/NavBar/Avatar-white.png';
+import NZFlag from '../../images/src-assets/NavBar/NZFlag.png';
+import MāoriFlag from '../../images/src-assets/NavBar/MaoriFlag.png';
 
 const NavBar = () => {
   return (

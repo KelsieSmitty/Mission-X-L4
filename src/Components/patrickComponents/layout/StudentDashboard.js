@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import styles from '../../../Styling/StudentDashboardSidebar.module.css';
-import SidebarIcons from '../../../Styling/SidebarIcons.module.css';
+import styles from '../../../styling/StudentDashboardSidebar.module.css';
+import SidebarIcons from '../../../styling/SidebarIcons.module.css';
 import { NavLink } from 'react-router-dom';
-import LearningObjectivesicon from '../../../Images/StudentDashboard/learningObjectives.png';
-import Instructionsicon from '../../../Images/StudentDashboard/instructions.png';
-import Videoicon from '../../../Images/StudentDashboard/video.png';
-import MakeProjecticon from '../../../Images/StudentDashboard/makeProjectSelected.png';
-import SubmitProjecticon from '../../../Images/StudentDashboard/submitProject.png';
-import takethequizicon from '../../../Images/StudentDashboard/takeTheQuiz.png';
-import projectsubmission from '../../../Images/StudentDashboard/projectSubmissions.png';
-import AidenAndrewSD from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
-import RightArrowSD from '../../../Images/StudentDashboard/right-arrowSD.png';
-import logoutSD from '../../../Images/StudentDashboard/logoutSD.png';
-import profileSD from '../../../Images/StudentDashboard/profileSD.png';
-import settingsSD from '../../../Images/StudentDashboard/settingsSD.png';
-import StudentAdvertisement from '../../../Images/StudentDashboard/ADVERTISEMENTSD.png';
+import LearningObjectivesicon from '../../../images/StudentDashboard/learningObjectives.png';
+import Instructionsicon from '../../../images/StudentDashboard/instructions.png';
+import Videoicon from '../../../images/StudentDashboard/video.png';
+import MakeProjecticon from '../../../images/StudentDashboard/makeProjectSelected.png';
+import SubmitProjecticon from '../../../images/StudentDashboard/submitProject.png';
+import takethequizicon from '../../../images/StudentDashboard/takeTheQuiz.png';
+import projectsubmission from '../../../images/StudentDashboard/projectSubmissions.png';
+import AidenAndrewSD from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
+import RightArrowSD from '../../../images/StudentDashboard/right-arrowSD.png';
+import logoutSD from '../../../images/StudentDashboard/logoutSD.png';
+import profileSD from '../../../images/StudentDashboard/profileSD.png';
+import settingsSD from '../../../images/StudentDashboard/settingsSD.png';
+import StudentAdvertisement from '../../../images/StudentDashboard/ADVERTISEMENTSD.png';
 
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);

@@ -1,5 +1,5 @@
 import './App.css';
-import MainDashboard from './Pages/MainDashboard';
+import MainDashboard from './pages/MainDashboard';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LearningObjectives from './Components/patrickComponents/layout/LearningObjectives';
 import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
@@ -8,10 +8,10 @@ import MakeProject from './Components/patrickComponents/layout/MakeProject';
 import SubmitProject from './Components/patrickComponents/layout/SubmitProject';
 import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
 import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
-import './Styling/Footer.css';
-import './Styling/SPL.css';
+import './styling/Footer.css';
+import './styling/SPL.css';
 
-import Home from './Pages/Home';
+import Home from './pages/Home';
 
 function App() {
   return (

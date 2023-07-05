@@ -1,7 +1,7 @@
 import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
-import images from '../../../Images/StudentDashboard/learning objectives.png';
-import styles from '../../../Styling/LearningObjectives.module.css';
+import MainDashboard from '../../../pages/MainDashboard';
+import images from '../../../images/StudentDashboard/learning objectives.png';
+import styles from '../../../styling/LearningObjectives.module.css';
 console.log(images);
 
 const LearningObjectives = () => {

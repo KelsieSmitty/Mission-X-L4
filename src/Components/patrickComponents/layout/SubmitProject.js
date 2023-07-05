@@ -1,12 +1,12 @@
-import MainDashboard from '../../../Pages/MainDashboard';
-import styles from '../../../Styling/SubmitProject.module.css';
+import MainDashboard from '../../../pages/MainDashboard';
+import styles from '../../../styling/SubmitProject.module.css';
 import FileStack from './FileStack';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
-import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
-import images2 from '../../../Images/StudentDashboard/TeacherPhoto.png';
-import images3 from '../../../Images/StudentDashboard/callTeacher.png';
-import images4 from '../../../Images/StudentDashboard/sendPhoto.png';
+import images from '../../../images/StudentDashboard/makeProject-screenshot.png';
+import images2 from '../../../images/StudentDashboard/TeacherPhoto.png';
+import images3 from '../../../images/StudentDashboard/callTeacher.png';
+import images4 from '../../../images/StudentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
   const alert6 = () => {
