@@ -1,4 +1,4 @@
-import StudentProyectLibrary from "./pages/StudentProjectLibrary";
+import StudentProjectLibrary from "./pages/StudentProjectLibrary";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<StudentProyectLibrary />}/>
+          <Route path="/student-project" element={<StudentProjectLibrary />}/>
         </Routes>
       </BrowserRouter>
     </div>
