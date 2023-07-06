@@ -41,6 +41,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  height: 100%;
 
   @media screen and (max-width: 860px) {
     flex-direction: column;
@@ -77,8 +78,8 @@
   }
 }
 
-.signup-teachers {
-  border-left: 2px solid #707070;
+.student-teacher-split {
+  border-right: 2px solid #707070;
   height: 100%;
 
   @media screen and (max-width: 860px) {

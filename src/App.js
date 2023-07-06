@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           {/* <Route
-            path="/studentprojectlibrary"
+            path="/project-library"
             element={<StudentProyectLibrary />}
           ></Route> */}
         </Routes>

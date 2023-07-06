@@ -3,6 +3,14 @@
   left: 236px;
   width: 174px;
   height: 55px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 /* Home/features/teachers area: */
