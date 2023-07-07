@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 export const Nav = styled.nav`
   background: #52bff3;
   color: #fff;
-  width: 1920px;
+  width: 100%;
   height: 64px;
   display: flex;
   justify-content: space-around;
@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   margin: 0;
   border: #41baef solid 1px;
   font-family: "Open Sans", sans-serif, bold;
+  
 `;
 
 // Home/features/teachers links:
@@ -26,6 +27,7 @@ export const NavLink = styled(Link)`
   padding: 32px 100px 10px 100px;
   cursor: pointer;
   
+  
   }
 `;
 
@@ -33,7 +35,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-
+  
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -53,12 +55,13 @@ export const NavLogin = styled.nav`
   padding-bottom: 10px;
   height: 22px;
   margin: 0;
+  
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-
+  
   @media screen and (max-width: 768px) {
     display: none;
   }
