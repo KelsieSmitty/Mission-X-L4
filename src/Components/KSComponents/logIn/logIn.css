@@ -84,6 +84,7 @@
 
   @media screen and (max-width: 860px) {
     border: none;
+    padding-bottom: 5em;
   }
 }
 

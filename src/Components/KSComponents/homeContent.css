@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .home {
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 
 .homeBanner {
@@ -10,10 +16,17 @@
   margin: 0;
   padding: 0;
   left: 0px;
-  width: 1920px;
-  height: 410px;
+  width: 100%;
+  height: 25.5rem;
   position: relative;
   background-size: cover;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 #homeFuture {
@@ -23,125 +36,208 @@
 .home-banner-btns {
   display: flex;
   text-align: center;
+  justify-content: flex-start;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 
 #homeBannerH1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   text-align: left;
   position: relative;
   font-family: "Nunito", sans-serif;
-  left: 266px;
-  width: 588px;
-  padding-top: 40px;
+  left: 16.5rem;
+  width: 37rem;
+  padding-top: 2.5rem;
   padding-bottom: 0;
   margin: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    font-size: 2.5rem;
+  }
 }
 
 #homeBannerH6 {
   font-family: "Nunito", sans-serif;
   position: relative;
-  font-size: 24px;
-  left: 266px;
-  width: 562px;
-  height: 98px;
+  font-size: 1.5rem;
+  left: 16.5rem;
+  width: 35rem;
+  height: 6.8rem;
   text-align: left;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: #6c6c6c;
-  padding-top: 11px;
+  padding-top: 0.7rem;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    left: auto;
+    height: auto;
+    font-size: 1rem;
+  }
 }
 
 #homeBannerP {
   left: 625px;
-  width: 175px;
-  height: 37px;
+  width: 11rem;
+  height: 2.3rem;
   text-align: center;
   letter-spacing: 0.22px;
   color: #707070;
   position: relative;
-  font-size: 11px;
+  font-size: 0.7rem;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
 
 #homeOfferH1 {
   left: 266px;
-  width: 292px;
-  height: 57px;
+  width: 18.25rem;
+  height: 3.5rem;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
-  padding-top: 118px;
+  padding-top: 7.5rem;
   margin: 0;
   padding-bottom: 0;
-  font-size: 42px;
+  font-size: 2.6rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 #homeOfferP {
   left: 270px;
-  width: 554px;
-  height: 131px;
+  width: 35rem;
+  height: 8rem;
   font-family: "Open Sans", sans-serif;
   position: relative;
   text-align: left;
   letter-spacing: 0.4px;
   color: #767676;
-  font-size: 20px;
-  padding-top: 17px;
+  font-size: 1.25rem;
+  padding-top: 1.05rem;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    font-size: 1rem;
+  }
 }
 
 #homeOfferH3 {
   left: 270px;
-  height: 41px;
+  height: 2.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   text-align: left;
-  font-size: 30px;
+  font-size: 1.9rem;
   letter-spacing: 0.6px;
   color: #6c6c6c;
-  padding-top: 35px;
+  padding-top: 2rem;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    left: auto;
+  }
 }
 
 .homeOfferImgs {
   display: flex;
   justify-content: space-between;
-  padding-top: 11px;
+  padding-top: 0.7rem;
   margin: 0;
   padding-bottom: 0;
   left: 270px;
-  width: 152px;
-  height: 152px;
-  border-radius: 20px;
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 1.25rem;
   position: relative;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding-top: 2.5rem;
+    margin: auto;
+    left: auto;
+    align-items: center;
+    height: auto;
+    max-width: 18rem;
+  }
 }
 
 .whatWeOffer {
-  width: 1920px;
-  height: 700px;
+  width: 100%;
+  height: 44rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 #homeTeachingH2 {
   left: 408px;
-  width: 1104px;
-  height: 41px;
+  width: 69rem;
+  height: 2.5rem;
   text-align: center;
   letter-spacing: 0.6px;
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-family: "Nunito", sans-serif;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .homeTeachingImgs {
@@ -149,92 +245,138 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 1400px;
-  height: 221px;
+  width: 87.5rem;
+  height: 13rem;
   left: 288px;
   position: relative;
-  border-radius: 20px;
-  padding-top: 55px;
+  border-radius: 1.25rem;
+  padding-top: 3.4rem;
   margin: 0;
   padding-bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    padding-top: 2.5rem;
+    margin: auto;
+    left: auto;
+    align-items: center;
+    height: auto;
+  }
 }
 
 /* Home help div: */
 
 .homeHelpH1 {
-  left: 452px;
-  width: 970px;
-  height: 57px;
+  left: 28.25rem;
+  width: 60.625rem;
+  height: 3.5625rem;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   position: relative;
   letter-spacing: 0.84px;
   color: #6c6c6c;
-  font-size: 42px;
-  padding-bottom: 100px;
-  padding-top: 140px;
+  font-size: 2.6rem;
+  padding-bottom: 6.25rem;
+  padding-top: 8.75rem;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .home-btns {
   display: flex;
-  left: 288px;
+  left: 18rem;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0 0 0;
-  width: 1400px;
+  margin: 0.25rem 0 0 0;
+  width: 87.5rem;
   position: relative;
-  padding-top: 55px;
+  padding-top: 3.4rem;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 3.125rem;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 .home-btn {
   color: #fff;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 0.3rem;
   cursor: pointer;
-  width: 250px;
-  height: 35px;
+  width: 15.5rem;
+  height: 2rem;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.32px;
   color: #707070;
-  box-shadow: 0px 4px 5px #00000029;
+  box-shadow: 0px 0.25rem 0.3rem #00000029;
   border: 3px solid #43c0f6;
   border-radius: 7px;
-  line-height: 35px;
+  line-height: 2rem;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 /* How our programme helps section: */
 
 .homeHelpSection {
-  top: 50px;
+  top: 3.125rem;
   left: 0px;
-  width: 1920px;
-  height: 750px;
+  width: 100%;
+  height: 46.875rem;
   background: #efeff1 0% 0% no-repeat padding-box;
   border: 1px solid #efeff1;
-  opacity: 1;
   position: relative;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .homeHelpH3 {
-  height: 41px;
+  height: 2.5rem;
   position: relative;
   text-align: left;
   font-family: "Nunito", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   letter-spacing: 0.6px;
   color: #606060;
-  opacity: 1;
   padding-top: 70px;
   margin: 0;
   padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .homeHelpHeadings {
@@ -242,84 +384,131 @@
   margin: 0;
   padding-bottom: 0;
   left: 290px;
-  width: 1235px;
-  height: 346px;
+  width: 78rem;
+  height: 21.5rem;
   position: relative;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0.4px;
   color: #606060;
-  opacity: 1;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .homeHelpSubHeading {
-  padding-top: 24px;
+  padding-top: 1.5rem;
   margin: 0;
   padding-bottom: 0;
-  width: 1235px;
+  width: 77.3rem;
   position: relative;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0.4px;
   color: #606060;
-  opacity: 1;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
 }
 
 .homeHelpP {
   padding-top: 0px;
   margin: 0;
   padding-bottom: 0;
-  width: 1235px;
-  height: 18px;
+  width: 77.3rem;
+  height: 1.125rem;
   position: relative;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.32px;
   color: #606060;
-  opacity: 1;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
 }
 
 .home-help-active {
   background: #efeff1 0% 0% no-repeat padding-box;
-  box-shadow: 0px 4px 5px #00000029;
+  box-shadow: 0px 0.25rem 0.3rem #00000029;
   border: 3px solid #efeff1;
   border-radius: 7px;
-  opacity: 1;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 .home-icons {
   display: flex;
   flex-direction: column;
-  width: 40px;
-  height: 480px;
+  width: 2.5rem;
+  height: 30rem;
   left: 282px;
   position: relative;
   align-items: center;
   justify-content: space-around;
-  padding-top: 35px;
+  padding-top: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7rem;
+    margin: auto;
+    left: auto;
+    top: -6rem;
+  }
 }
 
 .homeHelpFlex1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 150px;
+  height: 9.4rem;
   left: 282px;
   position: relative;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
 }
 
 .homeHelpFlex2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 364px;
+  height: 14.4rem;
   position: relative;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 /* section ends */
@@ -329,23 +518,38 @@ What are you waiting for section: */
 
 .homeWaiting {
   display: flex;
-  width: 1920px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  top: 57px;
+  top: 3.5rem;
   position: relative;
-  height: 634px;
-  width: 1920px;
+  height: 40rem;
   background-color: #fff;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 .homeWaitingText {
-  padding-left: 85.5px;
+  padding-left: 5.3rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-left: 0;
+  }
 }
 
 #homeWaitingH1 {
-  width: 525px;
-  height: 57px;
+  width: 32.8rem;
+  height: 3.5rem;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
@@ -354,11 +558,18 @@ What are you waiting for section: */
   color: #6c6c6c;
   margin: 0;
   padding-bottom: 0;
-  font-size: 42px;
+  font-size: 2.6rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    font-size: 2rem;
+  }
 }
 
 #homeWaitingH3 {
-  width: 610px;
+  width: 38rem;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -367,11 +578,19 @@ What are you waiting for section: */
   margin: 0;
   padding-top: 28px;
   padding-bottom: 0;
-  font-size: 30px;
+  font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    left: auto;
+    font-size: 1.5rem;
+  }
 }
 
 #homeWaitingP {
-  width: 610px;
+  width: 38rem;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -380,13 +599,30 @@ What are you waiting for section: */
   margin: 0;
   padding-top: 40px;
   padding-bottom: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
 }
 
 #homeWaitingImg {
-  width: 625px;
-  height: 417px;
-  padding-right: 85.5px;
+  width: 38rem;
+  max-width: 100%;
+  height: auto;
+  padding-right: 5.3rem;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    padding: 0.5rem 0;
+  }
 }
 
 #home_enquire_btn {
@@ -397,19 +633,34 @@ What are you waiting for section: */
   text-align: center;
   box-shadow: 0px 4px 5px #00000029;
   letter-spacing: 0.32px;
-  width: 175px;
-  height: 31px;
+  width: 11.5rem;
+  height: 2rem;
   position: relative;
-  font-size: 16px;
-  margin-top: 55px;
-  padding: 0;
+  font-size: 1rem;
+  margin-top: 3.4rem;
+  padding: 1rem 0;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
   cursor: pointer;
+  line-height: 0.5rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    margin-top: 1rem;
+  }
 }
 
 .homeWaitingBtns {
   display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 
 /* Section ends */
@@ -417,6 +668,14 @@ What are you waiting for section: */
 .homeSection1 {
   display: flex;
   width: 1920px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 
 .home-laptop-container {
@@ -424,16 +683,37 @@ What are you waiting for section: */
   flex-direction: column;
   padding: 0;
   margin: 0;
-  width: 728px;
-  height: 493px;
+  width: 45.5rem;
+  height: 31rem;
   padding-right: 182px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
+    padding-right: 0;
+    padding-bottom: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
 }
 
 .home-laptop-image {
-  width: 728px;
-  height: 493px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 45.5rem;
+  height: 31rem;
   padding-top: 40px;
   margin: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+  }
 }
 
 .home-laptop-dots {
@@ -442,6 +722,12 @@ What are you waiting for section: */
   justify-content: center;
   margin-top: 10px;
   padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+  }
 }
 
 .home-laptop-dot {
@@ -454,10 +740,21 @@ What are you waiting for section: */
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    width: 5%;
+    margin: auto;
+    padding-top: 0;
+  }
 }
 
 .home-laptop-dot.active {
   background-color: #707070;
+  @media screen and (max-width: 768px) {
+    width: 5%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
 }
 
 #home_sign_btn {
@@ -478,6 +775,13 @@ What are you waiting for section: */
   font-size: 16px;
   cursor: pointer;
   border: none;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }
 
 #home_sign_btn2 {
@@ -498,6 +802,14 @@ What are you waiting for section: */
   font-size: 16px;
   cursor: pointer;
   border: none;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    margin-top: 1rem;
+  }
 }
 
 #home-learn-btn {
@@ -513,9 +825,15 @@ What are you waiting for section: */
   height: 31px;
   position: relative;
   font-size: 16px;
-
   margin-top: 17px;
   font-family: "Nunito";
   font-size: 16px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
 }

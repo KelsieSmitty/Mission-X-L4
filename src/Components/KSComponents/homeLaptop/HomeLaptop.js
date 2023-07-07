@@ -104,7 +104,7 @@ export default function HomeLaptop() {
       </div>
       <div className="home-laptop-container">
         <div className="home-laptop-image">
-          <img src={displayedContent.component}></img>
+          <img src={displayedContent.component} />
         </div>
         <div className="home-laptop-dots">
           <span

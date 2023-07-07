@@ -1,8 +1,5 @@
 // Still to complete for NavBar:
-// - Responsive Page design:
 // - - Menu items in drop down
-// -- Hamburger icon to be made bigger
-//-- Logo to stay on page
 //-- signup/login/lang to move to drop down
 
 import {
@@ -20,20 +17,27 @@ import NZFlag from "../../images/src-assets/NavBar/NZFlag.png";
 import MāoriFlag from "../../images/src-assets/NavBar/MaoriFlag.png";
 import { Login } from "./logIn/Login";
 import { useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
 
 const NavBar = () => {
   const [openLogin, setOpenLogin] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleOpenLogin = () => {
     setOpenLogin(true);
+  };
+
+  const handleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   return (
     <div>
       <Nav>
         <img src={Logo} alt="LevelUpLogo" className="logoMain" />
-        <Bars />
-        <div className="navMenu">
+        <Bars onClick={handleDropdown} />
+        <div className={`navMenu ${dropdownOpen ? "active" : ""}`}>
           <NavLink to="/" activestyle="true">
             HOME
           </NavLink>
@@ -61,6 +65,38 @@ const NavBar = () => {
           </NavLogin>
         </div>
       </Nav>
+      <Dropdown>
+        <div className={`dropdownContainer ${dropdownOpen ? "active" : ""}`}>
+          <DropdownItem>
+            <NavLink to="/" activestyle="true">
+              HOME
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem>
+            <NavLink to="/Features" activestyle="true">
+              FEATURES
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem>
+            <NavLink to="/Teachers" activestyle="true">
+              TEACHERS
+            </NavLink>
+          </DropdownItem>
+
+          <DropdownItem>
+            <NavBtnLink onClick={handleOpenLogin}>REGISTER | LOGIN</NavBtnLink>
+          </DropdownItem>
+          <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
+
+          <DropdownItem>
+            <div className="navLang">
+              LANG
+              <img src={NZFlag} alt="NZFlag" />
+              <img src={MāoriFlag} alt="MāoriFlag" />
+            </div>
+          </DropdownItem>
+        </div>
+      </Dropdown>
     </div>
   );
 };
