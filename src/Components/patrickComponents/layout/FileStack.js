@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PickerOverlay } from 'filestack-react-18';
 import styles from '../../../styling/FileStack.module.css';
 import SendPhotoSD from '../../../images/StudentDashboard/sendPhoto.png';
@@ -10,6 +10,23 @@ const FileStack = () => {
   const handleVisible = () => {
     setIsPickerOverlayVisible(!isPickerOverlayVisible);
   };
+  useEffect(() => {
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: JSON.stringify({ imageUrl }),
+      redirect: 'follow',
+    };
+    fetch(
+      'http://localhost:3000/studentdashboard/submitproject',
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log('error', error));
+  }, [imageUrl]);
 
   return (
     <div>
@@ -37,7 +54,7 @@ const FileStack = () => {
       </div>
       {/* you need to store this url to your database */}
       <br></br>
-      {/* <a href={imageUrl}>Verify</a> */}
+      {/*<a href={imageUrl}>Verify</a>*/}
     </div>
   );
 };

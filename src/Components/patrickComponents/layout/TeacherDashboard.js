@@ -7,6 +7,7 @@ import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/Te
 import AidenAndrewsTDS from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
 import RawiriFletcherTDS from '../../../images/StudentDashboard/students (1)/students/RawiriFletcher.png';
 import NeevahMachenryTDS from '../../../images/StudentDashboard/students (1)/students/NeveahMachenry.png';
+
 const TeacherDashboard = () => {
   const [checked, setChecked] = useState(false);
   // declaring variable for translation
@@ -75,6 +76,7 @@ const TeacherDashboard = () => {
                 height={90}
               ></img>
               {content.Description}
+
               <div id={styles['time3']}>
                 <div>{content.Description2}</div>
                 <div>10:53 AM</div>
