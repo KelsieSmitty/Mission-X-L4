@@ -91,7 +91,7 @@ transform: translate(-50%, -50%);
 }
 .Displayed-info{
     display: flex;
-    gap: 100px;
+    gap: 70px;
 }
 ul {
  list-style: none;
