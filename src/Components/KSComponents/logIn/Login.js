@@ -52,7 +52,7 @@ export const Login = ({ open, handleClose }) => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:/4000/loginStudent", {
+      .post("http://localhost:4000/api/loginStudent", {
         email: studentEmail,
         password: studentPassword,
       })
@@ -83,7 +83,7 @@ export const Login = ({ open, handleClose }) => {
       return;
     }
     axios
-      .post("http://localhost4000/signupStudent", {
+      .post("http://localhost:4000/api/signupStudent", {
         name: studentName,
         email: studentEmail,
         password: studentPassword,
@@ -108,7 +108,7 @@ export const Login = ({ open, handleClose }) => {
   const handleTeacherLogin = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost4000/loginTeacher", {
+      .post("http://localhost:4000/api/loginTeacher", {
         email: teacherEmail,
         password: teacherPassword,
       })
@@ -127,34 +127,37 @@ export const Login = ({ open, handleClose }) => {
       });
   };
   const handleTeacherSignup = (e) => {
-    setSignupTeacherResult(
-      <span className="passwords-failed">
-        {" "}
-        Passwords do not match, please try again.
-      </span>
-    );
-    return;
+    e.preventDefault();
+    axios
+      .post("http://localhost:4000/api/signupTeacher", {
+        teacher_name: teacherName,
+        email: teacherEmail,
+        password: teacherPassword,
+        confirmPassword: teacherConfirmPassword,
+      })
+      .then((response) => {
+        setSignupTeacherResult(
+          <span className="signup-successful">Sign Up Successful</span>
+        );
+      })
+      .catch((error) => {
+        setSignupTeacherResult(
+          <span className="signup-failed">
+            Sign Up Failed. Please Try Again.
+          </span>
+        );
+        console.log(error);
+        if (teacherPassword !== teacherConfirmPassword) {
+          setSignupTeacherResult(
+            <span className="passwords-failed">
+              {" "}
+              Passwords do not match, please try again.
+            </span>
+          );
+          return;
+        }
+      });
   };
-  axios
-    .post("http://localhost4000/signupTeacher", {
-      name: teacherName,
-      email: teacherEmail,
-      password: teacherPassword,
-      confirmPassword: teacherConfirmPassword,
-    })
-    .then((response) => {
-      setSignupTeacherResult(
-        <span className="signup-successful">Sign Up Successful</span>
-      );
-    })
-    .catch((error) => {
-      setSignupTeacherResult(
-        <span className="signup-failed hidden">
-          Sign Up Failed. Please Try Again.
-        </span>
-      );
-      console.log(error);
-    });
 
   return (
     <Modal open={open} onClose={handleClose}>
