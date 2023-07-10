@@ -46,11 +46,11 @@ export default function HomeHelp() {
 
   return (
     <div className="home-help-container">
-      <h1 className="homeHelpH1">
+      <h1 className="home-help-h1">
         How our programme helps teachers and schools
       </h1>
       <div className="home-btns">
-        <btn
+        <div
           id="learning-pathways"
           className={`home-btn ${
             displayedContent.name === "learning-pathways" && "home-help-active"
@@ -58,8 +58,8 @@ export default function HomeHelp() {
           onClick={handleContentClick}
         >
           LEARNING PATHWAYS
-        </btn>
-        <btn
+        </div>
+        <div
           id="digital-technologies"
           className={`home-btn ${
             displayedContent.name === "digital-technologies" &&
@@ -68,8 +68,8 @@ export default function HomeHelp() {
           onClick={handleContentClick}
         >
           DIGITAL TECHNOLOGIES
-        </btn>
-        <btn
+        </div>
+        <div
           id="key-competencies"
           className={`home-btn ${
             displayedContent.name === "key-competencies" && "home-help-active"
@@ -77,8 +77,8 @@ export default function HomeHelp() {
           onClick={handleContentClick}
         >
           KEY COMPETENCIES
-        </btn>
-        <btn
+        </div>
+        <div
           id="ir4"
           className={`home-btn ${
             displayedContent.name === "ir4" && "home-help-active"
@@ -86,7 +86,7 @@ export default function HomeHelp() {
           onClick={handleContentClick}
         >
           IR4.0
-        </btn>
+        </div>
       </div>
       {displayedContent.component}
     </div>

@@ -35,9 +35,9 @@ const NavBar = () => {
   return (
     <div>
       <Nav>
-        <img src={Logo} alt="LevelUpLogo" className="logoMain" />
+        <img src={Logo} alt="LevelUpLogo" className="logo-main" />
         <Bars onClick={handleDropdown} />
-        <div className={`navMenu ${dropdownOpen ? "active" : ""}`}>
+        <div className={`nav-menu ${dropdownOpen ? "active" : ""}`}>
           <NavLink to="/" activestyle="true">
             HOME
           </NavLink>
@@ -48,15 +48,15 @@ const NavBar = () => {
             TEACHERS
           </NavLink>
         </div>
-        <div className="navRight">
-          <div className="navLang">
+        <div className="nav-right">
+          <div className="nav-lang">
             LANG
             <img src={NZFlag} alt="NZFlag" />
             <img src={MāoriFlag} alt="MāoriFlag" />
           </div>
           <NavLogin>
             <NavBtn>
-              <img src={Avatar} alt="LoginAvatar" className="navAvatar" />
+              <img src={Avatar} alt="LoginAvatar" className="nav-avatar" />
               <NavBtnLink onClick={handleOpenLogin}>
                 REGISTER | LOGIN
               </NavBtnLink>
@@ -66,7 +66,7 @@ const NavBar = () => {
         </div>
       </Nav>
       <Dropdown>
-        <div className={`dropdownContainer ${dropdownOpen ? "active" : ""}`}>
+        <div className={`dropdown-container ${dropdownOpen ? "active" : ""}`}>
           <DropdownItem>
             <NavLink to="/" activestyle="true">
               HOME
@@ -89,7 +89,7 @@ const NavBar = () => {
           <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
 
           <DropdownItem>
-            <div className="navLang">
+            <div className="nav-lang">
               LANG
               <img src={NZFlag} alt="NZFlag" />
               <img src={MāoriFlag} alt="MāoriFlag" />

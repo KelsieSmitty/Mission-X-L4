@@ -1,8 +1,24 @@
+/* Fonts:  
+font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+/* 
+Colors:
+Bright blue: #42c0f6;
+Bright Pink: #f91c85;
+Dark Grey: #707070;
+Light Grey: #6c6c6c;
+Background White: #efeff1;
+ */
+
+/* HOME PAGE */
 .home {
   padding-bottom: 3.125rem;
+  margin: 0;
+  padding: 0;
   @media screen and (max-width: 768px) {
     width: 100%;
     align-items: center;
@@ -11,11 +27,24 @@
   }
 }
 
-.homeBanner {
+.home-section-1 {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
+}
+
+/* Home Banner section starts: */
+
+.home-banner {
   color: #767676;
-  margin: 0;
-  padding: 0;
-  left: 0px;
   width: 100%;
   height: 25.5rem;
   position: relative;
@@ -29,7 +58,7 @@
   }
 }
 
-#homeFuture {
+#home_future {
   color: #42c0f6;
 }
 
@@ -46,8 +75,43 @@
     left: auto;
   }
 }
+#home_learn_btn,
+#home_sign_btn {
+  color: #707070;
+  background: #fff;
+  border: 3px solid #43c0f6;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 0px 4px 5px #00000029;
+  letter-spacing: 0.32px;
+  left: 398px;
+  width: 175px;
+  height: 32px;
+  position: relative;
+  font-size: 16px;
+  margin-top: 17px;
+  font-family: "Nunito";
+  font-size: 16px;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
 
-#homeBannerH1 {
+#home_sign_btn {
+  color: #f0efef;
+  background: #f91c85;
+  left: 445px;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+}
+
+#home_banner_h1 {
   font-size: 3.75rem;
   text-align: left;
   position: relative;
@@ -66,7 +130,7 @@
   }
 }
 
-#homeBannerH6 {
+#home_banner_h6 {
   font-family: "Nunito", sans-serif;
   position: relative;
   font-size: 1.5rem;
@@ -90,7 +154,7 @@
   }
 }
 
-#homeBannerP {
+#home_banner_p {
   left: 625px;
   width: 11rem;
   height: 2.3rem;
@@ -113,7 +177,11 @@
   }
 }
 
-#homeOfferH1 {
+/* Home Banner Section ends */
+
+/* What we offer section starts: */
+
+#home_offer_h1 {
   left: 266px;
   width: 18.25rem;
   height: 3.5rem;
@@ -138,7 +206,7 @@
   }
 }
 
-#homeOfferP {
+#home_offer_p {
   left: 270px;
   width: 35rem;
   height: 8rem;
@@ -161,7 +229,7 @@
   }
 }
 
-#homeOfferH3 {
+#home_offer_h3 {
   left: 270px;
   height: 2.5rem;
   font-family: "Nunito", sans-serif;
@@ -183,7 +251,7 @@
   }
 }
 
-.homeOfferImgs {
+.home-offer-imgs {
   display: flex;
   justify-content: space-between;
   padding-top: 0.7rem;
@@ -208,7 +276,7 @@
   }
 }
 
-.whatWeOffer {
+.what-we-offer {
   width: 100%;
   height: 44rem;
   @media screen and (max-width: 768px) {
@@ -219,464 +287,9 @@
     height: auto;
   }
 }
+/* What we offer section ends */
 
-#homeTeachingH2 {
-  left: 408px;
-  width: 69rem;
-  height: 2.5rem;
-  text-align: center;
-  letter-spacing: 0.6px;
-  position: relative;
-  letter-spacing: 0.84px;
-  color: #6c6c6c;
-  font-size: 1.8rem;
-  font-family: "Nunito", sans-serif;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.homeTeachingImgs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 87.5rem;
-  height: 13rem;
-  left: 288px;
-  position: relative;
-  border-radius: 1.25rem;
-  padding-top: 3.4rem;
-  margin: 0;
-  padding-bottom: 0;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    width: 90%;
-    padding-top: 2.5rem;
-    margin: auto;
-    left: auto;
-    align-items: center;
-    height: auto;
-  }
-}
-
-/* Home help div: */
-
-.homeHelpH1 {
-  left: 28.25rem;
-  width: 60.625rem;
-  height: 3.5625rem;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  position: relative;
-  letter-spacing: 0.84px;
-  color: #6c6c6c;
-  font-size: 2.6rem;
-  padding-bottom: 6.25rem;
-  padding-top: 8.75rem;
-  margin: 0;
-  padding-bottom: 0;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.home-btns {
-  display: flex;
-  left: 18rem;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.25rem 0 0 0;
-  width: 87.5rem;
-  position: relative;
-  padding-top: 3.4rem;
-  margin: 0;
-  padding-bottom: 0;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 3.125rem;
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-  }
-}
-.home-btn {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 0.3rem;
-  cursor: pointer;
-  width: 15.5rem;
-  height: 2rem;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.32px;
-  color: #707070;
-  box-shadow: 0px 0.25rem 0.3rem #00000029;
-  border: 3px solid #43c0f6;
-  border-radius: 7px;
-  line-height: 2rem;
-
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-/* How our programme helps section: */
-
-.homeHelpSection {
-  top: 3.125rem;
-  left: 0px;
-  width: 100%;
-  height: 46.875rem;
-  background: #efeff1 0% 0% no-repeat padding-box;
-  border: 1px solid #efeff1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.homeHelpH3 {
-  height: 2.5rem;
-  position: relative;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.875rem;
-  letter-spacing: 0.6px;
-  color: #606060;
-  padding-top: 70px;
-  margin: 0;
-  padding-bottom: 0;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.homeHelpHeadings {
-  padding-top: 0px;
-  margin: 0;
-  padding-bottom: 0;
-  left: 290px;
-  width: 78rem;
-  height: 21.5rem;
-  position: relative;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  letter-spacing: 0.4px;
-  color: #606060;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.homeHelpSubHeading {
-  padding-top: 1.5rem;
-  margin: 0;
-  padding-bottom: 0;
-  width: 77.3rem;
-  position: relative;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  letter-spacing: 0.4px;
-  color: #606060;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    left: auto;
-  }
-}
-
-.homeHelpP {
-  padding-top: 0px;
-  margin: 0;
-  padding-bottom: 0;
-  width: 77.3rem;
-  height: 1.125rem;
-  position: relative;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.32px;
-  color: #606060;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    left: auto;
-  }
-}
-
-.home-help-active {
-  background: #efeff1 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0.25rem 0.3rem #00000029;
-  border: 3px solid #efeff1;
-  border-radius: 7px;
-  @media screen and (max-width: 768px) {
-    width: 80%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-.home-icons {
-  display: flex;
-  flex-direction: column;
-  width: 2.5rem;
-  height: 30rem;
-  left: 282px;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 2rem;
-  @media screen and (max-width: 768px) {
-    width: 20%;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 7rem;
-    margin: auto;
-    left: auto;
-    top: -6rem;
-  }
-}
-
-.homeHelpFlex1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 9.4rem;
-  left: 282px;
-  position: relative;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    left: auto;
-  }
-}
-
-.homeHelpFlex2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 14.4rem;
-  position: relative;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
-/* section ends */
-
-/* 
-What are you waiting for section: */
-
-.homeWaiting {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  top: 3.5rem;
-  position: relative;
-  height: 40rem;
-  background-color: #fff;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    flex-direction: column;
-  }
-}
-
-.homeWaitingText {
-  padding-left: 5.3rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-    padding-bottom: 3rem;
-    padding-left: 0;
-  }
-}
-
-#homeWaitingH1 {
-  width: 32.8rem;
-  height: 3.5rem;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  position: relative;
-  letter-spacing: 0.84px;
-  color: #6c6c6c;
-  margin: 0;
-  padding-bottom: 0;
-  font-size: 2.6rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    font-size: 2rem;
-  }
-}
-
-#homeWaitingH3 {
-  width: 38rem;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  letter-spacing: 0.6px;
-  color: #6c6c6c;
-  margin: 0;
-  padding-top: 28px;
-  padding-bottom: 0;
-  font-size: 2rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    height: auto;
-    margin: auto;
-    left: auto;
-    font-size: 1.5rem;
-  }
-}
-
-#homeWaitingP {
-  width: 38rem;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  letter-spacing: 0.6px;
-  color: #6c6c6c;
-  margin: 0;
-  padding-top: 40px;
-  padding-bottom: 0;
-  font-size: 1.25rem;
-
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    height: auto;
-    left: auto;
-  }
-}
-
-#homeWaitingImg {
-  width: 38rem;
-  max-width: 100%;
-  height: auto;
-  padding-right: 5.3rem;
-  @media screen and (max-width: 768px) {
-    width: 80%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-    padding: 0.5rem 0;
-  }
-}
-
-#home_enquire_btn {
-  color: #707070;
-  background: #fff;
-  border: 3px solid #43c0f6;
-  border-radius: 7px;
-  text-align: center;
-  box-shadow: 0px 4px 5px #00000029;
-  letter-spacing: 0.32px;
-  width: 11.5rem;
-  height: 2rem;
-  position: relative;
-  font-size: 1rem;
-  margin-top: 3.4rem;
-  padding: 1rem 0;
-  font-family: "Nunito", sans-serif;
-  cursor: pointer;
-  line-height: 0.5rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    margin-top: 1rem;
-  }
-}
-
-.homeWaitingBtns {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.5rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-  }
-}
-
-/* Section ends */
-
-.homeSection1 {
-  display: flex;
-  width: 1920px;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-  }
-}
+/* Laptop section starts: */
 
 .home-laptop-container {
   display: flex;
@@ -757,24 +370,21 @@ What are you waiting for section: */
   }
 }
 
-#home_sign_btn {
-  color: #f0efef;
-  background: #f91c85;
-  box-shadow: 0px 4px 5px #00000029;
-  border-radius: 7px;
+/*laptop section ends */
+
+/* Teaching kids programming section starts: */
+
+#home_teaching_h2 {
+  left: 408px;
+  width: 69rem;
+  height: 2.5rem;
   text-align: center;
-  letter-spacing: 0.32px;
-  left: 445px;
-  width: 175px;
-  height: 35px;
+  letter-spacing: 0.6px;
   position: relative;
-  font-size: 16px;
-  line-height: 35px;
-  margin-top: 17px;
-  font-family: "Nunito";
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
   @media screen and (max-width: 768px) {
     width: 90%;
     align-items: center;
@@ -784,35 +394,404 @@ What are you waiting for section: */
   }
 }
 
+.home-teaching-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 87.5rem;
+  height: 13rem;
+  left: 288px;
+  position: relative;
+  border-radius: 1.25rem;
+  padding-top: 3.4rem;
+  margin: 0;
+  padding-bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    padding-top: 2.5rem;
+    margin: auto;
+    left: auto;
+    align-items: center;
+    height: auto;
+  }
+}
+
+/* Teaching kids programming section ends */
+
+/* How our programme helps section starts: */
+
+.home-help-h1 {
+  left: 28.25rem;
+  width: 60.625rem;
+  height: 3.5625rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  font-size: 2.6rem;
+  padding-bottom: 6.25rem;
+  padding-top: 8.75rem;
+  margin: 0;
+  padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-btns {
+  display: flex;
+  left: 18rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.25rem 0 0 0;
+  width: 87.5rem;
+  position: relative;
+  padding-top: 3.4rem;
+  margin: 0;
+  padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 3.125rem;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
+}
+.home-btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  width: 15.5rem;
+  height: 2rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.32px;
+  color: #707070;
+  box-shadow: 0px 0.25rem 0.3rem #00000029;
+  border: 3px solid #43c0f6;
+  border-radius: 7px;
+  line-height: 2rem;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-help-section {
+  top: 3.125rem;
+  left: 0px;
+  width: 100%;
+  height: 46.875rem;
+  background: #efeff1 0% 0% no-repeat padding-box;
+  border: 1px solid #efeff1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-help-h3 {
+  height: 2.5rem;
+  position: relative;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.875rem;
+  letter-spacing: 0.6px;
+  color: #606060;
+  padding-top: 70px;
+  margin: 0;
+  padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-help-headings {
+  padding-top: 0px;
+  margin: 0;
+  padding-bottom: 0;
+  left: 290px;
+  width: 78rem;
+  height: 21.5rem;
+  position: relative;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.4px;
+  color: #606060;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-help-subheading {
+  padding-top: 1.5rem;
+  margin: 0;
+  padding-bottom: 0;
+  width: 77.3rem;
+  position: relative;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.4px;
+  color: #606060;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
+}
+
+.home-help-p {
+  padding-top: 0px;
+  margin: 0;
+  padding-bottom: 0;
+  width: 77.3rem;
+  height: 1.125rem;
+  position: relative;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.32px;
+  color: #606060;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
+}
+
+.home-help-active {
+  background: #efeff1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.25rem 0.3rem #00000029;
+  border: 3px solid #efeff1;
+  border-radius: 7px;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+.home-icons {
+  display: flex;
+  flex-direction: column;
+  width: 2.5rem;
+  height: 30rem;
+  left: 282px;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7rem;
+    margin: auto;
+    left: auto;
+    top: -6rem;
+  }
+}
+
+.home-help-flex-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 9.4rem;
+  left: 282px;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
+}
+
+.home-help-flex-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 14.4rem;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
+/* How our programme helps section ends */
+
+/* What are you waiting for section starts: */
+
+.home-waiting {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 3.5rem;
+  position: relative;
+  height: 40rem;
+  background-color: #fff;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.home-waiting-text {
+  padding-left: 5.3rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-left: 0;
+  }
+}
+
+#home_waiting_h1 {
+  width: 32.8rem;
+  height: 3.5rem;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 0.84px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 2.6rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    font-size: 2rem;
+  }
+}
+
+#home_waiting_h3 {
+  width: 38rem;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 0;
+  font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    left: auto;
+    font-size: 1.5rem;
+  }
+}
+
+#home_waiting_p {
+  width: 38rem;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    left: auto;
+  }
+}
+
+#home_waiting_img {
+  width: 38rem;
+  max-width: 100%;
+  height: auto;
+  padding-right: 5.3rem;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+}
+
+.home-waiting-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
+}
+
+#home_enquire_btn,
 #home_sign_btn2 {
-  color: #f0efef;
-  background: #f91c85;
-  box-shadow: 0px 4px 5px #00000029;
-  border-radius: 7px;
-  text-align: center;
-  letter-spacing: 0.32px;
-  left: 119px;
-  width: 175px;
-  height: 35px;
-  position: relative;
-  font-size: 16px;
-  margin-top: 55px;
-  line-height: 35px;
-  font-family: "Nunito";
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-    margin-top: 1rem;
-  }
-}
-
-#home-learn-btn {
   color: #707070;
   background: #fff;
   border: 3px solid #43c0f6;
@@ -820,20 +799,29 @@ What are you waiting for section: */
   text-align: center;
   box-shadow: 0px 4px 5px #00000029;
   letter-spacing: 0.32px;
-  left: 398px;
-  width: 175px;
-  height: 31px;
+  width: 11.5rem;
+  height: 2rem;
   position: relative;
-  font-size: 16px;
-  margin-top: 17px;
-  font-family: "Nunito";
-  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 3.4rem;
+  padding: 1rem 0;
+  font-family: "Nunito", sans-serif;
   cursor: pointer;
+  line-height: 0.5rem;
   @media screen and (max-width: 768px) {
     width: 90%;
     align-items: center;
     margin: auto;
     left: auto;
-    height: auto;
+    margin-top: 1rem;
   }
 }
+
+#home_sign_btn2 {
+  color: #f0efef;
+  background: #f91c85;
+  left: 119px;
+  border: none;
+}
+
+/* What are you waiting for section ends */

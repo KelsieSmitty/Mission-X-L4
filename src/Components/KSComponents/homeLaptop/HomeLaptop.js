@@ -54,16 +54,16 @@ export default function HomeLaptop() {
   }
 
   return (
-    <div className="homeSection1">
-      <div className="whatWeOffer">
-        <h1 id="homeOfferH1">What we offer</h1>
-        <p id="homeOfferP">
+    <div className="home-section-1">
+      <div className="what-we-offer">
+        <h1 id="home_offer_h1">What we offer</h1>
+        <p id="home_offer_p">
           The Creative Problem Solving programme is series of digital creation
           projects aimed to encourage self-motivation and student agency,
           designed by New Zealand’s leading IT industry experts and schools.
         </p>
-        <h3 id="homeOfferH3">What will students create?</h3>
-        <div className="homeOfferImgs">
+        <h3 id="home_offer_h3">What will students create?</h3>
+        <div className="home-offer-imgs">
           <img
             src={Animation}
             alt="AnimationImg"

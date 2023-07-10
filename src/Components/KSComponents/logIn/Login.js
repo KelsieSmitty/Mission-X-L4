@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Modal } from "@mui/material";
+import axios from "axios";
 import "./logIn.css";
 import ModalCloseBtn from "../../../images/src-assets/LoginSignup/esc.png";
 import Teacher from "../../../images/src-assets/LoginSignup/teachers.png";
 import Students from "../../../images/src-assets/LoginSignup/students.png";
-import axios from "axios";
 
 export const Login = ({ open, handleClose }) => {
   const [studentName, setStudentName] = useState("");
@@ -150,7 +150,6 @@ export const Login = ({ open, handleClose }) => {
         if (teacherPassword !== teacherConfirmPassword) {
           setSignupTeacherResult(
             <span className="passwords-failed">
-              {" "}
               Passwords do not match, please try again.
             </span>
           );

@@ -1,4 +1,5 @@
-.logoMain {
+/* Main logo: */
+.logo-main {
   top: 0.3rem;
   left: 15rem;
   width: 11rem;
@@ -10,7 +11,7 @@
 }
 
 /* Home/features/teachers area: */
-.navMenu {
+.nav-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,7 +21,18 @@
   }
 }
 
-.navLang {
+/* Right side of NavBar: */
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.nav-lang {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,7 +47,7 @@
   }
 }
 
-.navLang img {
+.nav-lang img {
   padding-left: 0.6rem;
   cursor: pointer;
   top: 0.5rem;
@@ -43,25 +55,15 @@
   height: 0.75rem;
 }
 
-.navRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
-.navAvatar {
+.nav-avatar {
   padding-right: 0.6rem;
   height: 1.5rem;
   width: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.dropdownContainer {
+/* Dropdown Menu for under 768px: */
+.dropdown-container {
   display: none;
 
   @media screen and (max-width: 768px) {
