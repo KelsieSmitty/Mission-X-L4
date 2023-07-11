@@ -9,7 +9,10 @@ import images3 from '../../../images/StudentDashboard/callTeacher.png';
 import images4 from '../../../images/StudentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
   const alert6 = () => {
+    setIsClicked(true);
     alert('Teacher help is on the way');
   };
   //translating a page using json file please see DataSubmit.Project.json file
@@ -78,7 +81,7 @@ const SubmitProject = () => {
                 />
               </div>
 
-              <p>Call Teacher</p>
+              <p>{content.Description6}</p>
             </button>
             <br></br>
             <br></br>
