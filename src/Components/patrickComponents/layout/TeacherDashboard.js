@@ -94,7 +94,11 @@ const TeacherDashboard = () => {
               {/* {<img src={imageUrl} />} */}
               {showData.map((data) => (
                 <div>
-                  <img src={data.submission} alt="data" />
+                  <img
+                    src={data.submission}
+                    alt="data"
+                    className={styles['UploadedPictureTDSH']}
+                  />
                 </div>
               ))}
 

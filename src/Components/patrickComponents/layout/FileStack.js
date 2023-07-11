@@ -6,35 +6,47 @@ import SendPhotoSD from '../../../images/StudentDashboard/sendPhoto.png';
 const FileStack = () => {
   const [isPickerOverlayVisible, setIsPickerOverlayVisible] = useState(false);
   const [imageUrl, setImageUrl] = useState();
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleVisible = () => {
     setIsPickerOverlayVisible(!isPickerOverlayVisible);
   };
   useEffect(() => {
-    const myHeaders = new Headers();
-    myHeaders.append('Content-Type', 'application/json');
-    const requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: JSON.stringify({ imageUrl }),
-      redirect: 'follow',
-    };
-    fetch(
-      'http://localhost:4000/studentdashboard/submitproject',
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => console.log(result))
-      .catch((error) => console.log('error', error));
+    if (imageUrl) {
+      const myHeaders = new Headers();
+      myHeaders.append('Content-Type', 'application/json');
+      const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: JSON.stringify({ imageUrl }),
+        redirect: 'follow',
+      };
+      fetch(
+        'http://localhost:4000/studentdashboard/submitproject',
+        requestOptions
+      )
+        .then((response) => response.text())
+        .then((result) => {
+          console.log(result);
+          setIsSubmitted(true);
+        })
+        .catch((error) => console.log('error', error));
+    }
   }, [imageUrl]);
 
   return (
     <div>
-      <button onClick={handleVisible} className={styles['SendPhotoButton']}>
+      <button
+        onClick={handleVisible}
+        className={`${styles.SendPhotoButton} ${
+          isSubmitted ? styles.blackButton : ''
+        }`}
+        disabled={isSubmitted}
+      >
         <div>
           <img
             src={SendPhotoSD}
-            className={styles['SendPhotoPic']}
+            className={styles.SendPhotoPic}
             alt="Send PhotoSD"
           ></img>
         </div>

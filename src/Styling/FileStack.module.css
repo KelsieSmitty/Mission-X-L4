@@ -11,7 +11,10 @@
   
     
 }
-
+.blackButton{
+  color: white;
+  background-color: #1f09138e
+}
 .SendPhotoPic{
   margin-top: 22px;
   margin-left: 22px; 
