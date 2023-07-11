@@ -114,6 +114,7 @@ export const Login = ({ open, handleClose }) => {
   // Handles Teacher Login form upon submission, including success/failure validation & message and navigate upon login.
   const handleTeacherLogin = (e) => {
     e.preventDefault();
+
     axios
       .post("http://localhost:4000/api/loginTeacher", {
         email: teacherEmail,
@@ -136,6 +137,15 @@ export const Login = ({ open, handleClose }) => {
   // Handles Teacher Signup form upon submission, including success/failure validation & message and navigate upon login.
   const handleTeacherSignup = (e) => {
     e.preventDefault();
+
+    if (teacherPassword !== teacherConfirmPassword) {
+      setSignupTeacherResult(
+        <span className="passwords-failed">
+          Passwords do not match, please try again.
+        </span>
+      );
+      return;
+    }
     axios
       .post("http://localhost:4000/api/signupTeacher", {
         teacher_name: teacherName,
@@ -155,14 +165,6 @@ export const Login = ({ open, handleClose }) => {
           </span>
         );
         console.log(error);
-        if (teacherPassword !== teacherConfirmPassword) {
-          setSignupTeacherResult(
-            <span className="passwords-failed">
-              Passwords do not match, please try again.
-            </span>
-          );
-          return;
-        }
       });
   };
 
