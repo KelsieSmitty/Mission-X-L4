@@ -79,7 +79,7 @@
   }
 }
 
-.dropdownContainer.active {
+.dropdown-container.active {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -95,11 +95,11 @@
   width: 100%;
 }
 
-.dropdownItem {
+.dropdown-item {
   padding: 0.25rem;
 }
 
-.dropdownItem a {
+.dropdown-item a {
   color: #fff;
   font-size: 1rem;
   text-decoration: underline;
