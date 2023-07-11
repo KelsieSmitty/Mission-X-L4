@@ -1,3 +1,4 @@
+// Imports:
 import HomeHero from "../../images/src-assets/Home/hero.png";
 import "./homeContent.css";
 import Group1 from "../../images/src-assets/Home/Group 1.png";
@@ -10,15 +11,17 @@ import HomeLaptop from "./homeLaptop/HomeLaptop.js";
 import { Login } from "./logIn/Login";
 import { useState } from "react";
 
+// Content for home page:
 export const HomeContent = () => {
-  const [openLogin, setOpenLogin] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false); // Default state variable for login modal as not open
 
   const handleOpenLogin = () => {
-    setOpenLogin(true);
+    setOpenLogin(true); // update state variable to true to open the modal when handled
   };
 
   return (
     <div className="home">
+      {/* // Banner Section: */}
       <div
         className="home-banner"
         style={{
@@ -35,6 +38,7 @@ export const HomeContent = () => {
         </h6>
         <div className="home-banner-btns">
           <button id="home_learn_btn">LEARN MORE</button>
+          {/* // Signup button with Login modal to open upon click: */}
           <button id="home_sign_btn" onClick={handleOpenLogin}>
             SIGN UP
           </button>
@@ -43,9 +47,12 @@ export const HomeContent = () => {
         <p id="home_banner_p">
           *Basic subscription includes the first 15 projects free of charge.
         </p>
-      </div>{" "}
+      </div>
+      {/* // Laptop Section: */}
       <div className="home-body">
         <HomeLaptop />
+
+        {/* // Teaching Section: */}
         <h2 id="home_teaching_h2">
           Teaching kids programming and digital skills is MORE than just writing
           code.
@@ -56,7 +63,10 @@ export const HomeContent = () => {
           <img src={Group3} alt="Group3Img" />
           <img src={Group4} alt="Group4Img" />
         </div>
+        {/* // HomeHelp Section: */}
         <HomeHelp />
+
+        {/* // What are you waiting for? Section: */}
         <div className="home-waiting">
           <img src={Classroom} alt="Classroom" id="home_waiting_img" />
           <div className="home-waiting-text">
@@ -70,6 +80,7 @@ export const HomeContent = () => {
             </p>
             <div className="home-waiting-btns">
               <button id="home_enquire_btn">ENQUIRE NOW</button>
+              {/* // Signup button with Login modal to open upon click: */}
               <button
                 id="home_sign_btn2"
                 onClick={() => handleOpenLogin("signup")}

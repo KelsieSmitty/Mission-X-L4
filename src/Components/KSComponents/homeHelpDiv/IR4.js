@@ -12,6 +12,7 @@ export default function IR4() {
         </div>
       </div>
       <div className="home-help-flex-2">
+        {/* // Star logo icons */}
         <div className="home-icons">
           <img id="home-icon-1" src={HomeIcon} />
           <img id="home-icon-2" src={HomeIcon} />

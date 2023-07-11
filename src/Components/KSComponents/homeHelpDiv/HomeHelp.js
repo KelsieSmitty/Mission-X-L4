@@ -1,3 +1,4 @@
+// Imports:
 import LearningPathways from "./LearningPathways";
 import DigitalTechnologies from "./DigitalTechnologies";
 import KeyCompetencies from "./KeyCompetencies";
@@ -5,12 +6,13 @@ import IR4 from "./IR4";
 import { useState } from "react";
 import "../../kSComponents/homeContent.css";
 
+// Home help section of home page:
 export default function HomeHelp() {
   const [displayedContent, setDisplayedContent] = useState({
-    component: <KeyCompetencies />,
+    component: <KeyCompetencies />, // default state showing on page is this section
     name: "key-competencies",
   });
-
+  //onclick function that changes the displayed content to update the show the different components
   function handleContentClick(event) {
     console.log(event.target.id);
     switch (event.target.id) {
@@ -45,11 +47,13 @@ export default function HomeHelp() {
   }
 
   return (
+    // How our programme helps text section:
     <div className="home-help-container">
       <h1 className="home-help-h1">
         How our programme helps teachers and schools
       </h1>
       <div className="home-btns">
+        {/* // Handle onclick for the corresponding blue square images to laptop image by using a dynamic class */}
         <div
           id="learning-pathways"
           className={`home-btn ${

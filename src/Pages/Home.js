@@ -5,8 +5,11 @@ import HomeFooter from "../components/kSComponents/HomeFooter";
 export default function Home() {
   return (
     <>
+      {/* //Top NavBar */}
       <NavBar />
+      {/* //Main Home Body Content*/}
       <HomeContent />
+      {/* //Bottom Home Footer*/}
       <HomeFooter />
     </>
   );

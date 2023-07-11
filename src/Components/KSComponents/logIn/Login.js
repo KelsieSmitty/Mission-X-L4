@@ -1,3 +1,4 @@
+// Imports:
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Modal } from "@mui/material";
@@ -7,6 +8,7 @@ import ModalCloseBtn from "../../../images/src-assets/LoginSignup/esc.png";
 import Teacher from "../../../images/src-assets/LoginSignup/teachers.png";
 import Students from "../../../images/src-assets/LoginSignup/students.png";
 
+// Variables for student/teacher form & database info:
 export const Login = ({ open, handleClose }) => {
   const [studentName, setStudentName] = useState("");
   const [studentEmail, setStudentEmail] = useState("");
@@ -20,9 +22,10 @@ export const Login = ({ open, handleClose }) => {
   const [signupTeacherResult, setSignupTeacherResult] = useState("");
   const [loginStudentResult, setLoginStudentResult] = useState("");
   const [loginTeacherResult, setLoginTeacherResult] = useState("");
-  const [studentFormType, setStudentFormType] = useState("signup");
+  const [studentFormType, setStudentFormType] = useState("signup"); // Set initial form to signup upon open
   const [teacherFormType, setTeacherFormType] = useState("signup");
 
+  // event handler functions to update the variables when form input fields are updated by teacher/students:
   const handleStudentEmailChange = (e) => {
     setStudentEmail(e.target.value);
   };
@@ -47,9 +50,12 @@ export const Login = ({ open, handleClose }) => {
     setTeacherConfirmPassword(e.target.value);
   };
 
+  // Navigation hook to send user to the right page upon login:
   const goTo = useNavigate();
+
+  // Handles Student Login form upon submission, including success/failure validation & message and navigate upon login.
   const handleStudentLogin = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent refresh default on submission to ensure execution of below validations etc
 
     axios
       .post("http://localhost:4000/api/loginStudent", {
@@ -71,8 +77,9 @@ export const Login = ({ open, handleClose }) => {
       });
   };
 
+  // Handles Student Signup form upon submission, including success/failure validation & message and navigate upon login.
   const handleStudentSignup = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent default refresh - allows execution of rest of the code including API signup
 
     if (studentPassword !== studentConfirmPassword) {
       setSignupStudentResult(
@@ -104,7 +111,7 @@ export const Login = ({ open, handleClose }) => {
         console.log(error);
       });
   };
-
+  // Handles Teacher Login form upon submission, including success/failure validation & message and navigate upon login.
   const handleTeacherLogin = (e) => {
     e.preventDefault();
     axios
@@ -126,6 +133,7 @@ export const Login = ({ open, handleClose }) => {
         console.log(error);
       });
   };
+  // Handles Teacher Signup form upon submission, including success/failure validation & message and navigate upon login.
   const handleTeacherSignup = (e) => {
     e.preventDefault();
     axios
@@ -158,10 +166,12 @@ export const Login = ({ open, handleClose }) => {
       });
   };
 
+  // Modal section:
   return (
+    // open/close params for modal
     <Modal open={open} onClose={handleClose}>
       <div className="signup-modal">
-        <img
+        <img // Close X img top right of modal
           src={ModalCloseBtn}
           id="login_close_btn"
           alt="Close Pop Up Symbol"
@@ -169,6 +179,7 @@ export const Login = ({ open, handleClose }) => {
         />
         <div className="signup-modal-content">
           <div className="student-teacher-split">
+            {/* // Student section: */}
             <div className="signup-students">
               <img
                 src={Students}
@@ -178,22 +189,25 @@ export const Login = ({ open, handleClose }) => {
               <h1 className="login-signup-header">Students</h1>
 
               <div className="login-signup-sub-headings">
+                {/* Buttons to toggle between forms: */}
                 <button
-                  className={`login-signup-btns ${
-                    studentFormType === "signup"
+                  className={`home-login-btns ${
+                    studentFormType === "login" && "active" // if formtype = login, add active class
                   }`}
-                  onClick={() => setStudentFormType("login")}
+                  onClick={() => setStudentFormType("login")} //on click change formtype to login
                 >
-                  {" "}
                   LOG IN
                 </button>
                 <button
-                  className={`login-signup-btns ${studentFormType === "login"}`}
-                  onClick={() => setStudentFormType("signup")}
+                  className={`home-signup-btns ${
+                    studentFormType === "signup" && "active" // if formtype = signup, add active class
+                  }`}
+                  onClick={() => setStudentFormType("signup")} //on click change formtype to signup
                 >
                   SIGN UP
                 </button>
               </div>
+              {/* // Login section: */}
               {studentFormType === "login" ? (
                 <div>
                   <form onSubmit={handleStudentLogin}>
@@ -223,6 +237,7 @@ export const Login = ({ open, handleClose }) => {
                 </div>
               ) : (
                 <div>
+                  {/* // Signup section: */}
                   <form onSubmit={handleStudentSignup}>
                     <div className="login-signup-input-container">
                       <input
@@ -268,28 +283,33 @@ export const Login = ({ open, handleClose }) => {
             </div>
           </div>
           <div className="signup-students">
+            {/* //Teachers section: */}
             <div className="signup-teachers">
               <img src={Teacher} className="login-signup-imgs" alt="Teacher" />
               <h1 className="login-signup-header">Teachers</h1>
 
               <div className="login-signup-sub-headings">
+                {/* Buttons to toggle between forms: */}
                 <button
-                  className={`login-signup-btns ${
-                    teacherFormType === "signup"
+                  className={`home-login-btns ${
+                    teacherFormType === "login" && "active" // if formtype = login, add active class
                   }`}
-                  onClick={() => setTeacherFormType("login")}
+                  onClick={() => setTeacherFormType("login")} // when clicked change form type to login
                 >
                   LOG IN
                 </button>
                 <button
-                  className={`login-signup-btns ${teacherFormType === "login"}`}
+                  className={`home-signup-btns ${
+                    teacherFormType === "signup" && "active" // if formtype = signup, add active class
+                  }`}
                   onClick={() => {
-                    setTeacherFormType("signup");
+                    setTeacherFormType("signup"); // when clicked change form type to signup
                   }}
                 >
                   SIGN UP
                 </button>
               </div>
+              {/* // Login section: */}
               {teacherFormType === "login" ? (
                 <div>
                   <form onSubmit={handleTeacherLogin}>
@@ -319,6 +339,7 @@ export const Login = ({ open, handleClose }) => {
                 </div>
               ) : (
                 <div>
+                  {/* // Signup section: */}
                   <form onSubmit={handleTeacherSignup}>
                     <div className="login-signup-input-container">
                       <input

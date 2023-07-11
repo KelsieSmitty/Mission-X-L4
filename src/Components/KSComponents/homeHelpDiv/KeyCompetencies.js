@@ -12,6 +12,7 @@ export default function KeyCompetencies() {
       </div>
       <div className="home-help-flex-2">
         <div className="home-icons">
+          {/* // Star logo icons */}
           <img id="home-icon-1" src={HomeIcon} />
           <img id="home-icon-2" src={HomeIcon} />
           <img id="home-icon-3" src={HomeIcon} />
