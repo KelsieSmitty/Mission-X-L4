@@ -37,6 +37,7 @@ const SubmitProject = () => {
             <img src={images} alt="Instructions" width={650} />
             <h2>{content.Description3}</h2>
             <select
+              className={styles['languageSelector']}
               value={language}
               onChange={(e) => {
                 setLanguage(e.target.value);

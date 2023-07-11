@@ -14,6 +14,10 @@ const TeacherDashboard = () => {
   const [language, setLanguage] = useState('english');
   const [content, setContent] = useState({});
 
+  //fetching data from database
+  const [showData, setShowData] = useState([]);
+  //const [imageUrl, setImageUrl] = useState('');
+
   useEffect(() => {
     if (language === 'english') {
       setContent(TranslatedLanguage2.english);
@@ -22,14 +26,24 @@ const TeacherDashboard = () => {
     }
   }, [language]);
 
+  //Warning it will be unable to fetch
+  useEffect(() => {
+    fetch(`http://localhost:4000/studentdashboard/submitproject`)
+      .then((response) => response.json())
+      .then((data) => {
+        setShowData(data);
+        console.log(data[0].submission);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   const handleCheckboxChange = () => {
     setChecked(!checked);
   };
 
   const handleMarkAsComplete = () => {
     if (checked) {
-      // Perform additional actions here
-      setChecked(false); // Reset the checkbox to unchecked state
+      setChecked(false);
     } else {
       alert('Please tick the checkbox before marking as complete.');
     }
@@ -75,7 +89,14 @@ const TeacherDashboard = () => {
                 width={90}
                 height={90}
               ></img>
+
               {content.Description}
+              {/* {<img src={imageUrl} />} */}
+              {showData.map((data) => (
+                <div>
+                  <img src={data.submission} alt="data" />
+                </div>
+              ))}
 
               <div id={styles['time3']}>
                 <div>{content.Description2}</div>

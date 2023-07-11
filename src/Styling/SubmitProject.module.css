@@ -18,7 +18,10 @@
     font-family: sans-serif ;
     
   }
-
+  .languageSelector{
+    border: none;
+    font-size: 25px;
+  }
   .callTeacherContainer{
     font-size: 35px;
     background-color: #F91C85;
