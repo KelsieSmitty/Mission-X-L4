@@ -3,27 +3,28 @@ import Footer from "../components/componentsLuis/Footer.jsx";
 import "../styling/SPV.css";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export default function StudentProfileViewer() {
   const [student, setStudent] = useState("");
+  const  { id } = useParams();
 
   useEffect(() => {
     fetchStudent();
-  }, []);
+  }, [] );
 
-  //Function to fetch student data by making an http request to the end point
   const fetchStudent = () => {
-    fetch("http://localhost:4000/api/student_teacher/2")
+    fetch(`http://localhost:4000/api/student_teacher/${id}`)
       .then((response) => response.json())
       .then((data) => {
-        setStudent(data[0]); //state update with the fetched student data
+        setStudent(data[0]);
       })
       .catch((error) => {
         console.log(error);
       });
   };
-
-  // Function to format the date as "dd MMM yyyy"
+  
+  // Function to format fetched date as "dd MMM yyyy"
   function formatDate(date) {
     const options = { day: "2-digit", month: "short", year: "numeric" };
     return new Date(date).toLocaleDateString("en-NZ", options);
@@ -32,8 +33,10 @@ export default function StudentProfileViewer() {
   // Convert the backend date to the desired format
   const formattedDate = formatDate(student.date_of_birth);
 
-  console.log(student.name);
-  console.log(student.teacher_name);
+  // console.log(student.name);
+  // console.log(student.teacher_name);
+  // console.log(student.profile_pic);
+  // console.log(imagePath);
   return (
     <>
       <header className="navbar">
@@ -44,7 +47,7 @@ export default function StudentProfileViewer() {
         <div className="profile-Pic-Container">
           <img
             id="Profile-Pic"
-            src={student.profile_pic}
+            src={process.env.PUBLIC_URL + "/" + student.profile_pic} // renders studend profile picture on page
             alt="Student Profile Pic"
           />
           <div id="Profile-Buttons-Container">
@@ -53,8 +56,8 @@ export default function StudentProfileViewer() {
           </div>
         </div>
 
-        <div className="student-Info-Container">
-          <h1>{student.name}</h1>
+        <div className="student-Info-Container"> 
+          <h1>{student.name}</h1> 
 
           <div className="Displayed-info">
             <ul className="static-info">
@@ -78,7 +81,7 @@ export default function StudentProfileViewer() {
         </div>
 
         <div id="button">
-          <Link to="/student-project">
+          <Link to="/student-project-library">
             <button id="back-To-Projects"> BACK TO PROJECTS</button>
           </Link>
         </div>

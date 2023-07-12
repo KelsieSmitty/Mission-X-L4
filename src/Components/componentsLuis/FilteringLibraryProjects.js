@@ -68,7 +68,7 @@ export default function FilteringLibraryProjects( ) {
       type: "Project",
       name: "Debugging",
       image: <img src={Project06} alt="Debugging" />,
-      category: "Animation",
+      category: "Augmented Reality",
       level: "Advanced",
       subscription: "Premium",
     },
@@ -191,14 +191,15 @@ export default function FilteringLibraryProjects( ) {
    
     return (
       <>
-      
         <div className="button-container">
           <div className="buttons left">
             <button
               id="beginner"
               onClick={() => handleSelection("Beginner")}
               style={{
-                backgroundColor: valueSelected === "Beginner" ? "orange" : "",
+                backgroundColor:
+                  valueSelected === "Beginner" ? "rgb(15, 150, 241)" : "",
+                color: valueSelected === "Beginner" ? "white" : "",
               }}
             >
               BEGINNER
@@ -209,7 +210,8 @@ export default function FilteringLibraryProjects( ) {
               onClick={() => handleSelection("Intermediate")}
               style={{
                 backgroundColor:
-                  valueSelected === "Intermediate" ? "orange" : "",
+                  valueSelected === "Intermediate" ? "rgb(15, 150, 241)" : "",
+                color: valueSelected === "Intermediate" ? "white" : "",
               }}
             >
               INTERMEDIATE
@@ -219,7 +221,9 @@ export default function FilteringLibraryProjects( ) {
               id="advanced"
               onClick={() => handleSelection("Advanced")}
               style={{
-                backgroundColor: valueSelected === "Advanced" ? "orange" : "",
+                backgroundColor:
+                  valueSelected === "Advanced" ? "rgb(15, 150, 241)" : "",
+                color: valueSelected === "Advanced" ? "white" : "",
               }}
             >
               ADVANCED
@@ -231,7 +235,9 @@ export default function FilteringLibraryProjects( ) {
               id="five"
               onClick={() => handleQuantity(5)}
               style={{
-                backgroundColor: quantityDisplayed === 5 ? "orange" : "",
+                backgroundColor:
+                  quantityDisplayed === 5 ? "rgb(15, 150, 241)" : "",
+                color: quantityDisplayed === 5 ? "white" : "",
               }}
             >
               5
@@ -240,7 +246,9 @@ export default function FilteringLibraryProjects( ) {
               id="ten"
               onClick={() => handleQuantity(10)}
               style={{
-                backgroundColor: quantityDisplayed === 10 ? "orange" : "",
+                backgroundColor:
+                  quantityDisplayed === 10 ? "rgb(15, 150, 241)" : "",
+                color: quantityDisplayed === 10 ? "white" : "",
               }}
             >
               10
@@ -249,7 +257,11 @@ export default function FilteringLibraryProjects( ) {
               id="all"
               onClick={() => handleQuantity(pictureData.length)}
               style={{
-                backgroundColor: quantityDisplayed === pictureData.length ? "orange" : "",
+                backgroundColor:
+                  quantityDisplayed === pictureData.length
+                    ? "rgb(15, 150, 241)"
+                    : "",
+                color: quantityDisplayed === pictureData.length ? "white" : "",
               }}
             >
               All

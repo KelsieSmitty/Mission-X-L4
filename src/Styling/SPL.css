@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nunito:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:800&display=swap");
 
 .main-SPL-container {
   display: flex;
@@ -26,6 +26,7 @@ label {
   font-size: 14px;
 }
 .projects-container {
+  margin-top: -1%;
   flex-basis: 65%;
   padding: 5%;
 }
@@ -36,9 +37,12 @@ label {
   font-weight: 900;
 }
 .projects-container p {
+  margin-top: -3%;
   color: #767676;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  margin-bottom: 5%;
+  
 }
 .button-container {
   display: flex;
@@ -58,11 +62,14 @@ label {
 }
 /*I styled each button individually*/
 #beginner {
-  background-color: #faf0e6;
+  font-size: 13px;
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 #beginner:hover {
   background-color: rgb(15, 150, 241);
@@ -70,11 +77,14 @@ label {
   cursor: pointer;
 }
 #intermediate {
-  background-color: #faf0e6;
+  font-size: 13px;
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 #intermediate:hover {
   background-color: rgb(15, 150, 241);
@@ -82,11 +92,15 @@ label {
   cursor: pointer;
 }
 #advanced {
-  background-color: #faf0e6;
+  
+  font-size: 13px;
+  background-color:rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 #advanced:hover {
   background-color: rgb(15, 150, 241);
@@ -94,11 +108,14 @@ label {
   cursor: pointer;
 }
 #five {
-  background-color: #faf0e6;
+  width: 15%;
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 #five:hover {
   background-color: rgb(15, 150, 241);
@@ -106,10 +123,13 @@ label {
   cursor: pointer;
 }
 #ten {
-  background-color: #faf0e6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  width: 15%;
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 #ten:hover {
@@ -118,11 +138,14 @@ label {
   cursor: pointer;
 }
 #all {
-  background-color: #faf0e6;
+  width: 15%;
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 #all:hover {
   background-color: rgb(15, 150, 241);
