@@ -1,17 +1,16 @@
-import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
-import styles from '../../../Styling/SubmitProject.module.css';
-import UploaderButton from './UploaderButton';
+import MainDashboard from '../../../pages/MainDashboard';
+import styles from '../../../styling/SubmitProject.module.css';
+import FileStack from './FileStack';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
-import images from '../../../Images/StudentDashboard/makeProject-screenshot.png';
-import images2 from '../../../Images/StudentDashboard/TeacherPhoto.png';
-import images3 from '../../../Images/StudentDashboard/callTeacher.png';
-import images4 from '../../../Images/StudentDashboard/sendPhoto.png';
+import images from '../../../images/StudentDashboard/makeProject-screenshot.png';
+import images2 from '../../../images/StudentDashboard/TeacherPhoto.png';
+import images3 from '../../../images/StudentDashboard/callTeacher.png';
+import images4 from '../../../images/StudentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
   const alert6 = () => {
-    return alert(' Teacher help is on the way');
+    alert('Teacher help is on the way');
   };
   //translating a page using json file please see DataSubmit.Project.json file
 
@@ -38,6 +37,7 @@ const SubmitProject = () => {
             <img src={images} alt="Instructions" width={650} />
             <h2>{content.Description3}</h2>
             <select
+              className={styles['languageSelector']}
               value={language}
               onChange={(e) => {
                 setLanguage(e.target.value);
@@ -54,9 +54,9 @@ const SubmitProject = () => {
 
             <br></br>
 
-            <UploaderButton>
+            <FileStack>
               <img src={images4} alt="Instructions" width={200} height={200} />
-            </UploaderButton>
+            </FileStack>
           </div>
           <div className={styles['flex-item-right']}>
             <img src={images2} alt="Instructions" width={625} height={350} />
@@ -65,13 +65,25 @@ const SubmitProject = () => {
             <p>{content.Description2}</p>
             <br></br>
             <br></br>
-            <img
-              src={images3}
-              alt="Instructions"
-              width={200}
-              height={200}
-              onClick={alert6}
-            />
+
+            <button className={styles['callTeacherContainer']}>
+              <div>
+                <img
+                  src={images3}
+                  alt="Instructions"
+                  width={200}
+                  height={180}
+                  onClick={alert6}
+                  className={styles['callTeacherContainerPic']}
+                />
+              </div>
+
+              <p>{content.Description6}</p>
+            </button>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </section>

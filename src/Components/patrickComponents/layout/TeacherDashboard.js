@@ -1,17 +1,22 @@
 import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
-import styles from '../../../Styling/TeacherDashboard.module.css';
-import images from '../../../Images/StudentDashboard/VideoTutorial.png';
+import MainDashboard from '../../../pages/MainDashboard';
+import styles from '../../../styling/TeacherDashboard.module.css';
+import images from '../../../images/StudentDashboard/VideoTutorial.png';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/TeacherDashboardData.json';
-import AidenAndrewsTDS from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
-import RawiriFletcherTDS from '../../../Images/StudentDashboard/students (1)/students/RawiriFletcher.png';
-import NeevahMachenryTDS from '../../../Images/StudentDashboard/students (1)/students/NeveahMachenry.png';
+import AidenAndrewsTDS from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
+import RawiriFletcherTDS from '../../../images/StudentDashboard/students (1)/students/RawiriFletcher.png';
+import NeevahMachenryTDS from '../../../images/StudentDashboard/students (1)/students/NeveahMachenry.png';
+
 const TeacherDashboard = () => {
   const [checked, setChecked] = useState(false);
   // declaring variable for translation
   const [language, setLanguage] = useState('english');
   const [content, setContent] = useState({});
+
+  //fetching data from database
+  const [showData, setShowData] = useState([]);
+  //const [imageUrl, setImageUrl] = useState('');
 
   useEffect(() => {
     if (language === 'english') {
@@ -21,14 +26,24 @@ const TeacherDashboard = () => {
     }
   }, [language]);
 
+  //Warning it will be unable to fetch
+  useEffect(() => {
+    fetch(`http://localhost:4000/studentdashboard/submitproject`)
+      .then((response) => response.json())
+      .then((data) => {
+        setShowData(data);
+        console.log(data[0].submission);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   const handleCheckboxChange = () => {
     setChecked(!checked);
   };
 
   const handleMarkAsComplete = () => {
     if (checked) {
-      // Perform additional actions here
-      setChecked(false); // Reset the checkbox to unchecked state
+      setChecked(false);
     } else {
       alert('Please tick the checkbox before marking as complete.');
     }
@@ -67,13 +82,26 @@ const TeacherDashboard = () => {
                 checked={checked}
                 onChange={handleCheckboxChange}
               />
+
               <img
                 src={AidenAndrewsTDS}
                 alt="Instructions"
                 width={90}
                 height={90}
               ></img>
+
               {content.Description}
+              {/* {<img src={imageUrl} />} */}
+              {showData.map((data) => (
+                <div>
+                  <img
+                    src={data.submission}
+                    alt="data"
+                    className={styles['UploadedPictureTDSH']}
+                  />
+                </div>
+              ))}
+
               <div id={styles['time3']}>
                 <div>{content.Description2}</div>
                 <div>10:53 AM</div>

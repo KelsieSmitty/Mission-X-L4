@@ -1,27 +1,36 @@
 import React, { useState } from 'react';
-import styles from '../../../Styling/StudentDashboardSidebar.module.css';
-import SidebarIcons from '../../../Styling/SidebarIcons.module.css';
+import styles from '../../../styling/StudentDashboardSidebar.module.css';
+import SidebarIcons from '../../../styling/SidebarIcons.module.css';
 import { NavLink } from 'react-router-dom';
-import LearningObjectivesicon from '../../../Images/StudentDashboard/learningObjectives.png';
-import Instructionsicon from '../../../Images/StudentDashboard/instructions.png';
-import Videoicon from '../../../Images/StudentDashboard/video.png';
-import MakeProjecticon from '../../../Images/StudentDashboard/makeProjectSelected.png';
-import SubmitProjecticon from '../../../Images/StudentDashboard/submitProject.png';
-import takethequizicon from '../../../Images/StudentDashboard/takeTheQuiz.png';
-import projectsubmission from '../../../Images/StudentDashboard/projectSubmissions.png';
-import AidenAndrewSD from '../../../Images/StudentDashboard/students (1)/students/AidenAndrews.png';
-import RightArrowSD from '../../../Images/StudentDashboard/right-arrowSD.png';
+import LearningObjectivesicon from '../../../images/StudentDashboard/learningObjectives.png';
+import Instructionsicon from '../../../images/StudentDashboard/instructions.png';
+import Videoicon from '../../../images/StudentDashboard/video.png';
+import MakeProjecticon from '../../../images/StudentDashboard/makeProjectSelected.png';
+import SubmitProjecticon from '../../../images/StudentDashboard/submitProject.png';
+import takethequizicon from '../../../images/StudentDashboard/takeTheQuiz.png';
+import projectsubmission from '../../../images/StudentDashboard/projectSubmissions.png';
+import AidenAndrewSD from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
+import RightArrowSD from '../../../images/StudentDashboard/right-arrowSD.png';
+import logoutSD from '../../../images/StudentDashboard/logoutSD.png';
+import profileSD from '../../../images/StudentDashboard/profileSD.png';
+import settingsSD from '../../../images/StudentDashboard/settingsSD.png';
+import StudentAdvertisement from '../../../images/StudentDashboard/ADVERTISEMENTSD.png';
+
 const StudentDashboard = () => {
   const [inActive, setInActive] = useState(false);
-
+  const [expandedAndrewSD, setExpandedAndrewSD] = useState(false);
+  const [RightArrowclickSD, setRightArrowclickSD] = useState(false);
+  const [sidebarImagesSpace, setSidebarImagesSpace] = useState(false);
+  const [showAdvertisement, setShowAdvertisement] = useState(false);
   // use to control the sidebar menu
 
   const toggleSidebar = () => {
     setInActive(!inActive);
+    setExpandedAndrewSD(!expandedAndrewSD);
+    setRightArrowclickSD(!RightArrowclickSD);
+    setSidebarImagesSpace(!sidebarImagesSpace);
+    setShowAdvertisement(!showAdvertisement);
   };
-  console.log(inActive);
-  // this is for color background change
-  //arrow that open and close
 
   const sidebarMenu = [
     {
@@ -72,11 +81,21 @@ const StudentDashboard = () => {
         }          `}
       >
         <br></br>
-        <img src={AidenAndrewSD} className={styles['AidenAndrewsSD']} />
+        <img
+          src={AidenAndrewSD}
+          alt="AidenAndrewsPicSD"
+          className={`${styles['AidenAndrewsSD']} ${
+            expandedAndrewSD ? styles.middlePositionAndrewSD : ''
+          }`}
+        />
         <div>
           {sidebarMenu.map((item, index) => (
             <NavLink to={item.path} key={index}>
-              <div className={SidebarIcons['SidebarWords']}>
+              <div
+                className={`${SidebarIcons['SidebarWords']} ${
+                  inActive ? SidebarIcons.active : ''
+                }`}
+              >
                 <img
                   src={item.img}
                   alt={item.img}
@@ -101,10 +120,56 @@ const StudentDashboard = () => {
             <img
               src={RightArrowSD}
               alt="makeproject"
-              className={styles['RightArrowSD']}
+              className={`${styles['RightArrowSD']} ${
+                RightArrowclickSD ? styles.RightArrowmiddlePositionSD : ''
+              }`}
             />
           </button>
         </div>
+        <img
+          src={StudentAdvertisement}
+          alt="profileSD"
+          className={`${styles.StudentAdvertisement} ${
+            RightArrowclickSD ? styles.StudentAdvertisementinActive : ''
+          }`}
+        />
+
+        <img
+          src={profileSD}
+          alt="profileSD"
+          className={`${styles.profileSD} ${
+            RightArrowclickSD && sidebarImagesSpace
+              ? styles.profileSDActive
+              : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.ProfileStatement}>Profile</p>
+        )}
+
+        <img
+          src={settingsSD}
+          alt="settingsSD"
+          className={`${styles.settingsSD} ${
+            RightArrowclickSD && sidebarImagesSpace
+              ? styles.settingsSDActive
+              : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.SettingStatement}>Settings</p>
+        )}
+        <br></br>
+        <img
+          src={logoutSD}
+          alt="logoutSD"
+          className={`${styles.logoutSD} ${
+            RightArrowclickSD && sidebarImagesSpace ? styles.logoutSDActive : ''
+          }`}
+        />
+        {RightArrowclickSD && sidebarImagesSpace && (
+          <p className={styles.LogoutStatement}>Logout</p>
+        )}
       </div>
     </>
   );
