@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../../styling/Navbar2.module.css';
-import images from '../../../images/StudentDashboard/NavBar/LevelUpWorks-white.png';
+// import images from '../../../images/StudentDashboard/NavBar/LevelUpWorks-white.png';
 import { useState } from 'react';
 import MaoriFlagSD from '../../../images/src-assets/StudentDashboard/MaoriFlagSD.png';
 import NZFlagSD from '../../../images/src-assets/StudentDashboard/NZFlagSD.png';
@@ -19,13 +19,13 @@ const Navbar2 = () => {
     <div className={styles['nav']}>
       <div className={styles['nav-header']}>
         <div className={styles['nav-title']}>
-          <img
+          {/* <img
             src={images}
             alt="Instructions"
             width={120}
             height={40}
             className={styles['nav-title']}
-          ></img>
+          ></img> */}
           Project Introduction
           <span className={activeDot === 1 ? styles['dot-1'] : styles['dot']}>
             1

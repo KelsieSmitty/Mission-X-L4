@@ -3,10 +3,10 @@ import styles from '../../../styling/SubmitProject.module.css';
 import FileStack from './FileStack';
 import { useEffect, useState } from 'react';
 import TranslatedLanguage from './DataSubmitProject.json';
-import images from '../../../images/StudentDashboard/makeProject-screenshot.png';
-import images2 from '../../../images/StudentDashboard/TeacherPhoto.png';
-import images3 from '../../../images/StudentDashboard/callTeacher.png';
-import images4 from '../../../images/StudentDashboard/sendPhoto.png';
+import images from '../../../images/studentDashboard/makeProject-screenshot.png';
+import images2 from '../../../images/studentDashboard/TeacherPhoto.png';
+import images3 from '../../../images/studentDashboard/callTeacher.png';
+import images4 from '../../../images/studentDashboard/sendPhoto.png';
 
 const SubmitProject = () => {
   const alert6 = () => {

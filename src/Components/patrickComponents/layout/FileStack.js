@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PickerOverlay } from 'filestack-react-18';
 import styles from '../../../styling/FileStack.module.css';
-import SendPhotoSD from '../../../images/StudentDashboard/sendPhoto.png';
+import SendPhotoSD from '../../../images/studentDashboard/sendPhoto.png';
 
 const FileStack = () => {
   const [isPickerOverlayVisible, setIsPickerOverlayVisible] = useState(false);

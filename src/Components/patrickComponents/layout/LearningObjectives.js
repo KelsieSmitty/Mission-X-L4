@@ -1,6 +1,6 @@
 import React from 'react';
 import MainDashboard from '../../../pages/MainDashboard';
-import images from '../../../images/StudentDashboard/learning objectives.png';
+import images from '../../../images/studentDashboard/learning objectives.png';
 import styles from '../../../styling/LearningObjectives.module.css';
 console.log(images);
 

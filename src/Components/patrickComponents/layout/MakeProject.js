@@ -1,6 +1,6 @@
 import React from 'react';
 import MainDashboard from '../../../pages/MainDashboard';
-import images from '../../../images/StudentDashboard/makeProject.png';
+import images from '../../../images/studentDashboard/makeProject.png';
 import styles from '../../../styling/MakeProject.module.css';
 const MakeProject = () => {
   return (

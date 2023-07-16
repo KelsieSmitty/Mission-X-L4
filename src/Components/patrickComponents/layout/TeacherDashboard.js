@@ -1,12 +1,12 @@
 import React from 'react';
 import MainDashboard from '../../../pages/MainDashboard';
 import styles from '../../../styling/TeacherDashboard.module.css';
-import images from '../../../images/StudentDashboard/VideoTutorial.png';
+import images from '../../../images/studentDashboard/VideoTutorial.png';
 import { useEffect, useState } from 'react';
-import TranslatedLanguage2 from '../../../Components/patrickComponents/layout/TeacherDashboardData.json';
-import AidenAndrewsTDS from '../../../images/StudentDashboard/students (1)/students/AidenAndrews.png';
-import RawiriFletcherTDS from '../../../images/StudentDashboard/students (1)/students/RawiriFletcher.png';
-import NeevahMachenryTDS from '../../../images/StudentDashboard/students (1)/students/NeveahMachenry.png';
+import TranslatedLanguage2 from '../../../components/patrickComponents/layout/TeacherDashboardData.json';
+import AidenAndrewsTDS from '../../../images/studentDashboard/students (1)/students/AidenAndrews.png';
+import RawiriFletcherTDS from '../../../images/studentDashboard/students (1)/students/RawiriFletcher.png';
+import NeevahMachenryTDS from '../../../images/studentDashboard/students (1)/students/NeveahMachenry.png';
 
 const TeacherDashboard = () => {
   const [checked, setChecked] = useState(false);
