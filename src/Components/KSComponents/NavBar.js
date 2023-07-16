@@ -12,12 +12,22 @@ import {
   NavLink,
   //Bars,
   NavLogin,
+<<<<<<< HEAD
 } from './NavBarElements';
 import './navBar.css';
 import Logo from '../../images/src-assets/NavBar/LevelUpWorks-white.png';
 import Avatar from '../../images/src-assets/NavBar/Avatar-white.png';
 import NZFlag from '../../images/src-assets/NavBar/NZFlag.png';
 import MāoriFlag from '../../images/src-assets/NavBar/MaoriFlag.png';
+=======
+} from "./NavBarElements";
+import "./navBar.css";
+import Logo from "../../images/src-assets/NavBar/LevelUpWorks-white.png";
+import Avatar from "../../images/src-assets/NavBar/Avatar-white.png";
+import NZFlag from "../../images/src-assets/NavBar/NZFlag.png";
+import MāoriFlag from "../../images/src-assets/NavBar/MaoriFlag.png";
+import { FaDrawPolygon } from "react-icons/fa";
+>>>>>>> LuisR
 
 const NavBar = () => {
   return (

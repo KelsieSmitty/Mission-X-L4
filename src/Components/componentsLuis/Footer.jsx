@@ -1,10 +1,10 @@
-// import "./footer.css";
+import "../../styling/FooterStyle.css";
 
 function Footer() {
   return (
     //creates a large container for all the elements in footer
     <div className="footer-container">
-      {/* each element in footer belongs to footer-element class */}
+{/* each element in footer belongs to footer-element class */}
 
       <div className="footer-element">
         <h3>COMPANY</h3>

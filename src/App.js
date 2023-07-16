@@ -1,6 +1,10 @@
+import StudentProjectLibrary from "./pages/StudentProjectLibrary";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import StudentProfileViewer from "./pages/StudentProfileViewer";
 import './App.css';
 import MainDashboard from './pages/MainDashboard';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import LearningObjectives from './Components/patrickComponents/layout/LearningObjectives';
 import VideoTutorial from './Components/patrickComponents/layout/VideoTutorial';
 import Instructions from './Components/patrickComponents/layout/Instructions';
@@ -10,10 +14,10 @@ import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
 import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
 import './styling/Footer.css';
 import './styling/SPL.css';
-import StudentProjectLibrary from "./pages/StudentProjectLibrary";
-import Home from "./pages/Home";
 
-import StudentProfileViewer from "./pages/StudentProfileViewer";
+
+
+
 
 
 function App() {
