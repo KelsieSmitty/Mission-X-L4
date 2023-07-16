@@ -10,8 +10,11 @@ import TaketheQuiz from './Components/patrickComponents/layout/TaketheQuiz';
 import TeacherDashboard from './Components/patrickComponents/layout/TeacherDashboard';
 import './styling/Footer.css';
 import './styling/SPL.css';
+import StudentProjectLibrary from "./pages/StudentProjectLibrary";
+import Home from "./pages/Home";
 
-import Home from './pages/Home';
+import StudentProfileViewer from "./pages/StudentProfileViewer";
+
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+           <Route path="/student-project-library" element={<StudentProjectLibrary />} />
+          <Route path="/student-profile-viewer/:id" element={<StudentProfileViewer />} />
           <Route path="/studentdashboard" element={<MainDashboard />}></Route>
           <Route
             path="/studentdashboard/learningobjectives"
@@ -54,4 +59,4 @@ function App() {
   );
 }
 
-export default App;
+
