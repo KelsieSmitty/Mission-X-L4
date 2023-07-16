@@ -1,7 +1,7 @@
 import React from 'react';
-import MainDashboard from '../../../Pages/MainDashboard';
-import images from '../../../Images/StudentDashboard/VideoTutorial.png';
-import styles from '../../../Styling/Videotutorial.module.css';
+import MainDashboard from '../../../pages/MainDashboard';
+import images from '../../../images/StudentDashboard/VideoTutorial.png';
+import styles from '../../../styling/Videotutorial.module.css';
 
 console.log(images);
 function VideoTutorial() {

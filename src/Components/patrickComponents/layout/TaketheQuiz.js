@@ -1,6 +1,6 @@
-import MainDashboard from '../../../Pages/MainDashboard';
+import MainDashboard from '../../../pages/MainDashboard';
 import React, { useState } from 'react';
-import styles from '../../../Styling/TaketheQuiz.module.css';
+import styles from '../../../styling/TaketheQuiz.module.css';
 
 const questions = [
   {
