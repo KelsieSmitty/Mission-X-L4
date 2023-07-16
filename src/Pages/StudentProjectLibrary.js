@@ -4,6 +4,7 @@ import ScrollUp from "../components/componentsLuis/ScrollUp";
 import Footer from "../components/componentsLuis/Footer";
 import FilteringLibraryProjects from "../components/componentsLuis/FilteringLibraryProjects";
 import CheckboxFilteringProjects from "../components/componentsLuis/CheckboxFilteringProjects";
+import TestBackendLibraryProjects from "../components/componentsLuis/TestBackendLibraryProjects";
 
 export default function StudentProyectLibrary() {
   return (
@@ -23,7 +24,8 @@ export default function StudentProyectLibrary() {
             Welcome to the library project.You can use the filters on the right
             to help you search for specific projects
           </p>
-          <FilteringLibraryProjects />
+          {/* <FilteringLibraryProjects /> */}
+          <TestBackendLibraryProjects/>
           <ScrollUp />
         </section>
       </div>

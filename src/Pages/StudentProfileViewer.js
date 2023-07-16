@@ -18,6 +18,7 @@ export default function StudentProfileViewer() {
       .then((response) => response.json())
       .then((data) => {
         setStudent(data[0]);
+        console.log(data);
       })
       .catch((error) => {
         console.log(error);

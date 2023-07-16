@@ -16,7 +16,7 @@ import Project13 from "../componentsLuis/projectsImages/Project13.png";
 import Project14 from "../componentsLuis/projectsImages/Project14.png";
 import Project15 from "../componentsLuis/projectsImages/Project15.png";
 
-export default function FilteringLibraryProjects( ) {
+export default function FilteringLibraryProjects() {
   const pictureData = [
     {
       id: 1,
@@ -157,9 +157,7 @@ export default function FilteringLibraryProjects( ) {
 
   const [displayedProjects, setDisplayedProjects] = useState(pictureData);
   const [valueSelected, setValueSelected] = useState("");
-  const [quantityDisplayed, setQuantityDisplayed] = useState(pictureData.length);
-
-  
+  const [quantityDisplayed, setQuantityDisplayed] = useState();
 
   const handleSelection = (value) => {
     setValueSelected(value);
@@ -182,105 +180,104 @@ export default function FilteringLibraryProjects( ) {
       setDisplayedProjects(valueSelected);
     }
   };
-    const handleQuantity = (total) => {
-      setQuantityDisplayed(total);
-    };
-
-   const filteredQuantity = displayedProjects.slice(0, quantityDisplayed);
-   console.log(filteredQuantity);
-   
-    return (
-      <>
-        <div className="button-container">
-          <div className="buttons left">
-            <button
-              id="beginner"
-              onClick={() => handleSelection("Beginner")}
-              style={{
-                backgroundColor:
-                  valueSelected === "Beginner" ? "rgb(15, 150, 241)" : "",
-                color: valueSelected === "Beginner" ? "white" : "",
-              }}
-            >
-              BEGINNER
-            </button>
-
-            <button
-              id="intermediate"
-              onClick={() => handleSelection("Intermediate")}
-              style={{
-                backgroundColor:
-                  valueSelected === "Intermediate" ? "rgb(15, 150, 241)" : "",
-                color: valueSelected === "Intermediate" ? "white" : "",
-              }}
-            >
-              INTERMEDIATE
-            </button>
-
-            <button
-              id="advanced"
-              onClick={() => handleSelection("Advanced")}
-              style={{
-                backgroundColor:
-                  valueSelected === "Advanced" ? "rgb(15, 150, 241)" : "",
-                color: valueSelected === "Advanced" ? "white" : "",
-              }}
-            >
-              ADVANCED
-            </button>
-          </div>
-          <div className="buttons right">
-            <h3>SHOW</h3>
-            <button
-              id="five"
-              onClick={() => handleQuantity(5)}
-              style={{
-                backgroundColor:
-                  quantityDisplayed === 5 ? "rgb(15, 150, 241)" : "",
-                color: quantityDisplayed === 5 ? "white" : "",
-              }}
-            >
-              5
-            </button>
-            <button
-              id="ten"
-              onClick={() => handleQuantity(10)}
-              style={{
-                backgroundColor:
-                  quantityDisplayed === 10 ? "rgb(15, 150, 241)" : "",
-                color: quantityDisplayed === 10 ? "white" : "",
-              }}
-            >
-              10
-            </button>
-            <button
-              id="all"
-              onClick={() => handleQuantity(pictureData.length)}
-              style={{
-                backgroundColor:
-                  quantityDisplayed === pictureData.length
-                    ? "rgb(15, 150, 241)"
-                    : "",
-                color: quantityDisplayed === pictureData.length ? "white" : "",
-              }}
-            >
-              All
-            </button>
-          </div>
-        </div>
-
-        <div className="image-container">
-          {filteredQuantity.map((project) => (
-            <div class="image" key={project.id}>
-              {project.image}
-              <h2>{project.name}</h2>
-              <p>
-                {project.level} | {project.category}
-              </p>
-            </div>
-          ))}
-        </div>
-      </>
-    );
- 
+  const handleQuantity = (total) => {
+    setQuantityDisplayed(total);
   };
+
+  const filteredQuantity = displayedProjects.slice(0, quantityDisplayed);
+  console.log(filteredQuantity);
+
+  return (
+    <>
+      <div className="button-container">
+        <div className="buttons left">
+          <button
+            id="beginner"
+            onClick={() => handleSelection("Beginner")}
+            style={{
+              backgroundColor:
+                valueSelected === "Beginner" ? "rgb(15, 150, 241)" : "",
+              color: valueSelected === "Beginner" ? "white" : "",
+            }}
+          >
+            BEGINNER
+          </button>
+
+          <button
+            id="intermediate"
+            onClick={() => handleSelection("Intermediate")}
+            style={{
+              backgroundColor:
+                valueSelected === "Intermediate" ? "rgb(15, 150, 241)" : "",
+              color: valueSelected === "Intermediate" ? "white" : "",
+            }}
+          >
+            INTERMEDIATE
+          </button>
+
+          <button
+            id="advanced"
+            onClick={() => handleSelection("Advanced")}
+            style={{
+              backgroundColor:
+                valueSelected === "Advanced" ? "rgb(15, 150, 241)" : "",
+              color: valueSelected === "Advanced" ? "white" : "",
+            }}
+          >
+            ADVANCED
+          </button>
+        </div>
+        <div className="buttons right">
+          <h3>SHOW</h3>
+          <button
+            id="five"
+            onClick={() => handleQuantity(5)}
+            style={{
+              backgroundColor:
+                quantityDisplayed === 5 ? "rgb(15, 150, 241)" : "",
+              color: quantityDisplayed === 5 ? "white" : "",
+            }}
+          >
+            5
+          </button>
+          <button
+            id="ten"
+            onClick={() => handleQuantity(10)}
+            style={{
+              backgroundColor:
+                quantityDisplayed === 10 ? "rgb(15, 150, 241)" : "",
+              color: quantityDisplayed === 10 ? "white" : "",
+            }}
+          >
+            10
+          </button>
+          <button
+            id="all"
+            onClick={() => handleQuantity(pictureData.length)}
+            style={{
+              backgroundColor:
+                quantityDisplayed === pictureData.length
+                  ? "rgb(15, 150, 241)"
+                  : "",
+              color: quantityDisplayed === pictureData.length ? "white" : "",
+            }}
+          >
+            All
+          </button>
+        </div>
+      </div>
+
+      <div className="image-container">
+        {filteredQuantity.map((project) => (
+          <div class="image" key={project.id}>
+            {project.image}
+            <h2>{project.name}</h2>
+            <p>
+              {project.level} | {project.category}
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
