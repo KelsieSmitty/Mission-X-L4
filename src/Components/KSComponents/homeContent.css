@@ -32,6 +32,9 @@ Background White: #efeff1;
   width: 100%;
   max-width: 1920px;
 
+  @media screen and (min-width: 769px) and (max-width: 1478px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 90%;
