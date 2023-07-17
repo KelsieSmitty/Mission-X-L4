@@ -1,12 +1,17 @@
-.logoMain {
-  top: 5px;
-  left: 236px;
-  width: 174px;
-  height: 55px;
+/* Main logo: */
+.logo-main {
+  top: 0.3rem;
+  left: 15rem;
+  width: 11rem;
+  height: 3.5rem;
+
+  @media screen and (max-width: 768px) {
+    display: fixed;
+  }
 }
 
 /* Home/features/teachers area: */
-.navMenu {
+.nav-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,27 +21,8 @@
   }
 }
 
-.navLang {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 11px;
-  padding-top: 8px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  
-}
-
-.navLang img {
-  padding-left: 10px;
-  cursor: pointer;
-  top: 8px;
-  width: 24px;
-  height: 12px;
-  
-}
-
-.navRight {
+/* Right side of NavBar: */
+.nav-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,11 +32,77 @@
     display: none;
   }
 }
+.nav-lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #fff;
+  text-decoration: underline;
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
 
-.navAvatar {
-  padding-right: 10px;
-  height: 25px;
-  width: 25px;
-  padding-bottom: 9px;
- 
+.nav-lang img {
+  padding-left: 0.6rem;
+  cursor: pointer;
+  top: 0.5rem;
+  width: 1.5rem;
+  height: 0.75rem;
+}
+
+.nav-avatar {
+  padding-right: 0.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Dropdown Menu for under 768px: */
+.dropdown-container {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    background-color: #52bff3;
+    color: #fff;
+    z-index: 1;
+    text-decoration: underline;
+    display: none;
+  }
+}
+
+.dropdown-container.active {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-decoration: none;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-item {
+  padding: 0.25rem;
+}
+
+.dropdown-item a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
 }
