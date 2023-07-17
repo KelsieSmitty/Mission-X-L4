@@ -19,6 +19,7 @@ Background White: #efeff1;
   padding-bottom: 3.125rem;
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
   @media screen and (max-width: 768px) {
     width: 100%;
     align-items: center;
@@ -30,7 +31,7 @@ Background White: #efeff1;
 .home-section-1 {
   display: flex;
   width: 100%;
-  max-width: 1920px;
+  box-sizing: content-box;
 
   @media screen and (min-width: 769px) and (max-width: 1478px) {
     flex-direction: column;
@@ -52,6 +53,7 @@ Background White: #efeff1;
   height: 25.5rem;
   position: relative;
   background-size: cover;
+  box-sizing: content-box;
   @media screen and (max-width: 768px) {
     width: 100%;
     align-items: center;
@@ -130,6 +132,7 @@ Background White: #efeff1;
 #home_banner_h1 {
   font-size: 3.75rem;
   text-align: left;
+  box-sizing: content-box;
   position: relative;
   font-family: "Nunito", sans-serif;
   left: 16.5rem;
@@ -147,6 +150,7 @@ Background White: #efeff1;
 }
 
 #home_banner_h6 {
+  box-sizing: content-box;
   font-family: "Nunito", sans-serif;
   position: relative;
   font-size: 1.5rem;
@@ -171,6 +175,7 @@ Background White: #efeff1;
 }
 
 #home_banner_p {
+  box-sizing: content-box;
   left: 625px;
   width: 11rem;
   height: 2.3rem;
@@ -197,9 +202,23 @@ Background White: #efeff1;
 
 /* What we offer section starts: */
 
+.what-we-offer {
+  width: 100%;
+  box-sizing: content-box;
+  height: 44rem;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
+
 #home_offer_h1 {
+  box-sizing: content-box;
   left: 266px;
-  width: 18.25rem;
+  width: 100%;
   height: 3.5rem;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -224,6 +243,7 @@ Background White: #efeff1;
 
 #home_offer_p {
   left: 270px;
+  box-sizing: content-box;
   width: 35rem;
   height: 8rem;
   font-family: "Open Sans", sans-serif;
@@ -246,6 +266,7 @@ Background White: #efeff1;
 }
 
 #home_offer_h3 {
+  box-sizing: content-box;
   left: 270px;
   height: 2.5rem;
   font-family: "Nunito", sans-serif;
@@ -269,6 +290,7 @@ Background White: #efeff1;
 
 .home-offer-imgs {
   display: flex;
+  box-sizing: content-box;
   justify-content: space-between;
   padding-top: 0.7rem;
   margin: 0;
@@ -292,29 +314,20 @@ Background White: #efeff1;
   }
 }
 
-.what-we-offer {
-  width: 100%;
-  height: 44rem;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
 /* What we offer section ends */
 
 /* Laptop section starts: */
 
 .home-laptop-container {
   display: flex;
+  box-sizing: content-box;
   flex-direction: column;
   padding: 0;
   margin: 0;
+  align-items: center;
   width: 45.5rem;
   height: 31rem;
-  padding-right: 182px;
+  padding: 0 100px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -329,6 +342,7 @@ Background White: #efeff1;
 
 .home-laptop-image {
   display: flex;
+  box-sizing: content-box;
   flex-direction: row;
   flex-wrap: wrap;
   width: 45.5rem;
@@ -347,6 +361,7 @@ Background White: #efeff1;
 
 .home-laptop-dots {
   display: flex;
+  box-sizing: content-box;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
@@ -360,6 +375,7 @@ Background White: #efeff1;
 }
 
 .home-laptop-dot {
+  box-sizing: content-box;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -392,6 +408,7 @@ Background White: #efeff1;
 
 #home_teaching_h2 {
   left: 408px;
+  box-sizing: content-box;
   width: 69rem;
   height: 2.5rem;
   text-align: center;
@@ -412,6 +429,7 @@ Background White: #efeff1;
 
 .home-teaching-imgs-container {
   display: flex;
+  box-sizing: content-box;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -436,9 +454,11 @@ Background White: #efeff1;
 }
 
 .home-teaching-imgs {
+  box-sizing: content-box;
   object-fit: contain;
   width: 314px;
   height: 231px;
+
   @media screen and (max-width: 768px) {
     padding-top: 1rem;
   }
@@ -449,8 +469,9 @@ Background White: #efeff1;
 /* How our programme helps section starts: */
 
 .home-help-h1 {
-  left: 28.25rem;
-  width: 60.625rem;
+  /* left: 28.25rem; */
+  box-sizing: content-box;
+  width: 100%;
   height: 3.5625rem;
   text-align: center;
   font-family: "Nunito", sans-serif;
@@ -475,6 +496,7 @@ Background White: #efeff1;
 .home-btns {
   display: flex;
   left: 18rem;
+  box-sizing: content-box;
   justify-content: space-between;
   align-items: center;
   margin: 0.25rem 0 0 0;
@@ -495,6 +517,7 @@ Background White: #efeff1;
 }
 .home-btn {
   color: #fff;
+  box-sizing: content-box;
   text-decoration: none;
   margin: 0 0.3rem;
   cursor: pointer;
@@ -520,6 +543,7 @@ Background White: #efeff1;
 }
 
 .home-help-section {
+  box-sizing: content-box;
   top: 3.125rem;
   left: 0px;
   width: 100%;
@@ -539,6 +563,7 @@ Background White: #efeff1;
 }
 
 .home-help-h3 {
+  box-sizing: content-box;
   height: 2.5rem;
   position: relative;
   text-align: left;
@@ -559,6 +584,7 @@ Background White: #efeff1;
 }
 
 .home-help-headings {
+  box-sizing: content-box;
   padding-top: 0px;
   margin: 0;
   padding-bottom: 0;
@@ -583,6 +609,7 @@ Background White: #efeff1;
 
 .home-help-subheading {
   padding-top: 1.5rem;
+  box-sizing: content-box;
   margin: 0;
   padding-bottom: 0;
   width: 77.3rem;
@@ -604,6 +631,7 @@ Background White: #efeff1;
 
 .home-help-p {
   padding-top: 0px;
+  box-sizing: content-box;
   margin: 0;
   padding-bottom: 0;
   width: 77.3rem;
@@ -625,6 +653,7 @@ Background White: #efeff1;
 }
 
 .home-help-active {
+  box-sizing: content-box;
   background: #efeff1 0% 0% no-repeat padding-box;
   box-shadow: 0px 0.25rem 0.3rem #00000029;
   border: 3px solid #efeff1;
@@ -639,6 +668,7 @@ Background White: #efeff1;
 }
 
 .home-icons {
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   width: 2.5rem;
@@ -660,6 +690,7 @@ Background White: #efeff1;
 }
 
 .home-help-flex-1 {
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -676,6 +707,7 @@ Background White: #efeff1;
 }
 
 .home-help-flex-2 {
+  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -696,6 +728,7 @@ Background White: #efeff1;
 
 .home-waiting {
   display: flex;
+  box-sizing: content-box;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -714,6 +747,7 @@ Background White: #efeff1;
 
 .home-waiting-text {
   padding-left: 5.3rem;
+  box-sizing: content-box;
   @media screen and (max-width: 768px) {
     width: 90%;
     align-items: center;
@@ -727,7 +761,8 @@ Background White: #efeff1;
 }
 
 #home_waiting_h1 {
-  width: 32.8rem;
+  width: 100%;
+  box-sizing: content-box;
   height: 3.5rem;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -749,6 +784,7 @@ Background White: #efeff1;
 
 #home_waiting_h3 {
   width: 38rem;
+  box-sizing: content-box;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -769,6 +805,7 @@ Background White: #efeff1;
 }
 
 #home_waiting_p {
+  box-sizing: content-box;
   width: 38rem;
   text-align: left;
   font-family: "Open Sans", sans-serif;
@@ -790,6 +827,7 @@ Background White: #efeff1;
 }
 
 #home_waiting_img {
+  box-sizing: content-box;
   width: 38rem;
   max-width: 100%;
   height: auto;
@@ -805,6 +843,7 @@ Background White: #efeff1;
 }
 
 .home-waiting-btns {
+  box-sizing: content-box;
   display: flex;
   justify-content: center;
   margin-top: 3.5rem;

@@ -20,10 +20,8 @@
 }
 hr {
   width: 164px;
-  width: 164px;
 }
 label {
-  font-size: 14px;
   font-size: 14px;
 }
 .projects-container {
@@ -49,22 +47,12 @@ label {
   justify-content: space-between;
   color: #767676;
   margin-right: 4%;
-  display: flex;
-  justify-content: space-between;
-  color: #767676;
-  margin-right: 4%;
 }
 .buttons {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .left {
-  justify-content: flex-start;
-  width: 287px;
-  height: 21px;
-  font-weight: bolder;
   justify-content: flex-start;
   width: 287px;
   height: 21px;

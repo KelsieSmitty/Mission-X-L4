@@ -38,10 +38,10 @@
   justify-content: center;
   font-size: 0.7rem;
   padding-top: 1rem;
-  padding-bottom: 0;
+  padding-bottom: 0.25rem;
   margin-bottom: 0;
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
