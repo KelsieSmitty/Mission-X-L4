@@ -3,7 +3,7 @@
 
 .main-SPL-container {
   display: flex;
-  /* background-color: #daa520; */
+  background-color: #daa520;
 }
 .projects-container .myCheckbox {
   display: flex;
@@ -14,7 +14,7 @@
   color: #767676;
   font-family: "Open Sans", sans-serif;
   /* flex-basis: 7%; */
-  /* background-color: black; */
+  background-color: black;
   position: absolute;
   margin-top: -3%;
   
@@ -30,7 +30,7 @@ label {
   font-size: 14px;
 }
 .projects-container {
-  /* background-color: rgb(164, 164, 233); */
+  background-color: rgb(164, 164, 233);
   /* margin-top: -1%; */
   /* flex-basis: 65%; */
   align-items: flex-end;
@@ -39,7 +39,7 @@ label {
   padding-top: 3% ;
   margin-left: 20%;
   /* height: 305vh; */
-  width: 65%;
+  width: 80%;
   
 }
 .projects-container h1 {
@@ -49,7 +49,7 @@ label {
   font-weight: 900;
 }
 .projects-container p {
-  margin-top: -3%;
+  /* margin-top: %; */
   color: #767676;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -179,11 +179,11 @@ label {
   margin-right: 10px;
 }
 .image-container {
-  
+  background-color: brown;
   display: flex;
   justify-content: space-around;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   flex-wrap: wrap;
   margin-right: 0px;
   margin-right: 0px;
