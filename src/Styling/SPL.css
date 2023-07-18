@@ -3,21 +3,14 @@
 
 .main-SPL-container {
   display: flex;
-  background-color: #daa520;
 }
 .projects-container .myCheckbox {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  /* padding-top: 13%; */
-  margin-left: -16%;
+  margin-left: -14%;
   color: #767676;
   font-family: "Open Sans", sans-serif;
-  /* flex-basis: 7%; */
-  background-color: black;
   position: absolute;
-  margin-top: -3%;
-  
 }
 
 .myCheckbox h1 {
@@ -30,16 +23,11 @@ label {
   font-size: 14px;
 }
 .projects-container {
-  background-color: rgb(164, 164, 233);
-  /* margin-top: -1%; */
-  /* flex-basis: 65%; */
   align-items: flex-end;
-  /* position: fixed; */
   padding: 5%;
   padding-top: 3% ;
   margin-left: 20%;
-  /* height: 305vh; */
-  width: 80%;
+  width: 75%;
   
 }
 .projects-container h1 {
@@ -49,7 +37,6 @@ label {
   font-weight: 900;
 }
 .projects-container p {
-  /* margin-top: %; */
   color: #767676;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -73,11 +60,11 @@ label {
 }
 /*I styled each button individually*/
 #beginner {
-  font-size: 13px;
+  width: 40%;
+  font-size: 12px;
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -88,11 +75,11 @@ label {
   cursor: pointer;
 }
 #intermediate {
-  font-size: 13px;
+  width: 40%;
+  font-size: 12px;
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -103,17 +90,16 @@ label {
   cursor: pointer;
 }
 #advanced {
-  font-size: 13px;
+  width: 40%;
+  font-size: 12px;
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #advanced:hover {
-  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
@@ -123,13 +109,11 @@ label {
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #five:hover {
-  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
@@ -141,11 +125,9 @@ label {
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 #ten:hover {
-  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
@@ -155,21 +137,16 @@ label {
   background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
-  /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #all:hover {
   background-color: rgb(15, 150, 241);
-  background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
 }
 .right {
-  justify-content: flex-end;
-  width: 246px;
-  height: 21px;
   justify-content: flex-end;
   width: 246px;
   height: 21px;
@@ -179,21 +156,16 @@ label {
   margin-right: 10px;
 }
 .image-container {
-  background-color: brown;
-  display: flex;
+   display: flex;
   justify-content: space-around;
-  /* display: flex;
-  justify-content: space-around; */
   flex-wrap: wrap;
-  margin-right: 0px;
-  margin-right: 0px;
+  width: 100%;
 }
 .image {
+  margin-bottom: 12%;
   width: 314px;
   height: 221px;
-  /* padding: 20px; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
   text-align: center;
 }
 .image h2 {
@@ -203,22 +175,13 @@ label {
   font-family: "Nunito", sans-serif;
   margin-top: 5px;
   margin-bottom: -10px;
-  font-size: 25px;
-  color: #707070;
-  font-weight: 900px;
-  font-family: "Nunito", sans-serif;
-  margin-top: 5px;
-  margin-bottom: -10px;
 }
 .image p {
-  font-size: 18px;
   color: #767676;
   font-family: "Open Sans", sans-serif;
   margin-top: 20px;
   font-size: 18px;
-  color: #767676;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 20px;
+  
 }
 #back-to-top {
   background-color: #daa520;
@@ -236,7 +199,5 @@ label {
   background-color: #ffda7b;
   color: black;
   cursor: pointer;
-  background-color: #ffda7b;
-  color: black;
-  cursor: pointer;
+
 }

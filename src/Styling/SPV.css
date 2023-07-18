@@ -63,7 +63,7 @@
   justify-content: space-evenly;
   position: absolute;
   margin-top: 90%;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 .Profile-Button {
   background-color: white;
@@ -88,6 +88,8 @@
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 .Displayed-info {
   display: flex;
