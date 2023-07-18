@@ -3,6 +3,8 @@ import "../../styling/SPL.css";
 
 
 export default function TestBackendLibraryProjects() {
+
+  // api that fetches all data on projects table from remote server
   const fetchProject = () => {
     fetch(`http://localhost:4000/api/project-library/`)
       .then((response) => response.json())
@@ -26,7 +28,7 @@ export default function TestBackendLibraryProjects() {
 
   console.log("pictureData:", pictureData);
 
-  const [displayedProjects, setDisplayedProjects] = useState(pictureData);
+  const [displayedProjects, setDisplayedProjects] = useState(pictureData); //displays all data in pictureData array, by default.
   const [valueSelected, setValueSelected] = useState("");
   const [quantityDisplayed, setQuantityDisplayed] = useState(pictureData.length);
 
@@ -34,19 +36,29 @@ export default function TestBackendLibraryProjects() {
     setValueSelected(value);
     if (value === "Beginner") {
       const beginnerProjects = pictureData.filter(
-        (project) => project.level === "Beginner"
+        (project) => project.course === "Beginner"
       );
       setDisplayedProjects(beginnerProjects);
     } else if (value === "Intermediate") {
       const intermediateProjects = pictureData.filter(
-        (project) => project.level === "Intermediate"
+        (project) => project.course === "Intermediate"
       );
       setDisplayedProjects(intermediateProjects);
     } else if (value === "Advanced") {
       const advancedProjects = pictureData.filter(
-        (project) => project.level === "Advanced"
+        (project) => project.course === "Advanced"
       );
       setDisplayedProjects(advancedProjects);
+    } else if (value === "Free") {
+      const freeProjects = pictureData.filter(
+        (project) => project.subscription === "Free"
+      );
+      setDisplayedProjects(freeProjects);
+    } else if (value === "Premium") {
+      const premiumProjects = pictureData.filter(
+        (project) => project.subscription === "Premium"
+      );
+      setDisplayedProjects(premiumProjects);
     } else {
       setDisplayedProjects(valueSelected);
     }
@@ -59,6 +71,86 @@ export default function TestBackendLibraryProjects() {
 
   return (
     <>
+      <div className="myCheckbox">
+        <h1 style={{ fontSize: "16px" }}>SUBSCRIPTION</h1>
+        <hr />
+        <div>
+          <input type="checkbox" />
+          <label> Free</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Premium</label>
+        </div>
+
+        <br />
+        <h1 style={{ fontSize: "16px" }}>ACTIVITY TYPE</h1>
+        <hr />
+        <div>
+          <input type="checkbox" />
+          <label> Animation</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Game</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Chatbot</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Augmented Reality</label>
+        </div>
+        <br />
+        <h1 style={{ fontSize: "16px" }}> YEAR LEVEL</h1>
+        <hr />
+        <div>
+          <input type="checkbox" />
+          <label> 1 - 4</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> 5 - 6</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> 7 - 8 </label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> 9 - 13</label>
+        </div>
+        <br />
+        <h1 style={{ fontSize: "16px" }}> SUBJECT MATTER</h1>
+        <hr />
+        <div>
+          <input type="checkbox" />
+          <label> Computer Science</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Maths</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Science</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Language</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Art</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label> Music</label>
+        </div>
+        <br />
+      </div>
+
       <div className="button-container">
         <div className="buttons left">
           <button
