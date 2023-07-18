@@ -1,14 +1,16 @@
 import { HomeContent } from "../components/kSComponents/HomeContent";
 import NavBar from "../components/kSComponents/NavBar";
-import Footer from "../components/componentsLuis/Footer";
-
+import HomeFooter from "../components/kSComponents/HomeFooter";
 
 export default function Home() {
   return (
     <>
+      {/* //Top NavBar */}
       <NavBar />
+      {/* //Main Home Body Content*/}
       <HomeContent />
-      <Footer />
+      {/* //Bottom Home Footer*/}
+      <HomeFooter />
     </>
   );
 }

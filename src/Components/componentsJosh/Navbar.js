@@ -6,10 +6,12 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <img src={logo} alt="logo" />
-        <div>
-        <button className="navbarBtn" style={{ backgroundColor: "rgb(230, 28, 150"}} //pink colour
-        > 
-        Help Centre 
+      <div>
+        <button
+          className="navbarBtn"
+          style={{ backgroundColor: "rgb(230, 28, 150" }} //pink colour
+        >
+          Help Centre
         </button>
 
         <button

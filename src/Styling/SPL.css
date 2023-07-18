@@ -22,7 +22,6 @@
 
 .myCheckbox h1 {
   font-size: 16px;
-  
 }
 hr {
   width: 164px;
@@ -55,7 +54,6 @@ label {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   margin-bottom: 5%;
-  
 }
 .button-container {
   display: flex;
@@ -81,7 +79,7 @@ label {
   border: none;
   /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #beginner:hover {
@@ -96,7 +94,7 @@ label {
   border: none;
   /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #intermediate:hover {
@@ -105,17 +103,17 @@ label {
   cursor: pointer;
 }
 #advanced {
-  
   font-size: 13px;
-  background-color:rgb(211, 210, 210);
+  background-color: rgb(211, 210, 210);
   transition: background-color 0.3s, color 0.3s;
   border: none;
   /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #advanced:hover {
+  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
@@ -127,10 +125,11 @@ label {
   border: none;
   /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #five:hover {
+  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
@@ -147,6 +146,7 @@ label {
 }
 #ten:hover {
   background-color: rgb(15, 150, 241);
+  background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
 }
@@ -157,15 +157,19 @@ label {
   border: none;
   /* border-radius: 5px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 #all:hover {
+  background-color: rgb(15, 150, 241);
   background-color: rgb(15, 150, 241);
   color: white;
   cursor: pointer;
 }
 .right {
+  justify-content: flex-end;
+  width: 246px;
+  height: 21px;
   justify-content: flex-end;
   width: 246px;
   height: 21px;
@@ -178,7 +182,10 @@ label {
   
   display: flex;
   justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-right: 0px;
   margin-right: 0px;
 }
 .image {
@@ -196,8 +203,18 @@ label {
   font-family: "Nunito", sans-serif;
   margin-top: 5px;
   margin-bottom: -10px;
+  font-size: 25px;
+  color: #707070;
+  font-weight: 900px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 5px;
+  margin-bottom: -10px;
 }
 .image p {
+  font-size: 18px;
+  color: #767676;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
   font-size: 18px;
   color: #767676;
   font-family: "Open Sans", sans-serif;
@@ -216,6 +233,9 @@ label {
   transition: background-color 0.3s, color 0.3s;
 }
 #back-to-top:hover {
+  background-color: #ffda7b;
+  color: black;
+  cursor: pointer;
   background-color: #ffda7b;
   color: black;
   cursor: pointer;
