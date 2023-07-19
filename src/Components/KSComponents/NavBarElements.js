@@ -53,12 +53,6 @@ export const Bars = styled(FaBars)`
 // Avatar/login and register:
 export const NavLogin = styled.nav`
   display: flex;
-  justify-content: space-around;
-  padding-top: 0.75rem;
-  padding-bottom: 0.625rem;
-  height: 1.4rem;
-  margin: 0;
-  font-size: 1rem;
 `;
 
 export const NavBtn = styled.nav`

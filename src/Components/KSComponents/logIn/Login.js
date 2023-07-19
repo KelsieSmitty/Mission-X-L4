@@ -1,5 +1,5 @@
 // Imports:
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { Modal } from "@mui/material";
 import axios from "axios";
@@ -29,6 +29,7 @@ export const Login = ({ open, handleClose }) => {
   const [userName, setUserName] = useState("");
   const [userAvatar, setUserAvatar] = useState("");
   const [userID, setUserID] = useState("");
+  const [profilePicUrl, setProfilePicUrl] = useState("");
 
   // event handler functions to update the variables when form input fields are updated by teacher/students:
   const handleStudentEmailChange = (e) => {
@@ -62,6 +63,7 @@ export const Login = ({ open, handleClose }) => {
   const handleStudentLogin = (e) => {
     e.preventDefault(); // Prevent refresh default on submission to ensure execution of below validations etc
 
+    // send a post request to api/loginStudent including email & pw
     axios
       .post("http://localhost:4000/api/loginStudent", {
         email: studentEmail,
@@ -71,9 +73,13 @@ export const Login = ({ open, handleClose }) => {
         setLoginStudentResult(
           <span className="login-successful">Login Successful!</span>
         );
+        //TEST LINE: checks for profile_pic validity.
+        console.log(response.data.profile_pic);
 
+        //extract name, avatar & id from res data object. (object destructuring)
         const { name, avatar, id } = response.data;
 
+        //store the info in localstorage
         localStorage.setItem(
           "user",
           JSON.stringify({
@@ -83,14 +89,17 @@ export const Login = ({ open, handleClose }) => {
           })
         );
 
-        //update the state with the user info:
+        //update the state variables with the user info:
         setUserID(id);
         setUserName(name);
         setUserAvatar(avatar);
         setIsLoggedIn(true);
 
+        //navigate to project library
         goTo(`/student-project-library`);
       })
+
+      //error catching
       .catch((error) => {
         setLoginStudentResult(
           <span className="login-failed">Login Failed. Please Try Again.</span>

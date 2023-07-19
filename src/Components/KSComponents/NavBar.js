@@ -81,7 +81,7 @@ const NavBar = ({ studentName }) => {
           <NavLogin>
             {/* // Avatar and Login/Register section:*/}
             {isLoggedIn ? (
-              <>
+              <div id="login_custom_user">
                 <img
                   src={userAvatar}
                   alt="LoginAvatar"
@@ -91,14 +91,16 @@ const NavBar = ({ studentName }) => {
                   <span id="login-username">{userName}</span>
                 </Link>
                 <NavBtnLink onClick={handleLogout}>| LOGOUT |</NavBtnLink>
-              </>
+              </div>
             ) : (
-              <NavBtn>
-                <img src={Avatar} alt="LoginAvatar" className="nav-avatar" />
-                <NavBtnLink onClick={handleOpenLogin}>
-                  REGISTER | LOGIN
-                </NavBtnLink>
-              </NavBtn>
+              <div id="login_avatar_user">
+                <NavBtn>
+                  <img src={Avatar} alt="LoginAvatar" className="nav-avatar" />
+                  <NavBtnLink onClick={handleOpenLogin}>
+                    REGISTER | LOGIN
+                  </NavBtnLink>
+                </NavBtn>
+              </div>
             )}
 
             <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
