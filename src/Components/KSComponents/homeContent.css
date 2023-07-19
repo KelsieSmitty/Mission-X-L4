@@ -19,26 +19,9 @@ Background White: #efeff1;
   padding-bottom: 3.125rem;
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  width: 100%;
   @media screen and (max-width: 768px) {
     width: 100%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-  }
-}
-
-.home-section-1 {
-  display: flex;
-  width: 100%;
-  box-sizing: content-box;
-
-  @media screen and (min-width: 769px) and (max-width: 1478px) {
-    flex-direction: column;
-  }
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    width: 90%;
     align-items: center;
     margin: auto;
     left: auto;
@@ -53,7 +36,6 @@ Background White: #efeff1;
   height: 25.5rem;
   position: relative;
   background-size: cover;
-  box-sizing: content-box;
   @media screen and (max-width: 768px) {
     width: 100%;
     align-items: center;
@@ -132,7 +114,6 @@ Background White: #efeff1;
 #home_banner_h1 {
   font-size: 3.75rem;
   text-align: left;
-  box-sizing: content-box;
   position: relative;
   font-family: "Nunito", sans-serif;
   left: 16.5rem;
@@ -201,25 +182,50 @@ Background White: #efeff1;
 /* Home Banner Section ends */
 
 /* What we offer section starts: */
+.home-section-1 {
+  display: flex;
+  width: 100%;
+
+  @media screen and (min-width: 769px) and (max-width: 1478px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+  }
+}
 
 .what-we-offer {
-  width: 100%;
+  width: 50%;
   box-sizing: content-box;
   height: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
   @media screen and (max-width: 768px) {
     width: 90%;
     align-items: center;
     margin: auto;
     left: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
+.what-we-offer-content {
+  width: 80%;
+  align-items: center;
+}
 #home_offer_h1 {
   box-sizing: content-box;
-  left: 266px;
   width: 100%;
-  height: 3.5rem;
+  height: auto;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
@@ -242,12 +248,10 @@ Background White: #efeff1;
 }
 
 #home_offer_p {
-  left: 270px;
   box-sizing: content-box;
-  width: 35rem;
-  height: 8rem;
+  width: 100%;
+  height: auto;
   font-family: "Open Sans", sans-serif;
-  position: relative;
   text-align: left;
   letter-spacing: 0.4px;
   color: #767676;
@@ -267,11 +271,10 @@ Background White: #efeff1;
 
 #home_offer_h3 {
   box-sizing: content-box;
-  left: 270px;
-  height: 2.5rem;
+  height: auto;
+  width: 100%;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
-  position: relative;
   text-align: left;
   font-size: 1.9rem;
   letter-spacing: 0.6px;
@@ -295,7 +298,7 @@ Background White: #efeff1;
   padding-top: 0.7rem;
   margin: 0;
   padding-bottom: 0;
-  left: 270px;
+  align-self: start;
   width: 9.5rem;
   height: 9.5rem;
   border-radius: 1.25rem;
@@ -330,7 +333,7 @@ Background White: #efeff1;
   padding: 0 100px;
 
   @media screen and (max-width: 768px) {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding-right: 0;
     padding-bottom: 2.5rem;
@@ -345,12 +348,13 @@ Background White: #efeff1;
   box-sizing: content-box;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   width: 45.5rem;
   height: 31rem;
   padding-top: 40px;
   margin: 0;
   @media screen and (max-width: 768px) {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 0;
     align-items: center;
@@ -405,9 +409,17 @@ Background White: #efeff1;
 /*laptop section ends */
 
 /* Teaching kids programming section starts: */
+.home-teaching-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
 
 #home_teaching_h2 {
-  left: 408px;
   box-sizing: content-box;
   width: 69rem;
   height: 2.5rem;
@@ -435,7 +447,6 @@ Background White: #efeff1;
   align-items: center;
   width: 87.5rem;
   height: 13rem;
-  left: 288px;
   position: relative;
   border-radius: 1.25rem;
   padding-top: 3.4rem;
@@ -467,6 +478,34 @@ Background White: #efeff1;
 /* Teaching kids programming section ends */
 
 /* How our programme helps section starts: */
+.home-help-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-help-section {
+  box-sizing: content-box;
+  top: 3.125rem;
+  width: 100%;
+  height: 46.875rem;
+  background: #efeff1 0% 0% no-repeat padding-box;
+  border: 1px solid #efeff1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    left: auto;
+    height: auto;
+  }
+}
 
 .home-help-h1 {
   /* left: 28.25rem; */
@@ -480,7 +519,6 @@ Background White: #efeff1;
   letter-spacing: 0.84px;
   color: #6c6c6c;
   font-size: 2.6rem;
-  padding-bottom: 6.25rem;
   padding-top: 8.75rem;
   margin: 0;
   padding-bottom: 0;
@@ -495,7 +533,6 @@ Background White: #efeff1;
 
 .home-btns {
   display: flex;
-  left: 18rem;
   box-sizing: content-box;
   justify-content: space-between;
   align-items: center;
@@ -503,8 +540,6 @@ Background White: #efeff1;
   width: 87.5rem;
   position: relative;
   padding-top: 3.4rem;
-  margin: 0;
-  padding-bottom: 0;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: stretch;
@@ -542,26 +577,6 @@ Background White: #efeff1;
   }
 }
 
-.home-help-section {
-  box-sizing: content-box;
-  top: 3.125rem;
-  left: 0px;
-  width: 100%;
-  height: 46.875rem;
-  background: #efeff1 0% 0% no-repeat padding-box;
-  border: 1px solid #efeff1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  @media screen and (max-width: 768px) {
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    left: auto;
-    height: auto;
-  }
-}
-
 .home-help-h3 {
   box-sizing: content-box;
   height: 2.5rem;
@@ -572,8 +587,6 @@ Background White: #efeff1;
   letter-spacing: 0.6px;
   color: #606060;
   padding-top: 70px;
-  margin: 0;
-  padding-bottom: 0;
   @media screen and (max-width: 768px) {
     width: 90%;
     align-items: center;
@@ -586,9 +599,6 @@ Background White: #efeff1;
 .home-help-headings {
   box-sizing: content-box;
   padding-top: 0px;
-  margin: 0;
-  padding-bottom: 0;
-  left: 290px;
   width: 78rem;
   height: 21.5rem;
   position: relative;
@@ -610,8 +620,6 @@ Background White: #efeff1;
 .home-help-subheading {
   padding-top: 1.5rem;
   box-sizing: content-box;
-  margin: 0;
-  padding-bottom: 0;
   width: 77.3rem;
   position: relative;
   text-align: left;
@@ -632,8 +640,6 @@ Background White: #efeff1;
 .home-help-p {
   padding-top: 0px;
   box-sizing: content-box;
-  margin: 0;
-  padding-bottom: 0;
   width: 77.3rem;
   height: 1.125rem;
   position: relative;
@@ -673,7 +679,7 @@ Background White: #efeff1;
   flex-direction: column;
   width: 2.5rem;
   height: 30rem;
-  left: 282px;
+  padding-right: 5px;
   position: relative;
   align-items: center;
   justify-content: space-around;
@@ -695,7 +701,6 @@ Background White: #efeff1;
   flex-direction: column;
   align-items: flex-start;
   height: 9.4rem;
-  left: 282px;
   position: relative;
   @media screen and (max-width: 768px) {
     width: 90%;

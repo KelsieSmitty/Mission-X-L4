@@ -53,15 +53,17 @@ export const HomeContent = () => {
         <HomeLaptop />
 
         {/* // Teaching Section: */}
-        <h2 id="home_teaching_h2">
-          Teaching kids programming and digital skills is MORE than just writing
-          code.
-        </h2>
-        <div className="home-teaching-imgs-container">
-          <img className="home-teaching-imgs" src={Group1} alt="Group1Img" />
-          <img className="home-teaching-imgs" src={Group2} alt="Group2Img" />
-          <img className="home-teaching-imgs" src={Group3} alt="Group3Img" />
-          <img className="home-teaching-imgs" src={Group4} alt="Group4Img" />
+        <div className="home-teaching-container">
+          <h2 id="home_teaching_h2">
+            Teaching kids programming and digital skills is MORE than just
+            writing code.
+          </h2>
+          <div className="home-teaching-imgs-container">
+            <img className="home-teaching-imgs" src={Group1} alt="Group1Img" />
+            <img className="home-teaching-imgs" src={Group2} alt="Group2Img" />
+            <img className="home-teaching-imgs" src={Group3} alt="Group3Img" />
+            <img className="home-teaching-imgs" src={Group4} alt="Group4Img" />
+          </div>
         </div>
         {/* // HomeHelp Section: */}
         <HomeHelp />
