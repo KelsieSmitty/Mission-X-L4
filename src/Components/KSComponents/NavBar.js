@@ -13,13 +13,18 @@ import Avatar from "../../images/src-assets/NavBar/Avatar-white.png";
 import NZFlag from "../../images/src-assets/NavBar/NZFlag.png";
 import MāoriFlag from "../../images/src-assets/NavBar/MaoriFlag.png";
 import { Login } from "./logIn/Login"; //Login Modal component
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown"; //Using for dropdown menu for under 768px
 import DropdownItem from "react-bootstrap/esm/DropdownItem"; //Using for dropdown menu for under 768px
 
-const NavBar = () => {
+const NavBar = ({ studentName }) => {
   const [openLogin, setOpenLogin] = useState(false); //set default state of login modal as not open
   const [dropdownOpen, setDropdownOpen] = useState(false); // set default state as not open
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [userAvatar, setUserAvatar] = useState("");
+  const [userID, setUserID] = useState("");
 
   const handleOpenLogin = () => {
     setOpenLogin(true); // handles the change of the login modal state to open
@@ -27,6 +32,26 @@ const NavBar = () => {
 
   const handleDropdown = () => {
     setDropdownOpen(!dropdownOpen); // handles the change of the state variable to open
+  };
+
+  useEffect(() => {
+    //check if the user is logged in already
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      //update the state with the user info
+      setUserID(user.id);
+      setUserName(user.name);
+      setUserAvatar(user.avatar);
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setIsLoggedIn(false);
+    setUserID("");
+    setUserName("");
+    setUserAvatar("");
   };
 
   return (
@@ -55,13 +80,30 @@ const NavBar = () => {
           </div>
           <NavLogin>
             {/* // Avatar and Login/Register section:*/}
-            <NavBtn>
-              <img src={Avatar} alt="LoginAvatar" className="nav-avatar" />
-              <NavBtnLink onClick={handleOpenLogin}>
-                REGISTER | LOGIN
-              </NavBtnLink>
-              <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
-            </NavBtn>
+            {isLoggedIn ? (
+              <div id="login_custom_user">
+                <img
+                  src={userAvatar}
+                  alt="LoginAvatar"
+                  className="nav-user-avatar"
+                />
+                <Link to={"/student-profile/${user.id}"}>
+                  <span id="login-username">{userName}</span>
+                </Link>
+                <NavBtnLink onClick={handleLogout}>| LOGOUT |</NavBtnLink>
+              </div>
+            ) : (
+              <div id="login_avatar_user">
+                <NavBtn>
+                  <img src={Avatar} alt="LoginAvatar" className="nav-avatar" />
+                  <NavBtnLink onClick={handleOpenLogin}>
+                    REGISTER | LOGIN
+                  </NavBtnLink>
+                </NavBtn>
+              </div>
+            )}
+
+            <Login open={openLogin} handleClose={() => setOpenLogin(false)} />
           </NavLogin>
         </div>
       </Nav>

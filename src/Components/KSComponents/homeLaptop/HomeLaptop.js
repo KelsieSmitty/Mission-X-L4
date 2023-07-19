@@ -61,52 +61,54 @@ export default function HomeLaptop() {
   return (
     <div className="home-section-1">
       <div className="what-we-offer">
-        {/* // What we offer text section: */}
-        <h1 id="home_offer_h1">What we offer</h1>
-        <p id="home_offer_p">
-          The Creative Problem Solving programme is series of digital creation
-          projects aimed to encourage self-motivation and student agency,
-          designed by New Zealand’s leading IT industry experts and schools.
-        </p>
-        <h3 id="home_offer_h3">What will students create?</h3>
-        <div className="home-offer-imgs">
-          {/* // Handle onclick for the corresponding blue square images to laptop image by using a dynamic class */}
-          <img
-            src={Animation}
-            alt="AnimationImg"
-            id="home-animation"
-            className={`home-create ${
-              displayedContent.name === "home-animation" ? "active" : ""
-            } `}
-            onClick={() => handleContentClick("home-animation")}
-          />
-          <img
-            src={Games}
-            alt="GameImg"
-            id="home-games"
-            className={`home-create ${
-              displayedContent.name === "home-games" ? "active" : ""
-            } `}
-            onClick={() => handleContentClick("home-games")}
-          />
-          <img
-            src={Chatbots}
-            alt="ChatbotsImg"
-            id="home-chatbots"
-            className={`home-create ${
-              displayedContent.name === "home-chatbots" ? "active" : ""
-            } `}
-            onClick={() => handleContentClick("home-chatbots")}
-          />
-          <img
-            src={AugReality}
-            alt="AugRealityImg"
-            id="home-aug-reality"
-            className={`home-create ${
-              displayedContent.name === "home-aug-reality" ? "active" : ""
-            } `}
-            onClick={() => handleContentClick("home-aug-reality")}
-          />
+        <div className="what-we-offer-content">
+          {/* // What we offer text section: */}
+          <h1 id="home_offer_h1">What we offer</h1>
+          <p id="home_offer_p">
+            The Creative Problem Solving programme is series of digital creation
+            projects aimed to encourage self-motivation and student agency,
+            designed by New Zealand’s leading IT industry experts and schools.
+          </p>
+          <h3 id="home_offer_h3">What will students create?</h3>
+          <div className="home-offer-imgs">
+            {/* // Handle onclick for the corresponding blue square images to laptop image by using a dynamic class */}
+            <img
+              src={Animation}
+              alt="AnimationImg"
+              id="home-animation"
+              className={`home-create ${
+                displayedContent.name === "home-animation" ? "active" : ""
+              } `}
+              onClick={() => handleContentClick("home-animation")}
+            />
+            <img
+              src={Games}
+              alt="GameImg"
+              id="home-games"
+              className={`home-create ${
+                displayedContent.name === "home-games" ? "active" : ""
+              } `}
+              onClick={() => handleContentClick("home-games")}
+            />
+            <img
+              src={Chatbots}
+              alt="ChatbotsImg"
+              id="home-chatbots"
+              className={`home-create ${
+                displayedContent.name === "home-chatbots" ? "active" : ""
+              } `}
+              onClick={() => handleContentClick("home-chatbots")}
+            />
+            <img
+              src={AugReality}
+              alt="AugRealityImg"
+              id="home-aug-reality"
+              className={`home-create ${
+                displayedContent.name === "home-aug-reality" ? "active" : ""
+              } `}
+              onClick={() => handleContentClick("home-aug-reality")}
+            />
+          </div>{" "}
         </div>
       </div>
       <div className="home-laptop-container">

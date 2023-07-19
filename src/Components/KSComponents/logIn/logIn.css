@@ -64,7 +64,7 @@
   cursor: pointer;
 
   @media screen and (max-width: 860px) {
-    position: sticky;
+    position: webkit-sticky;
     top: 5%;
     left: 85%;
   }
