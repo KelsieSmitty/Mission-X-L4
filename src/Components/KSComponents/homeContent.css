@@ -219,12 +219,14 @@ Background White: #efeff1;
 }
 
 .what-we-offer-content {
-  width: 80%;
-  align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 #home_offer_h1 {
   box-sizing: content-box;
-  width: 100%;
+  width: 35rem;
   height: auto;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -249,7 +251,7 @@ Background White: #efeff1;
 
 #home_offer_p {
   box-sizing: content-box;
-  width: 100%;
+  width: 35rem;
   height: auto;
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -272,7 +274,7 @@ Background White: #efeff1;
 #home_offer_h3 {
   box-sizing: content-box;
   height: auto;
-  width: 100%;
+  width: 35rem;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   text-align: left;
@@ -294,12 +296,12 @@ Background White: #efeff1;
 .home-offer-imgs {
   display: flex;
   box-sizing: content-box;
+  align-content: center;
   justify-content: space-between;
   padding-top: 0.7rem;
   margin: 0;
   padding-bottom: 0;
-  align-self: start;
-  width: 9.5rem;
+  width: 35rem;
   height: 9.5rem;
   border-radius: 1.25rem;
   position: relative;
