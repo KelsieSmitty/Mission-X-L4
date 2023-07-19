@@ -53,7 +53,7 @@ export const HomeContent = () => {
         <HomeLaptop />
 
         {/* // Teaching Section: */}
-        <h2 id="home_teaching_h2">
+        <h2  id="home_teaching_h2">
           Teaching kids programming and digital skills is MORE than just writing
           code.
         </h2>

@@ -34,10 +34,6 @@ export default function StudentProfileViewer() {
   // Convert the backend date to the desired format
   const formattedDate = formatDate(student.date_of_birth);
 
-  // console.log(student.name);
-  // console.log(student.teacher_name);
-  // console.log(student.profile_pic);
-  // console.log(imagePath);
   return (
     <>
       <header className="navbar">
