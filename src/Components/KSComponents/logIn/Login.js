@@ -67,7 +67,7 @@ export const Login = ({ open, handleClose }) => {
           <span className="login-successful">Login Successful!</span>
         );
         console.log(response);
-        goTo(`/StudentProjectDashboard`);
+        goTo(`/student-project-library`);
       })
       .catch((error) => {
         setLoginStudentResult(
@@ -125,7 +125,7 @@ export const Login = ({ open, handleClose }) => {
           <span className="login-successful">Login Successful!</span>
         );
         console.log(response);
-        goTo(`submissionpagelink`);
+        goTo(`/studentdashboard/projectsubmissions`);
       })
       .catch((error) => {
         setLoginTeacherResult(
