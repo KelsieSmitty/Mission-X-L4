@@ -23,11 +23,12 @@
 
 /* Right side of NavBar: */
 .nav-right {
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
+  height: auto;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -62,6 +63,16 @@
   padding-bottom: 0.5rem;
 }
 
+.nav-user-avatar {
+  padding-right: 0.6rem;
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+#login-username {
+  text-decoration: none;
+}
 /* Dropdown Menu for under 768px: */
 .dropdown-container {
   display: none;

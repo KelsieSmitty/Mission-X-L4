@@ -25,6 +25,11 @@ export const Login = ({ open, handleClose }) => {
   const [studentFormType, setStudentFormType] = useState("signup"); // Set initial form to signup upon open
   const [teacherFormType, setTeacherFormType] = useState("signup");
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [userAvatar, setUserAvatar] = useState("");
+  const [userID, setUserID] = useState("");
+
   // event handler functions to update the variables when form input fields are updated by teacher/students:
   const handleStudentEmailChange = (e) => {
     setStudentEmail(e.target.value);
@@ -66,7 +71,24 @@ export const Login = ({ open, handleClose }) => {
         setLoginStudentResult(
           <span className="login-successful">Login Successful!</span>
         );
-        console.log(response);
+
+        const { name, avatar, id } = response.data;
+
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            id: response.data.id,
+            name: response.data.name,
+            avatar: response.data.profile_pic,
+          })
+        );
+
+        //update the state with the user info:
+        setUserID(id);
+        setUserName(name);
+        setUserAvatar(avatar);
+        setIsLoggedIn(true);
+
         goTo(`/student-project-library`);
       })
       .catch((error) => {
@@ -234,7 +256,7 @@ export const Login = ({ open, handleClose }) => {
                       <button type="submit" className="login-signup-button">
                         LOG IN
                       </button>
-                    </div>{" "}
+                    </div>
                   </form>
                 </div>
               ) : (
