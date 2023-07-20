@@ -1,5 +1,5 @@
 // Imports:
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Modal } from "@mui/material";
 import axios from "axios";
@@ -29,7 +29,6 @@ export const Login = ({ open, handleClose }) => {
   const [userName, setUserName] = useState("");
   const [userAvatar, setUserAvatar] = useState("");
   const [userID, setUserID] = useState("");
-  const [profilePicUrl, setProfilePicUrl] = useState("");
 
   // event handler functions to update the variables when form input fields are updated by teacher/students:
   const handleStudentEmailChange = (e) => {
@@ -313,7 +312,7 @@ export const Login = ({ open, handleClose }) => {
                   </form>
                 </div>
               )}
-            </div>
+            </div>{" "}
           </div>
           <div className="signup-students">
             {/* //Teachers section: */}

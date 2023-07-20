@@ -87,7 +87,7 @@ const NavBar = ({ studentName }) => {
                   alt="LoginAvatar"
                   className="nav-user-avatar"
                 />
-                <Link to={"/student-profile/${user.id}"}>
+                <Link to={"/studentdashboard"}>
                   <span id="login-username">{userName}</span>
                 </Link>
                 <NavBtnLink onClick={handleLogout}>| LOGOUT |</NavBtnLink>
