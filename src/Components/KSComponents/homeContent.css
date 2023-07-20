@@ -438,12 +438,10 @@ Background White: #efeff1;
     margin: auto;
     left: auto;
     height: auto;
-
   }
 }
 
 .home-teaching-imgs-container {
-  
   display: flex;
   box-sizing: content-box;
   flex-direction: row;
@@ -728,6 +726,7 @@ Background White: #efeff1;
     align-items: center;
     margin: auto;
     left: auto;
+    padding-bottom: 3rem;
     height: auto;
   }
 }
@@ -748,6 +747,7 @@ Background White: #efeff1;
   background-color: #fff;
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-top: 2rem;
     align-items: center;
     margin: auto;
     height: auto;
@@ -785,6 +785,7 @@ Background White: #efeff1;
   font-size: 2.6rem;
   @media screen and (max-width: 768px) {
     width: 90%;
+    padding-top: 1rem;
     align-items: center;
     margin: auto;
     left: auto;
@@ -848,7 +849,7 @@ Background White: #efeff1;
     margin: auto;
     left: auto;
     height: auto;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 1rem 0;
   }
 }
 
@@ -911,6 +912,7 @@ Background White: #efeff1;
   border: none;
   @media screen and (max-width: 768px) {
     width: 90%;
+    border: 1px solid #f91c85;
     align-items: center;
     margin: auto;
     left: auto;

@@ -94,6 +94,12 @@ export const Login = ({ open, handleClose }) => {
         setUserAvatar(avatar);
         setIsLoggedIn(true);
 
+        //clg unused variables:
+        console.log(isLoggedIn);
+        console.log(userName);
+        console.log(userAvatar);
+        console.log(userID);
+
         //navigate to project library
         goTo(`/student-project-library`);
       })
